@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uyen T.P. Nguyen — Strategic Communication Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  /* ============ TOKENS ============ */
+  :root{
+    --ink:#1C2B39;
+    --paper:#EDE7DA;
+    --paper-alt:#E2DAC7;
+    --jade:#3F6B5E;
+    --jade-deep:#2A4A40;
+    --brass:#A07A3D;
+    --text:#2A3540;
+    --muted:#6B6459;
+    --line:#C7BFA9;
+    --white:#FEFDFB;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--paper);
+    color: var(--text);
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    color: var(--ink);
+    margin:0;
+    font-weight:500;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 0 0 1em 0; max-width: 66ch; }
+  a { color: var(--jade-deep); }
+  .wrap{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+  .rule{
+    border:0; border-top:1px solid var(--line);
+    margin: 0;
+  }
+
+  /* ============ COVER ============ */
+  .cover{
+    padding: 76px 0 56px 0;
+  }
+  .cover-grid{
+    display:grid;
+    grid-template-columns: 1fr 220px;
+    gap: 44px;
+    align-items:center;
+  }
+  .cover-eyebrow{
+    font-size: 0.86rem;
+    color: var(--muted);
+    margin-bottom: 18px;
+    max-width: 46ch;
+  }
+  .cover h1{
+    font-size: clamp(2.1rem, 4.4vw, 3.1rem);
+    line-height:1.08;
+  }
+  .cover .role{
+    font-family:'Fraunces', serif;
+    font-style: italic;
+    color: var(--jade-deep);
+    font-size: 1.25rem;
+    margin-top: 8px;
+  }
+  .cover .lede{
+    margin-top: 20px;
+    font-size: 1.05rem;
+    color: var(--text);
+    max-width: 54ch;
+  }
+  .cover-photo{
+    width: 220px;
+    height: 220px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--paper-alt);
+    border: 1px solid var(--line);
+  }
+  .cover-photo img{
+    width:100%; height:100%; object-fit: cover; display:block;
+  }
+  .contact-row{
+    margin-top: 26px;
+    font-size: 0.92rem;
+    color: var(--muted);
+  }
+  .contact-row span{ margin-right: 18px; white-space: nowrap; }
+
+  /* ============ STATS ============ */
+  .stats{
+    background: var(--ink);
+    padding: 46px 0;
+  }
+  .stats-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .stat .num{
+    font-family:'Fraunces', serif;
+    font-size: 2.3rem;
+    color: var(--white);
+    line-height:1;
+  }
+  .stat .label{
+    margin-top: 10px;
+    font-size: 0.86rem;
+    color: #C7CDD3;
+    max-width: 22ch;
+  }
+
+  /* ============ SECTION SHELL ============ */
+  section.block{
+    padding: 64px 0;
+  }
+  section.block.alt{
+    background: var(--paper-alt);
+  }
+  .block-head{
+    margin-bottom: 30px;
+  }
+  .block-head h2{
+    font-size: clamp(1.6rem, 3vw, 2.05rem);
+  }
+  .block-head .meta{
+    margin-top: 8px;
+    color: var(--jade-deep);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .intro-title{
+    padding-top: 54px;
+  }
+  .intro-title h2{
+    font-size: 1.5rem;
+  }
+  .intro-title p{
+    color: var(--muted);
+    margin-top: 10px;
+  }
+
+  /* ============ TIMELINE ============ */
+  .timeline{
+    margin: 26px 0 30px 0;
+    border-left: 2px solid var(--line);
+    padding-left: 22px;
+  }
+  .timeline .step{
+    position: relative;
+    padding-bottom: 22px;
+  }
+  .timeline .step:last-child{ padding-bottom: 0; }
+  .timeline .step::before{
+    content:'';
+    position:absolute;
+    left:-27px; top: 4px;
+    width:10px; height:10px;
+    border-radius:50%;
+    background: var(--jade);
+    border: 2px solid var(--paper);
+  }
+  section.block.alt .timeline .step::before{ border-color: var(--paper-alt); }
+  .timeline .step .when{
+    font-size: 0.82rem;
+    color: var(--jade-deep);
+    font-weight:600;
+    text-transform: none;
+    margin-bottom: 2px;
+  }
+  .timeline .step p{ margin: 0; }
+
+  /* ============ MEDIA GRID / PLACEHOLDER SLOTS ============ */
+  .media-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 26px 0;
+  }
+  .media-grid.cols-4{ grid-template-columns: repeat(4,1fr); }
+  .media-slot{
+    position:relative;
+    aspect-ratio: 4/3;
+    background: var(--white);
+    border: 1px dashed var(--line);
+    border-radius: 3px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .media-slot img{
+    width:100%; height:100%; object-fit: cover; display:block;
+  }
+  .media-slot .ph{
+    display:none;
+    padding: 14px;
+    text-align:center;
+  }
+  .media-slot .ph .fname{
+    display:block;
+    font-size: 0.72rem;
+    color: var(--jade-deep);
+    background: var(--paper-alt);
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    font-family: monospace;
+  }
+  .media-slot .ph .cap{
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height:1.4;
+  }
+
+  .press-note{
+    margin-top: 18px;
+    padding: 14px 18px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  section.block.alt .press-note{ background: var(--paper); }
+  .press-note strong{ color: var(--text); }
+
+  /* ============ RECOGNITION ============ */
+  .recog-cols{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 46px;
+  }
+  .recog-list{ list-style: none; margin:0; padding:0; }
+  .recog-list li{
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.95rem;
+  }
+  .recog-list li:last-child{ border-bottom:none; }
+
+  /* ============ FOOTER ============ */
+  footer{
+    background: var(--ink);
+    color: #C7CDD3;
+    padding: 48px 0 40px 0;
+  }
+  footer h2{ color: var(--white); font-size: 1.5rem; }
+  footer a{ color: var(--white); }
+  footer .foot-contact{
+    margin-top: 14px;
+    font-size: 0.92rem;
+  }
+  footer .foot-contact span{ margin-right: 18px; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 720px){
+    .cover-grid{ grid-template-columns: 1fr; }
+    .cover-photo{ width: 140px; height: 140px; }
+    .stats-grid{ grid-template-columns: repeat(2,1fr); }
+    .recog-cols{ grid-template-columns: 1fr; }
+    .media-grid, .media-grid.cols-4{ grid-template-columns: repeat(2,1fr); }
+    .contact-row span{ display:block; margin-bottom:6px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- =========================================================
+       0. COVER
+  ========================================================== -->
+  <header class="cover">
+    <div class="wrap cover-grid">
+      <div>
+        <div class="cover-eyebrow">Portfolio prepared for: EU Strategic Communication in Viet Nam — Particip GmbH Consortium, Key Expert 1 Candidacy</div>
+        <h1>Uyen T.P. Nguyen, MBA</h1>
+        <div class="role">Strategic Communication &amp; Campaign Leader</div>
+        <p class="lede">20+ years designing, leading and evaluating brand, public-affairs and public-awareness campaigns across Vietnam and ASEAN — for global technology platforms and government-endorsed national programs.</p>
+        <div class="contact-row">
+          <span>+84 982 69 9090</span>
+          <span>uyenntp@gmail.com</span>
+          <span>Ho Chi Minh City, Vietnam</span>
+          <span>linkedin.com/in/uyen1503</span>
+        </div>
+      </div>
+      <div class="cover-photo">
+        <img src="images/profile.jpg" alt="Uyen T.P. Nguyen">
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       1. SNAPSHOT STATS
+  ========================================================== -->
+  <section class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat">
+        <div class="num">20+ yrs</div>
+        <div class="label">leading strategic communication campaigns across Vietnam &amp; ASEAN</div>
+      </div>
+      <div class="stat">
+        <div class="num">100+</div>
+        <div class="label">campaigns &amp; events run annually at peak — Alibaba.com Vietnam</div>
+      </div>
+      <div class="stat">
+        <div class="num">1,000+</div>
+        <div class="label">delegates, ASEAN-wide — IBM Think ASEAN 2021</div>
+      </div>
+      <div class="stat">
+        <div class="num">400,000+</div>
+        <div class="label">unique online viewers — KEL APAC Award livestream, VnExpress.net</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap intro-title">
+    <h2>Campaign case studies</h2>
+    <p>Five programs spanning national government communication, international e-commerce, and technology-sector demand generation — selected to show range across audience, scale and channel mix.</p>
+  </div>
+
+  <!-- =========================================================
+       2. VIETNAM PAVILION
+  ========================================================== -->
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>Vietnam Pavilion — Top 100 &amp; Top 200 Featured Businesses</h2>
+        <div class="meta">National flagship communication program · MOIT &amp; VIETRADE · 2023–2026</div>
+      </div>
+      <p>Designed and led the full multi-year integrated marketing communication (IMC) strategy end-to-end, from pre-launch media positioning through to a sustained, multi-year national press and advertising presence — a program endorsed by Vietnam's Ministry of Industry and Trade (MOIT) and Trade Promotion Agency (VIETRADE).</p>
+
+      <div class="timeline">
+        <div class="step">
+          <div class="when">Oct 2023 — Pre-launch</div>
+          <p>Media talkshow on Tạp chí Công Thương introducing the program concept.</p>
+        </div>
+        <div class="step">
+          <div class="when">Nov 2023 — Launch</div>
+          <p>Launch event with paid advertising and press outreach.</p>
+        </div>
+        <div class="step">
+          <div class="when">Late 2023 – Early 2024 — Selection</div>
+          <p>Nationwide Top 100 business selection, promoted at VIETRADE and Alibaba.com events.</p>
+        </div>
+        <div class="step">
+          <div class="when">Mar 2024 — National recognition</div>
+          <p>Awards ceremony in Hanoi with a media conference covered by VTV1 and national press, plus a TVC.</p>
+        </div>
+        <div class="step">
+          <div class="when">2025–2026 — Sustained</div>
+          <p>Continued press coverage and paid advertising in Vietnam and select foreign markets; 2025 edition completed, 2026 edition in preparation.</p>
+        </div>
+      </div>
+
+      <div class="media-grid cols-4">
+        <div class="media-slot">
+          <img src="images/vn-pavilion-1.jpg" alt="Vietnam Pavilion pre-launch talkshow, Oct 2023">
+          <div class="ph"><span class="fname">vn-pavilion-1.jpg</span><span class="cap">Pre-launch talkshow, Tạp chí Công Thương (Oct 2023)</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/vn-pavilion-2.jpg" alt="Vietnam Pavilion launch event, Nov 2023">
+          <div class="ph"><span class="fname">vn-pavilion-2.jpg</span><span class="cap">Launch event (Nov 2023)</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/vn-pavilion-3.jpg" alt="Top 100 selection event">
+          <div class="ph"><span class="fname">vn-pavilion-3.jpg</span><span class="cap">Top 100 selection, VIETRADE / Alibaba.com event</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/vn-pavilion-4.jpg" alt="Hanoi awards ceremony, Mar 2024">
+          <div class="ph"><span class="fname">vn-pavilion-4.jpg</span><span class="cap">Awards ceremony, Hanoi (Mar 2024)</span></div>
+        </div>
+      </div>
+      <div class="press-note"><strong>To add:</strong> TVC / VTV1 clip link, and links to press coverage — paste as text once you have them; ask Claude to drop them in.</div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       3. KEL AWARD
+  ========================================================== -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>KEL Award — Vietnam &amp; APAC</h2>
+        <div class="meta">E-commerce leadership awards, endorsed by VIETRADE · 2024</div>
+      </div>
+      <p>Conceived and led both the national and regional editions of the Key E-commerce Leader (KEL) Award for Alibaba.com.</p>
+
+      <div class="timeline">
+        <div class="step">
+          <div class="when">KEL Vietnam</div>
+          <p>Pre-awareness paid and organic promotion on Facebook and Zalo (via Alibaba.com's and contestants' own pages), an award event, and post-event press-release outreach generating national media coverage. A Deputy Director of Vietnam's Trade Promotion Agency (VIETRADE) attended and judged.</p>
+        </div>
+        <div class="step">
+          <div class="when">KEL APAC</div>
+          <p>A larger regional edition held in Vietnam with top sellers from India, Vietnam, Malaysia, Thailand and Pakistan — 500+ offline guests and 400,000+ unique online viewers via a live broadcast on VnExpress.net during the event. Featured a well-known Chinese seller-KOL as promotional partner. VIETRADE's Director General attended and endorsed.</p>
+        </div>
+      </div>
+
+      <div class="media-grid cols-4">
+        <div class="media-slot">
+          <img src="images/kel-1.jpg" alt="KEL Vietnam Award event">
+          <div class="ph"><span class="fname">kel-1.jpg</span><span class="cap">KEL Vietnam Award event</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/kel-2.jpg" alt="KEL APAC Award, sellers from 5 countries">
+          <div class="ph"><span class="fname">kel-2.jpg</span><span class="cap">KEL APAC — sellers from 5 countries</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/kel-3.jpg" alt="Chinese seller-KOL moment">
+          <div class="ph"><span class="fname">kel-3.jpg</span><span class="cap">Featured seller-KOL moment</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/kel-4.jpg" alt="VIETRADE representative attending">
+          <div class="ph"><span class="fname">kel-4.jpg</span><span class="cap">VIETRADE representative attending</span></div>
+        </div>
+      </div>
+      <div class="press-note"><strong>To add:</strong> VnExpress.net livestream link or screenshot.</div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       4. ITC SHETRADES / GOVERNMENT OF THE NETHERLANDS / APO
+  ========================================================== -->
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>ITC SheTrades × Government of the Netherlands</h2>
+        <div class="meta">International trade-development partnership · ITC (joint UN/WTO agency) · 2023–2025</div>
+      </div>
+      <p>Introduced Alibaba.com's B2B e-commerce solutions to the International Trade Centre's SheTrades team, leading to a government-funded market-access program for women-owned Vietnamese businesses.</p>
+
+      <div class="timeline">
+        <div class="step">
+          <div class="when">Sep 2023</div>
+          <p>First presentation to ITC SheTrades on Alibaba.com's B2B solutions and export/market-access opportunities, backed by market data.</p>
+        </div>
+        <div class="step">
+          <div class="when">Nov 2024</div>
+          <p>Official launch event introducing the Alibaba.com solution alongside the announcement of Government of the Netherlands funding for SheTrades member businesses.</p>
+        </div>
+        <div class="step">
+          <div class="when">Apr 2025</div>
+          <p>Funding approved; 32 women-owned businesses selected. Supported business selection and training through the program, with agency OSB.</p>
+        </div>
+        <div class="step">
+          <div class="when">Nov 2025</div>
+          <p>Invited back by ITC SheTrades as a speaker at the program's closing conference.</p>
+        </div>
+        <div class="step">
+          <div class="when">Aug 2025 — Related engagement</div>
+          <p>Hosted a 23-member delegation from the Asian Productivity Organization (APO).</p>
+        </div>
+      </div>
+
+      <div class="media-grid cols-4">
+        <div class="media-slot">
+          <img src="images/itc-1.jpg" alt="ITC SheTrades presentation">
+          <div class="ph"><span class="fname">itc-1.jpg</span><span class="cap">Presentation to ITC SheTrades (2023 / 2024)</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/itc-2.jpg" alt="Closing conference, Nov 2025">
+          <div class="ph"><span class="fname">itc-2.jpg</span><span class="cap">Closing conference speaker (Nov 2025)</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/itc-3.jpg" alt="APO delegation, Aug 2025">
+          <div class="ph"><span class="fname">itc-3.jpg</span><span class="cap">APO delegation visit (Aug 2025)</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/itc-4.jpg" alt="Invitation letter / presentation slide">
+          <div class="ph"><span class="fname">itc-4.jpg</span><span class="cap">Invitation letter or presentation slide</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       5. IBM THINK ASEAN / SOLUTION DAYS
+  ========================================================== -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>IBM Think ASEAN 2021 &amp; IBM Solution Days</h2>
+        <div class="meta">Regional demand-generation flagships · IBM ASEAN · 2012–2021</div>
+      </div>
+      <p>At IBM Vietnam, led marketing for two recurring flagship formats: an annual regional conference and a high-frequency national roadshow — together demonstrating sustained delivery at both large-scale and high-volume levels.</p>
+
+      <div class="timeline">
+        <div class="step">
+          <div class="when">Think ASEAN 2021 — Pre-event</div>
+          <p>Led social amplification and content/creative production (key visuals, posters, agenda design) driving registration across ASEAN-6 markets.</p>
+        </div>
+        <div class="step">
+          <div class="when">During the event</div>
+          <p>On-site facilitator for HCMC-region delegates, at an event drawing 1,000+ delegates across ASEAN.</p>
+        </div>
+        <div class="step">
+          <div class="when">Post-event</div>
+          <p>Coordinated with ASEAN-country teams and PR on press release and cross-channel social content, including client testimonials, social advocates, and a Singapore-based KOL.</p>
+        </div>
+        <div class="step">
+          <div class="when">IBM Solution Days — recurring, ~30 events/yr</div>
+          <p>As Demand Manager for the Software Group, led marketing for this annual flagship series, each edition drawing 300–500 guests, part of roughly 30 large and small events run per year.</p>
+        </div>
+      </div>
+
+      <div class="media-grid">
+        <div class="media-slot">
+          <img src="images/ibm-think-asean-1.jpg" alt="IBM Think ASEAN 2021 event">
+          <div class="ph"><span class="fname">ibm-think-asean-1.jpg</span><span class="cap">Think ASEAN 2021 — event / key visual</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/ibm-think-asean-2.jpg" alt="IBM Solution Days event">
+          <div class="ph"><span class="fname">ibm-think-asean-2.jpg</span><span class="cap">IBM Solution Days — event</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       6. EARLY HIGHLIGHTS
+  ========================================================== -->
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>Early highlights</h2>
+        <div class="meta">IBM "Come to You" (2012–2013) &amp; VIFON "World Cup 2006" (Masso Group)</div>
+      </div>
+      <p><strong>IBM "Come to You"</strong> — a nationwide roadshow communication strategy bringing enterprise technology awareness directly to regional business audiences across 8 provinces and cities: Đồng Nai, Bình Dương, Hải Phòng, Đà Nẵng, Gia Lai, Cần Thơ, Quảng Ngãi, Ho Chi Minh City and Hanoi.</p>
+      <p><strong>VIFON "World Cup 2006" ATL campaign</strong> — led execution of an above-the-line brand campaign for Masso Group, including video production and nationwide promotional activities.</p>
+      <div class="media-grid">
+        <div class="media-slot">
+          <img src="images/early-1.jpg" alt="Early campaign material">
+          <div class="ph"><span class="fname">early-1.jpg</span><span class="cap">Optional — any surviving material (TVC still, poster, etc.)</span></div>
+        </div>
+        <div class="media-slot">
+          <img src="images/early-2.jpg" alt="Early campaign material">
+          <div class="ph"><span class="fname">early-2.jpg</span><span class="cap">Optional — any surviving material</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       7. RECOGNITION
+  ========================================================== -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>Recognition &amp; partners</h2>
+        <div class="meta">Government, international and industry bodies engaged directly through the campaigns above</div>
+      </div>
+      <div class="recog-cols">
+        <ul class="recog-list">
+          <li>Ministry of Industry and Trade (MOIT)</li>
+          <li>Vietnam Trade Promotion Agency (VIETRADE)</li>
+          <li>Ministry of Science and Technology (MOST)</li>
+          <li>Vietnam Chamber of Commerce and Industry (VCCI)</li>
+          <li>Investment and Trade Promotion Centre (ITPC)</li>
+          <li>International Trade Centre (ITC — joint UN/WTO agency)</li>
+          <li>Asian Productivity Organization (APO)</li>
+          <li>Government of the Netherlands (SheTrades funding partner)</li>
+        </ul>
+        <ul class="recog-list">
+          <li>HubSpot Marketing Software</li>
+          <li>Product Marketing</li>
+          <li>Design Thinking</li>
+          <li>Digital Marketing &amp; Advertising</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer>
+    <div class="wrap">
+      <h2>Uyen T.P. Nguyen</h2>
+      <p style="color:#C7CDD3; max-width:56ch; margin-top:10px;">Strategic Communication &amp; Campaign Leader — proposed Key Expert 1 (Team Leader), EU Strategic Communication in Viet Nam.</p>
+      <div class="foot-contact">
+        <span>+84 982 69 9090</span>
+        <span>uyenntp@gmail.com</span>
+        <span>Ho Chi Minh City, Vietnam</span>
+        <span>linkedin.com/in/uyen1503</span>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.querySelectorAll('.media-slot img').forEach(function(img){
+    img.addEventListener('error', function(){
+      img.style.display = 'none';
+      var ph = img.nextElementSibling;
+      if (ph) ph.style.display = 'flex';
+      ph.style.flexDirection = 'column';
+      ph.style.alignItems = 'center';
+    });
+  });
+</script>
+
+</body>
+</html>
