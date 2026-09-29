@@ -741,6 +741,14 @@
   .sub-title{font-family:'Fraunces',serif; font-weight:600; font-size:22px; margin:52px 0 0;}
   .cred-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:22px;}
   .teach-card .chip-group{margin-top:14px;}
+  .skill-cols{display:grid; grid-template-columns:1.25fr 1fr 1fr; gap:36px; margin-top:56px;}
+  @media (max-width:980px){ .skill-cols{grid-template-columns:1fr; gap:32px;} }
+  .skill-title{display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-size:20px; font-weight:700; color:var(--text); padding-bottom:12px; border-bottom:2px solid var(--accent);}
+  .skill-title::before{content:""; flex:none; width:10px; height:10px; transform:rotate(45deg); background:var(--accent); border-radius:2px;}
+  .skill-cols .chip-group{margin-top:16px;}
+  .skill-cols .edu-row{align-items:flex-start;}
+  .skill-cols .edu-row b{display:block; font-weight:600; color:var(--text);}
+  .skill-cols .edu-row small{display:block; color:var(--text-muted); font-size:12.5px; margin-top:2px;}
   .prog-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:22px;}
   @media (max-width:860px){ .prog-grid{grid-template-columns:1fr;} }
   .prog-card{display:flex; flex-direction:column; background:var(--surface); border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:var(--shadow);}
@@ -1072,8 +1080,37 @@
         <h2 class="h2"><span class="lang-en">A practitioner, not just an advisor.</span><span class="lang-vi">Người trực tiếp làm, không chỉ tư vấn.</span></h2>
         <p class="lede-2"><span class="lang-en">I've spent 20+ years inside marketing teams — at IBM, Alibaba.com, TRG International, FPT and ACB, and at brand agency Masso Group — running campaigns, events and national programs with government and industry partners. I bring that same hands-on experience to every project, class and workshop: clear strategy, real execution, measurable results.</span><span class="lang-vi">Tôi đã có hơn 20 năm làm việc trong các đội ngũ marketing — tại IBM, Alibaba.com, TRG International, FPT, ACB và công ty thương hiệu Masso Group — triển khai chiến dịch, sự kiện và các chương trình tầm quốc gia cùng đối tác chính phủ và hiệp hội. Tôi mang chính kinh nghiệm thực chiến đó vào từng dự án, lớp học và workshop: chiến lược rõ ràng, thực thi thật, kết quả đo được.</span></p>
         <div class="cred-row">
-          <span class="brand-chip">IBM</span><span class="brand-chip">Alibaba.com</span><span class="brand-chip">TRG International</span><span class="brand-chip">Synnex FPT</span><span class="brand-chip">ACB</span><span class="brand-chip">Masso Group</span><span class="brand-chip"><span class="lang-en">MBA — Asian Institute of Management</span><span class="lang-vi">MBA — Asian Institute of Management</span></span>
+          <span class="brand-chip">IBM</span><span class="brand-chip">Alibaba.com</span><span class="brand-chip">TRG International</span><span class="brand-chip">Synnex FPT</span><span class="brand-chip">ACB</span><span class="brand-chip">Masso Group</span>
         </div>
+      </div>
+    </div>
+    <div class="skill-cols">
+      <div>
+        <div class="skill-title"><span class="lang-en">Core Expertise</span><span class="lang-vi">Chuyên môn cốt lõi</span></div>
+        <div class="chip-group">
+          <span class="chip"><span class="lang-en">IMC</span><span class="lang-vi">IMC</span></span>
+          <span class="chip"><span class="lang-en">Brand &amp; Communication</span><span class="lang-vi">Thương hiệu &amp; Truyền thông</span></span>
+          <span class="chip"><span class="lang-en">Events &amp; Project Management</span><span class="lang-vi">Quản lý Sự kiện &amp; Dự án</span></span>
+          <span class="chip"><span class="lang-en">Marketing Automation — HubSpot, Salesforce</span><span class="lang-vi">Marketing Automation — HubSpot, Salesforce</span></span>
+          <span class="chip"><span class="lang-en">Digital Marketing</span><span class="lang-vi">Digital Marketing</span></span>
+          <span class="chip"><span class="lang-en">Social Community Building &amp; Management</span><span class="lang-vi">Xây dựng &amp; Quản lý Cộng đồng Mạng xã hội</span></span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-title"><span class="lang-en">Soft Skills</span><span class="lang-vi">Kỹ năng mềm</span></div>
+        <div class="chip-group">
+          <span class="chip"><span class="lang-en">Team Leadership</span><span class="lang-vi">Lãnh đạo Đội ngũ</span></span>
+          <span class="chip"><span class="lang-en">Coaching</span><span class="lang-vi">Huấn luyện &amp; Kèm cặp</span></span>
+          <span class="chip"><span class="lang-en">Problem Solving</span><span class="lang-vi">Giải quyết Vấn đề</span></span>
+          <span class="chip"><span class="lang-en">Multitasking</span><span class="lang-vi">Xử lý Đa nhiệm</span></span>
+          <span class="chip"><span class="lang-en">Analytical Thinking</span><span class="lang-vi">Tư duy Phân tích</span></span>
+          <span class="chip"><span class="lang-en">Target-oriented &amp; Driven</span><span class="lang-vi">Định hướng Mục tiêu &amp; Quyết liệt</span></span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-title"><span class="lang-en">Education</span><span class="lang-vi">Học vấn</span></div>
+        <div class="edu-row"><span><b><span class="lang-en">MBA — Asian Institute of Management</span><span class="lang-vi">MBA — Asian Institute of Management</span></b><small><span class="lang-en">Philippines · Full scholarship, Cheng Yung Foundation</span><span class="lang-vi">Philippines · Học bổng toàn phần, Quỹ Cheng Yung</span></small></span><span class="k">2009–2010</span></div>
+        <div class="edu-row"><span><b><span class="lang-en">Bachelor of Foreign Trade</span><span class="lang-vi">Cử nhân Ngoại thương</span></b><small><span class="lang-en">University of Economics HCMC</span><span class="lang-vi">Đại học Kinh tế TP.HCM</span></small></span><span class="k">2000–2004</span></div>
       </div>
     </div>
   </div>
