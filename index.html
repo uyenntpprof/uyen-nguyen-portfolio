@@ -477,6 +477,7 @@
   .brand-chip{font-size:12.5px; font-weight:600; background:var(--surface-2); border:1px solid var(--line); padding:5px 12px; border-radius:999px; color:var(--text);}
 
   /* ---------- teaching ---------- */
+  #teaching{scroll-margin-top:96px;}
   .teach-grid{display:grid; grid-template-columns:1fr; gap:20px; margin-top:30px;}
   .training-topics{margin-top:36px;}
   .training-topics h4{font-family:'Fraunces',serif; font-weight:600; font-size:16.5px; margin-bottom:14px; color:var(--text-muted);}
@@ -817,7 +818,7 @@
       </div>
       <div class="pillar">
         <span class="num">04</span>
-        <h3><a href="#advisory"><span class="lang-en">Marketing Training</span><span class="lang-vi">Đào tạo Marketing</span></a></h3>
+        <h3><a href="#teaching"><span class="lang-en">Marketing Training</span><span class="lang-vi">Đào tạo Marketing</span></a></h3>
         <p><span class="lang-en">Training classes, corporate workshops and guest lectures on digital marketing, event &amp; IMC, and B2B sales &amp; marketing.</span><span class="lang-vi">Lớp đào tạo, workshop doanh nghiệp và giảng dạy thỉnh giảng về digital marketing, sự kiện &amp; IMC, và bán hàng &amp; marketing B2B.</span></p>
       </div>
     </div>
@@ -1250,7 +1251,7 @@
       </button>
     </div>
 
-    <div class="tl-block">
+    <div class="tl-block" id="teaching">
       <h3 class="tl-title"><span class="lang-en">Teaching &amp; Writing</span><span class="lang-vi">Giảng dạy &amp; Viết bài</span></h3>
     <div class="teach-grid">
       <div class="teach-card">
@@ -1491,6 +1492,26 @@
   }
   menuBtn.addEventListener('click', function(){ setMenu(!navLinks.classList.contains('open')); });
   navLinks.addEventListener('click', function(e){ if (e.target.closest('a')) setMenu(false); });
+
+  // In-page links: lazy images above the target can load mid-scroll and push it down,
+  // so re-align once scrolling settles (stops if the reader scrolls on their own).
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href^="#"]');
+    if (!link || link.getAttribute('href').length < 2) return;
+    var target = document.getElementById(link.getAttribute('href').slice(1));
+    if (!target) return;
+    var tries = 0, lastY = -1, stopped = false;
+    function stop(){ stopped = true; }
+    window.addEventListener('wheel', stop, {once:true, passive:true});
+    window.addEventListener('touchstart', stop, {once:true, passive:true});
+    var timer = setInterval(function(){
+      if (stopped || ++tries > 12){ clearInterval(timer); return; }
+      if (window.scrollY !== lastY){ lastY = window.scrollY; return; }
+      var margin = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
+      if (Math.abs(target.getBoundingClientRect().top - margin) > 8) target.scrollIntoView({behavior:'smooth'});
+      else clearInterval(timer);
+    }, 350);
+  });
 
   // Speaking gallery "View more"
   var moreBtn = document.getElementById('speakMore');
