@@ -1,623 +1,1603 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Uyen T.P. Nguyen — Strategic Communication Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Uyen T.P. Nguyen, MBA — Head of Marketing · Marketing Director</title>
+<meta name="description" content="Uyen T.P. Nguyen, MBA — Head of Marketing · Marketing Director. 20+ years of brand, demand generation and government-endorsed campaigns across Vietnam and ASEAN (IBM, Alibaba.com, TRG International, FPT, ACB).">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Uyen T.P. Nguyen, MBA — Head of Marketing · Marketing Director">
+<meta property="og:description" content="Uyen T.P. Nguyen, MBA — Head of Marketing · Marketing Director. 20+ years of brand, demand generation and government-endorsed campaigns across Vietnam and ASEAN (IBM, Alibaba.com, TRG International, FPT, ACB).">
+<meta property="og:image" content="assets/img/headshot.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/headshot.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Fraunces:ital,opsz,wght@1,9..144,500&family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-
-  /* ============ TOKENS ============ */
   :root{
-    --ink:#1C2B39;
-    --paper:#EDE7DA;
-    --paper-alt:#E2DAC7;
-    --jade:#3F6B5E;
-    --jade-deep:#2A4A40;
-    --brass:#A07A3D;
-    --text:#2A3540;
-    --muted:#6B6459;
-    --line:#C7BFA9;
-    --white:#FEFDFB;
+    --navy-950:#0A1730; --navy-900:#0E2142; --navy-800:#173059; --navy-700:#204073;
+    --gold-300:#E7CC8C; --gold-500:#C79A45; --gold-700:#9C7830;
+    --cream-50:#FAF6EC; --cream-100:#F1E9D6;
+    --paper:#FFFFFF;
+    --ink-900:#1C2130; --ink-700:#3E4557; --ink-500:#6E7686;
+    --line:#E4DBC5;
+    --bg:var(--cream-50); --surface:var(--paper); --surface-2:var(--cream-100);
+    --text:var(--ink-900); --text-muted:var(--ink-500);
+    --accent:var(--gold-500); --accent-ink:var(--gold-700);
+    --shadow: 0 1px 2px rgba(20,20,10,.04), 0 8px 24px -12px rgba(20,20,10,.18);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0A0E18; --surface:#111827; --surface-2:#141B2C;
+      --text:#EDE8D9; --text-muted:#9BA3B7; --line:#243049;
+      --accent:#D9AE5C; --accent-ink:#E7CC8C;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0A0E18; --surface:#111827; --surface-2:#141B2C;
+    --text:#EDE8D9; --text-muted:#9BA3B7; --line:#243049;
+    --accent:#D9AE5C; --accent-ink:#E7CC8C;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
   }
 
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
   body{
-    margin:0;
-    background: var(--paper);
-    color: var(--text);
-    font-family: 'Public Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+    background:var(--bg); color:var(--text);
+    font-family:'Public Sans','Be Vietnam Pro',sans-serif;
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+    padding-left:0; padding-right:0;
   }
-  h1,h2,h3{
-    font-family:'Fraunces', serif;
-    color: var(--ink);
-    margin:0;
-    font-weight:500;
-    letter-spacing: -0.01em;
+  @media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth;} }
+  h1,h2,h3,.display{
+    font-family:'Fraunces','Be Vietnam Pro',serif; font-weight:600; letter-spacing:-.01em;
+    text-wrap:balance; color:var(--text); margin:0;
   }
-  p { margin: 0 0 1em 0; max-width: 66ch; }
-  a { color: var(--jade-deep); }
-  .wrap{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 28px;
+  p{margin:0;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin-inline:auto; padding-inline:max(20px, calc((100vw - 1180px)/2 + 20px));}
+  .narrow{max-width:760px;}
+  [data-lang="en"] .lang-vi{display:none;}
+  [data-lang="vi"] .lang-en{display:none;}
+  [hidden]{display:none !important;}
+
+  /* ---------- nav ---------- */
+  .nav{
+    position:sticky; top:env(safe-area-inset-top,0px); z-index:50;
+    background:rgba(10,23,48,.92); backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(231,204,140,.18);
   }
-  .rule{
-    border:0; border-top:1px solid var(--line);
-    margin: 0;
+  .nav-inner{
+    max-width:1180px; margin-inline:auto; padding:14px 20px;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+  }
+  .brand{font-family:'Fraunces',serif; font-weight:600; font-size:17px; color:var(--cream-50); letter-spacing:.01em;}
+  .brand span{color:var(--gold-300);}
+  .brand{white-space:nowrap;}
+  .brand .brand-mba{color:var(--cream-50);}
+  .nav-links{display:flex; gap:26px; list-style:none; margin:0; padding:0;}
+  .nav-links a{font-size:13.5px; color:#D9DEE8; text-decoration:none; font-weight:500;}
+  .nav-links a:hover{color:var(--gold-300);}
+  .nav-inner{position:relative;}
+  .nav-actions{display:flex; align-items:center; gap:10px;}
+  .menu-btn{
+    display:none; width:40px; height:36px; padding:0; border-radius:10px; cursor:pointer;
+    background:transparent; border:1px solid rgba(231,204,140,.4);
+    flex-direction:column; align-items:center; justify-content:center; gap:4px;
+  }
+  .menu-btn span{display:block; width:18px; height:2px; border-radius:2px; background:var(--cream-50); transition:transform .2s ease, opacity .2s ease;}
+  .menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+  .menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+  @media (max-width:1080px) and (min-width:861px){ .nav-links{gap:18px;} .nav-links a{font-size:13px;} }
+  @media (max-width:860px){
+    .menu-btn{display:flex;}
+    .nav-links{
+      display:none; position:absolute; left:0; right:0; top:100%;
+      flex-direction:column; gap:0; padding:8px 20px 16px;
+      background:#0A1730; border-bottom:1px solid rgba(231,204,140,.25);
+      box-shadow:0 18px 30px -18px rgba(0,0,0,.6);
+    }
+    .nav-links.open{display:flex;}
+    .nav-links a{display:block; padding:12px 0; font-size:15px; border-bottom:1px solid rgba(231,204,140,.12);}
+    .nav-links li:last-child a{border-bottom:none;}
+  }
+  /* Speaking gallery: extra photos hidden until "View more" */
+  .speaking-gallery:not(.expanded) figure.more{display:none;}
+  .more-toggle{
+    display:block; margin:18px auto 0; padding:10px 22px; border-radius:999px; cursor:pointer;
+    background:transparent; border:1px solid var(--accent); color:var(--accent-ink);
+    font-family:'Public Sans',sans-serif; font-size:13.5px; font-weight:700;
+  }
+  .more-toggle:hover{background:var(--surface-2);}
+  .more-toggle .when-open{display:none;}
+  .more-toggle[aria-expanded="true"] .when-open{display:inline;}
+  .more-toggle[aria-expanded="true"] .when-closed{display:none;}
+  .lang-toggle{
+    display:flex; border:1px solid rgba(231,204,140,.4); border-radius:999px; overflow:hidden;
+    font-size:12.5px; font-weight:700; letter-spacing:.04em;
+  }
+  .lang-toggle button{
+    background:transparent; border:none; color:#D9DEE8; padding:6px 13px; cursor:pointer;
+    font-family:inherit; font-size:inherit; font-weight:inherit;
+  }
+  .lang-toggle button.active{background:var(--gold-500); color:var(--navy-950);}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--navy-950); color:var(--cream-50); position:relative; overflow:hidden;}
+  .hero::before{
+    content:""; position:absolute; inset:0;
+    background: radial-gradient(60% 50% at 82% 12%, rgba(231,204,140,.14), transparent 60%);
+    pointer-events:none;
+  }
+  .hero-inner{
+    max-width:1180px; margin-inline:auto; padding:56px 20px 44px;
+    display:grid; grid-template-columns:1.25fr .8fr; gap:44px; align-items:center; position:relative;
+  }
+  @media (max-width:860px){ .hero-inner{grid-template-columns:1fr; padding-top:36px;} }
+  .eyebrow{
+    font-family:'Public Sans',sans-serif; font-size:12px; font-weight:700; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--gold-300); margin-bottom:14px; display:block;
+  }
+  .hero .eyebrow .eb{white-space:nowrap;}
+  .hero .eyebrow{line-height:1.9;}
+  .hero h1{font-size:clamp(34px,5.2vw,54px); line-height:1.05; color:#fff;}
+  .hero .role{
+    font-family:'Fraunces',serif; font-style:italic; font-weight:500; font-size:clamp(17px,2.1vw,21px);
+    color:var(--gold-300); margin-top:10px;
+  }
+  .hero .lede{margin-top:20px; font-size:16.5px; color:#C9CFDC; max-width:52ch;}
+  .hero-cta{display:flex; gap:12px; margin-top:28px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; padding:12px 22px; border-radius:999px;
+    font-size:14px; font-weight:700; text-decoration:none; cursor:pointer; border:1px solid transparent;
+    font-family:'Public Sans',sans-serif;
+  }
+  .btn-primary{background:var(--gold-500); color:var(--navy-950);}
+  .btn-primary:hover{background:var(--gold-300);}
+  .btn-outline{border-color:rgba(231,204,140,.5); color:var(--cream-50);}
+  .btn-outline:hover{border-color:var(--gold-300); color:var(--gold-300);}
+  .hero-photo{
+    justify-self:center; width:min(300px, 70vw); aspect-ratio:2/3;
+    border-radius:16px; overflow:hidden; background:var(--navy-800);
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.55); position:relative;
+  }
+  .hero-photo img{width:100%; height:100%; object-fit:cover;}
+  .hero-photo::after{
+    content:""; position:absolute; inset:0; border-radius:16px;
+    box-shadow:inset 0 0 0 1px rgba(231,204,140,.35);
   }
 
-  /* ============ COVER ============ */
-  .cover{
-    padding: 76px 0 56px 0;
+  /* ---------- stat strip ---------- */
+  .stats{background:var(--navy-900); border-top:1px solid rgba(231,204,140,.15);}
+  .stats-inner{
+    max-width:1180px; margin-inline:auto; padding:26px 20px;
+    display:grid; grid-template-columns:repeat(6,1fr); gap:18px;
   }
-  .cover-grid{
-    display:grid;
-    grid-template-columns: 1fr 220px;
-    gap: 44px;
-    align-items:center;
+  @media (max-width:960px){ .stats-inner{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:560px){ .stats-inner{grid-template-columns:repeat(2,1fr);} }
+  .stat-num{
+    font-family:'Fraunces',serif; font-weight:700; font-size:clamp(22px,2.6vw,30px); color:var(--gold-300);
+    font-variant-numeric:tabular-nums; line-height:1;
   }
-  .cover-eyebrow{
-    font-size: 0.86rem;
-    color: var(--muted);
-    margin-bottom: 18px;
-    max-width: 46ch;
-  }
-  .cover h1{
-    font-size: clamp(2.1rem, 4.4vw, 3.1rem);
-    line-height:1.08;
-  }
-  .cover .role{
-    font-family:'Fraunces', serif;
-    font-style: italic;
-    color: var(--jade-deep);
-    font-size: 1.25rem;
-    margin-top: 8px;
-  }
-  .cover .lede{
-    margin-top: 20px;
-    font-size: 1.05rem;
-    color: var(--text);
-    max-width: 54ch;
-  }
-  .cover-photo{
-    width: 220px;
-    height: 220px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: var(--paper-alt);
-    border: 1px solid var(--line);
-  }
-  .cover-photo img{
-    width:100%; height:100%; object-fit: cover; display:block;
-  }
-  .contact-row{
-    margin-top: 26px;
-    font-size: 0.92rem;
-    color: var(--muted);
-  }
-  .contact-row span{ margin-right: 18px; white-space: nowrap; }
+  .stat-label{font-size:11.5px; color:#AEB6C6; margin-top:8px; line-height:1.4;}
 
-  /* ============ STATS ============ */
-  .stats{
-    background: var(--ink);
-    padding: 46px 0;
-  }
-  .stats-grid{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-  }
-  .stat .num{
-    font-family:'Fraunces', serif;
-    font-size: 2.3rem;
-    color: var(--white);
-    line-height:1;
-  }
-  .stat .label{
-    margin-top: 10px;
-    font-size: 0.86rem;
-    color: #C7CDD3;
-    max-width: 22ch;
-  }
+  /* ---------- sections ---------- */
+  .section{padding:76px 20px;}
+  .section-cream{background:var(--bg);}
+  .section-white{background:var(--surface);}
+  .section-head{max-width:640px; margin-bottom:40px;}
+  .section-head .eyebrow{color:var(--accent-ink);}
+  .h2{font-size:clamp(26px,3.4vw,38px);}
+  .lede-2{color:var(--text-muted); font-size:16px; margin-top:14px; max-width:60ch;}
 
-  /* ============ SECTION SHELL ============ */
-  section.block{
-    padding: 64px 0;
-  }
-  section.block.alt{
-    background: var(--paper-alt);
-  }
-  .block-head{
-    margin-bottom: 30px;
-  }
-  .block-head h2{
-    font-size: clamp(1.6rem, 3vw, 2.05rem);
-  }
-  .block-head .meta{
-    margin-top: 8px;
-    color: var(--jade-deep);
-    font-size: 0.95rem;
-    font-weight: 600;
-  }
-  .intro-title{
-    padding-top: 54px;
-  }
-  .intro-title h2{
-    font-size: 1.5rem;
-  }
-  .intro-title p{
-    color: var(--muted);
-    margin-top: 10px;
-  }
+  /* ---------- pillars ---------- */
+  .pillar-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:12px;}
+  @media (max-width:1100px){ .pillar-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:640px){ .pillar-grid{grid-template-columns:1fr;} }
 
-  /* ============ TIMELINE ============ */
-  .timeline{
-    margin: 26px 0 30px 0;
-    border-left: 2px solid var(--line);
-    padding-left: 22px;
-  }
-  .timeline .step{
-    position: relative;
-    padding-bottom: 22px;
-  }
-  .timeline .step:last-child{ padding-bottom: 0; }
-  .timeline .step::before{
-    content:'';
-    position:absolute;
-    left:-27px; top: 4px;
-    width:10px; height:10px;
-    border-radius:50%;
-    background: var(--jade);
-    border: 2px solid var(--paper);
-  }
-  section.block.alt .timeline .step::before{ border-color: var(--paper-alt); }
-  .timeline .step .when{
-    font-size: 0.82rem;
-    color: var(--jade-deep);
-    font-weight:600;
-    text-transform: none;
-    margin-bottom: 2px;
-  }
-  .timeline .step p{ margin: 0; }
+  .about-grid{display:grid; grid-template-columns:.7fr 1.3fr; gap:48px; align-items:center;}
+  @media (max-width:900px){ .about-grid{grid-template-columns:1fr;} }
 
-  /* ============ MEDIA GRID / PLACEHOLDER SLOTS ============ */
-  .media-grid{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-    margin: 26px 0;
+  .programs-head-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:stretch;}
+  @media (max-width:900px){ .programs-head-grid{grid-template-columns:1fr;} }
+  .programs-head-grid .section-head{display:flex; flex-direction:column; justify-content:center;}
+  .programs-photo{width:100%; min-height:260px; border-radius:14px; overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line); background:var(--surface-2);}
+  .programs-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+  @media (max-width:900px){ .programs-photo{min-height:220px;} }
+  .about-photo{justify-self:center; width:100%; max-width:320px; aspect-ratio:2/3; border-radius:18px; overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line); background:var(--surface-2);}
+  .about-photo img{width:100%; height:100%; object-fit:cover;}
+  @media (max-width:900px){ .about-photo{max-width:260px;} }
+  .pillar{
+    background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:26px;
+    box-shadow:var(--shadow);
   }
-  .media-grid.cols-4{ grid-template-columns: repeat(4,1fr); }
-  .media-slot{
-    position:relative;
-    aspect-ratio: 4/3;
-    background: var(--white);
-    border: 1px dashed var(--line);
-    border-radius: 3px;
-    overflow:hidden;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+  .pillar .num{font-family:'Fraunces',serif; font-weight:700; color:var(--accent); font-size:14px; margin-bottom:14px; display:block;}
+  .pillar h3{font-size:19px; margin-bottom:10px;}
+  .pillar h3 a{color:inherit; text-decoration:none; border-bottom:1.5px dotted var(--accent);}
+  .pillar h3 a:hover{border-bottom-style:solid;}
+  .pillar p{color:var(--text-muted); font-size:14.5px;}
+
+  /* ---------- track record ---------- */
+  .tr-grid{display:grid; grid-template-columns:1.5fr 1fr; gap:56px; align-items:start;}
+  @media (max-width:900px){ .tr-grid{grid-template-columns:1fr;} }
+  .highlight-list{display:flex; flex-direction:column; gap:22px;}
+  .highlight{display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:start;}
+  .highlight-mark{
+    width:34px; height:34px; border-radius:50%; background:var(--surface-2);
+    border:1px solid var(--line); display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces',serif; font-weight:700; color:var(--accent-ink); font-size:14px; flex:none;
   }
-  .media-slot img{
-    width:100%; height:100%; object-fit: cover; display:block;
+  .highlight h4{font-size:16.5px; margin:0 0 6px; padding-top:6px; line-height:1.35; font-family:'Fraunces',serif; font-weight:600;}
+  .highlight p{color:var(--text-muted); font-size:14.5px;}
+  /* Track record highlights: bright cards with gold accents */
+  .highlight-list{gap:16px;}
+  .highlight{
+    position:relative; gap:18px; align-items:start;
+    background:linear-gradient(135deg, var(--surface) 0%, var(--surface-2) 100%);
+    border:1px solid var(--line); border-left:4px solid var(--gold-500); border-radius:14px;
+    padding:20px 22px; box-shadow:var(--shadow); transition:transform .25s ease, box-shadow .25s ease;
   }
-  .media-slot .ph{
-    display:none;
-    padding: 14px;
-    text-align:center;
+  .highlight:hover{transform:translateY(-3px); box-shadow:0 18px 36px -18px rgba(156,120,48,.45);}
+  .highlight .highlight-mark{
+    width:42px; height:42px; font-size:17px; color:var(--navy-950); border:none;
+    background:linear-gradient(135deg, var(--gold-300), var(--gold-500));
+    box-shadow:0 6px 14px -6px rgba(156,120,48,.7);
   }
-  .media-slot .ph .fname{
-    display:block;
-    font-size: 0.72rem;
-    color: var(--jade-deep);
-    background: var(--paper-alt);
-    padding: 2px 7px;
-    border-radius: 3px;
-    margin-bottom: 8px;
-    font-family: monospace;
+  .highlight h4{color:var(--text); font-size:17.5px;}
+  .highlight p{color:var(--ink-700);}
+  .highlight strong.hl{
+    color:var(--accent-ink); font-weight:700;
+    background:linear-gradient(transparent 62%, rgba(231,204,140,.45) 62%); padding:0 2px;
   }
-  .media-slot .ph .cap{
-    font-size: 0.78rem;
-    color: var(--muted);
-    line-height:1.4;
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .highlight p{color:var(--text-muted);} }
+  .timeline{border-left:2px solid var(--line); padding-left:22px; display:flex; flex-direction:column; gap:18px;}
+  .timeline-item{position:relative;}
+  .timeline-item::before{
+    content:""; position:absolute; left:-27.5px; top:5px; width:9px; height:9px; border-radius:50%;
+    background:var(--accent); border:2px solid var(--bg);
+  }
+  .timeline-item .co{font-weight:700; font-size:14.5px;}
+  .timeline-item .yr{font-size:12.5px; color:var(--text-muted); font-variant-numeric:tabular-nums;}
+  .side-title{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:18px;}
+
+  /* ---------- case studies ---------- */
+  .case{padding:64px 0; border-top:1px solid var(--line);}
+  .case:first-of-type{border-top:none;}
+  .case-tag{font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); margin-bottom:10px; display:block;}
+  .case-title{font-size:clamp(24px,3vw,32px); margin-bottom:6px;}
+  .case-role{font-family:'Fraunces',serif; font-style:italic; color:var(--text-muted); font-size:15px; margin-bottom:22px;}
+  .case-cover{border-radius:14px; overflow:hidden; margin-bottom:26px; box-shadow:var(--shadow);}
+  .case-cover img{width:100%; height:auto; object-fit:cover;}
+  .case-narrative{font-size:16px; color:var(--text); max-width:74ch; margin-bottom:8px;}
+  .case-narrative + .case-narrative{margin-top:14px;}
+
+  .role-callout{
+    display:flex; gap:16px; align-items:flex-start;
+    background:var(--surface-2); border:1px solid var(--line); border-left:4px solid var(--accent);
+    border-radius:12px; padding:20px 24px; margin:20px 0 22px; max-width:76ch;
+  }
+  .role-callout .rc-mark{
+    flex:none; font-family:'Fraunces',serif; font-weight:700; font-size:22px; line-height:1;
+    color:var(--accent-ink); margin-top:2px;
+  }
+  .role-callout .rc-label{
+    font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--accent-ink); display:block; margin-bottom:8px;
+  }
+  .role-callout p{
+    font-family:'Fraunces',serif; font-weight:600; font-style:italic; font-size:17px; line-height:1.5;
+    color:var(--text); margin:0;
   }
 
-  .press-note{
-    margin-top: 18px;
-    padding: 14px 18px;
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 3px;
-    font-size: 0.9rem;
-    color: var(--muted);
-  }
-  section.block.alt .press-note{ background: var(--paper); }
-  .press-note strong{ color: var(--text); }
+  .model-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin:26px 0;}
+  @media (max-width:760px){ .model-grid{grid-template-columns:1fr;} }
+  .model-item{background:var(--surface-2); border-radius:12px; padding:22px; border:1px solid var(--line);}
+  .model-item .n{font-family:'Fraunces',serif; font-weight:700; color:var(--accent); font-size:22px; margin-bottom:8px; display:block;}
+  .model-item h4{font-size:16px; margin-bottom:8px; font-family:'Fraunces',serif; font-weight:600;}
+  .model-item p{font-size:14px; color:var(--text-muted);}
 
-  /* ============ RECOGNITION ============ */
-  .recog-cols{
-    display:grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 46px;
+  .season-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:26px 0;}
+  @media (max-width:760px){ .season-grid{grid-template-columns:1fr;} }
+  .season{border:1px solid var(--line); border-radius:12px; padding:18px; background:var(--surface);}
+  .season .s-name{font-size:11.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink);}
+  .season .s-date{font-size:13px; color:var(--text-muted); margin:4px 0 10px; font-variant-numeric:tabular-nums;}
+  .season p{font-size:13.5px; color:var(--text);}
+  .season-rows{display:flex; flex-direction:column; gap:16px; margin:26px 0;}
+  .season-row{
+    display:flex; align-items:center; gap:28px;
+    background:var(--navy-900); border-radius:28px; padding:26px 34px; overflow:hidden;
   }
-  .recog-list{ list-style: none; margin:0; padding:0; }
-  .recog-list li{
-    padding: 9px 0;
-    border-bottom: 1px solid var(--line);
-    font-size: 0.95rem;
-  }
-  .recog-list li:last-child{ border-bottom:none; }
-
-  /* ============ FOOTER ============ */
-  footer{
-    background: var(--ink);
-    color: #C7CDD3;
-    padding: 48px 0 40px 0;
-  }
-  footer h2{ color: var(--white); font-size: 1.5rem; }
-  footer a{ color: var(--white); }
-  footer .foot-contact{
-    margin-top: 14px;
-    font-size: 0.92rem;
-  }
-  footer .foot-contact span{ margin-right: 18px; }
-
-  /* ============ RESPONSIVE ============ */
-  @media (max-width: 720px){
-    .cover-grid{ grid-template-columns: 1fr; }
-    .cover-photo{ width: 140px; height: 140px; }
-    .stats-grid{ grid-template-columns: repeat(2,1fr); }
-    .recog-cols{ grid-template-columns: 1fr; }
-    .media-grid, .media-grid.cols-4{ grid-template-columns: repeat(2,1fr); }
-    .contact-row span{ display:block; margin-bottom:6px; }
+  .season-row .s-body{flex:1; min-width:0;}
+  .season-row .s-name{font-size:12.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-300);}
+  .season-row .s-date{font-family:'Fraunces',serif; font-weight:600; font-size:clamp(22px,2.6vw,30px); color:#fff; margin:6px 0 12px; line-height:1.1;}
+  .season-row p{font-size:14.5px; color:#B7BECC; max-width:46ch; margin:0;}
+  .season-row .s-thumb{flex:none; width:150px; border-radius:14px; overflow:hidden; display:block;}
+  .season-row .s-thumb img{width:100%; aspect-ratio:4/3; object-fit:cover; display:block;}
+  @media (max-width:760px){
+    .season-row{flex-direction:column; align-items:stretch; border-radius:20px; padding:22px;}
+    .season-row .s-thumb{width:100%;}
   }
 
-  @media (prefers-reduced-motion: reduce){
-    html{ scroll-behavior: auto; }
+  .impact-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:26px 0;}
+  @media (max-width:700px){ .impact-stats{grid-template-columns:1fr 1fr;} }
+  .impact-stats.cols-4{grid-template-columns:repeat(4,1fr);}
+  .impact-stats.cols-6{grid-template-columns:repeat(6,1fr);}
+  @media (max-width:900px){ .impact-stats.cols-6{grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:560px){ .impact-stats.cols-6{grid-template-columns:repeat(2,1fr);} }
+  .impact-tile{background:var(--navy-900); color:#fff; border-radius:10px; padding:18px 16px;}
+  .impact-tile .n{font-family:'Fraunces',serif; font-weight:700; font-size:clamp(20px,2.4vw,26px); color:var(--gold-300); font-variant-numeric:tabular-nums;}
+  .impact-tile .l{font-size:11.5px; color:#B7BECC; margin-top:6px; line-height:1.4;}
+  /* ITC single-stat banner: big number left, readable copy right */
+  .itc-impact .impact-tile{
+    display:flex; align-items:center; gap:28px; padding:26px 32px; border-radius:14px;
+    background:linear-gradient(120deg, var(--navy-950), var(--navy-800));
+    border-left:4px solid var(--gold-300);
   }
+  .itc-impact .impact-tile .n{font-size:clamp(44px,5vw,60px); line-height:1; flex:none; padding-right:28px; border-right:1px solid rgba(231,204,140,.35);}
+  .itc-impact .impact-tile .l{font-size:clamp(15px,1.6vw,17.5px); line-height:1.5; color:#E3E7EF; margin:0; max-width:60ch;}
+  @media (max-width:560px){
+    .itc-impact .impact-tile{flex-direction:column; align-items:flex-start; gap:12px; padding:22px;}
+    .itc-impact .impact-tile .n{border-right:none; padding-right:0;}
+  }
+  /* ITC timeline cards: no empty date row, slightly larger copy */
+  #programs article:nth-of-type(4) .season .s-date{display:none;}
+  #programs article:nth-of-type(4) .season .s-name{margin-bottom:10px; font-size:12.5px;}
+  #programs article:nth-of-type(4) .season p{font-size:14.5px; line-height:1.55;}
+
+  .quote{
+    border-left:3px solid var(--accent); padding:4px 0 4px 22px; margin:26px 0; max-width:70ch;
+  }
+  .quote p{font-family:'Fraunces',serif; font-style:italic; font-size:18px; line-height:1.5; color:var(--text);}
+  .quote cite{display:block; margin-top:12px; font-style:normal; font-size:13px; color:var(--text-muted);}
+
+  .quote-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px; margin:26px 0;}
+  @media (max-width:760px){ .quote-grid{grid-template-columns:1fr;} }
+  .quote-card{border-left:3px solid var(--accent); padding:16px 0 16px 22px;}
+  .quote-card .who{display:flex; align-items:center; gap:12px; margin-bottom:12px;}
+  .quote-card .who img{width:52px; height:52px; border-radius:50%; object-fit:cover; border:1px solid var(--line);}
+  .quote-card .who .name{font-size:13.5px; font-weight:700; color:var(--text);}
+  .quote-card .who .role{font-size:11.5px; color:var(--text-muted); margin-top:2px; line-height:1.35;}
+  .quote-card p{font-family:'Fraunces',serif; font-style:italic; font-size:16px; line-height:1.5; color:var(--text); margin:0;}
+
+  .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:22px 0;}
+  @media (max-width:860px){ .gallery{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:480px){ .gallery{grid-template-columns:1fr;} }
+  .gallery figure{margin:0; border-radius:10px; overflow:hidden; background:var(--surface-2); border:1px solid var(--line);}
+  .gallery img{width:100%; aspect-ratio:4/3; object-fit:cover;}
+  .gallery figcaption{font-size:11.5px; color:var(--text-muted); padding:8px 10px;}
+  .gallery .video-thumb, .imc-item .video-thumb{position:relative; display:block;}
+  .gallery .video-thumb::after, .imc-item .video-thumb::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(0deg, rgba(10,23,48,.45), rgba(10,23,48,0) 55%);
+  }
+  .gallery .video-thumb::before, .imc-item .video-thumb::before{
+    content:""; position:absolute; top:50%; left:50%; width:46px; height:46px;
+    transform:translate(-50%,-50%); border-radius:50%;
+    background:rgba(10,23,48,.55); border:1.5px solid rgba(255,255,255,.85);
+    z-index:2;
+  }
+  .gallery .video-thumb span.play-tri, .imc-item .video-thumb span.play-tri{
+    position:absolute; top:50%; left:calc(50% + 2px); width:0; height:0; z-index:3;
+    transform:translate(-50%,-50%);
+    border-style:solid; border-width:8px 0 8px 13px;
+    border-color:transparent transparent transparent #fff;
+  }
+
+  .imc-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:22px;}
+  @media (max-width:700px){ .imc-grid{grid-template-columns:1fr;} }
+  .imc-item{border:1px solid var(--line); border-radius:12px; overflow:hidden; background:var(--surface);}
+  .imc-item img{width:100%; aspect-ratio:16/9; object-fit:cover;}
+  .imc-item .body{padding:16px 18px;}
+  .imc-item h4{font-family:'Fraunces',serif; font-weight:600; font-size:15.5px; margin-bottom:6px;}
+  .imc-item p{font-size:13px; color:var(--text-muted);}
+
+  .press-line{font-size:14px; color:var(--text-muted); margin-top:18px; max-width:74ch;}
+  .press-links{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;}
+  .press-links a{font-size:12.5px; font-weight:600; color:var(--accent-ink); background:var(--surface-2); border:1px solid var(--line); padding:5px 12px; border-radius:999px; text-decoration:none;}
+  .press-links a:hover{border-color:var(--accent-ink);}
+  .success-block{font-size:14.5px; color:var(--text); margin-top:8px; max-width:74ch;}
+
+  /* ---------- consulting ---------- */
+  .consult-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px;}
+  @media (max-width:800px){ .consult-grid{grid-template-columns:1fr;} }
+  .consult-card{
+    border:1.5px dashed var(--line); border-radius:14px; padding:26px; background:var(--surface);
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .consult-card .tag{font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--text-muted); background:var(--surface-2); padding:4px 10px; border-radius:999px; width:fit-content;}
+  .consult-card h4{font-family:'Fraunces',serif; font-weight:600; font-size:19px;}
+  .consult-card .slogan{font-family:'Poppins',sans-serif; font-style:italic; color:var(--accent-ink); font-size:14.5px;}
+  .consult-card .slogan .slogan-label{font-family:'Public Sans',sans-serif; font-style:normal; font-weight:700; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--text-muted);}
+  .consult-card p{font-size:14px; color:var(--text-muted);}
+  .consult-logo{width:100%; max-width:220px;}
+  .consult-logo img{width:100%; display:block;}
+  .consult-logo-caption{font-size:11.5px; color:var(--text-muted); margin-top:-4px;}
+  .consult-full{
+    border:1px solid var(--line); border-radius:14px; padding:28px; background:var(--surface); margin-top:20px;
+  }
+  .consult-full h4{font-family:'Fraunces',serif; font-weight:600; font-size:19px; margin-bottom:12px;}
+  .consult-full p{font-size:14.5px; color:var(--text); max-width:74ch;}
+  .consult-cta{
+    position:relative; overflow:hidden; isolation:isolate;
+    border-radius:18px; padding:40px 44px; margin-top:20px;
+    background:linear-gradient(120deg, var(--navy-950) 0%, var(--navy-900) 55%, var(--navy-800) 100%);
+    border:1px solid rgba(231,204,140,.22);
+    display:flex; align-items:center; justify-content:space-between; gap:32px;
+    box-shadow:0 24px 48px -24px rgba(10,23,48,.6);
+  }
+  /* soft gold glow + concentric rings as a decorative visual on the right */
+  .consult-cta::before{
+    content:""; position:absolute; z-index:-1; right:-120px; top:50%; width:420px; height:420px;
+    transform:translateY(-50%); border-radius:50%;
+    background:
+      radial-gradient(circle, rgba(231,204,140,.22) 0%, rgba(231,204,140,0) 60%),
+      repeating-radial-gradient(circle, rgba(231,204,140,.18) 0 1px, transparent 1px 34px);
+  }
+  .consult-cta::after{
+    content:""; position:absolute; z-index:-1; left:0; top:0; bottom:0; width:4px;
+    background:linear-gradient(180deg, var(--gold-300), var(--gold-500));
+  }
+  .consult-cta .cta-text{max-width:56ch;}
+  .consult-cta .cta-eyebrow{
+    display:block; font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--gold-300); margin-bottom:10px;
+  }
+  .consult-cta h4{font-family:'Fraunces',serif; font-weight:600; font-size:clamp(22px,2.6vw,28px); color:#fff; line-height:1.2;}
+  .consult-cta p{font-size:15px; color:#C9CFDC; margin-top:10px;}
+  .consult-cta .tag-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;}
+  .consult-cta .tag-group{display:flex; align-items:center; gap:12px; margin-top:14px; flex-wrap:nowrap;}
+  .consult-cta .cta-text{max-width:660px;}
+  @media (max-width:760px){ .consult-cta .tag-group{flex-wrap:wrap;} }
+  .consult-cta .tag-group .tag-row{margin-top:0;}
+  .consult-cta .tag-label{flex:none; width:74px; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#AEB6C6;}
+  .consult-cta .tag-row > span{
+    font-size:12px; font-weight:600; color:var(--gold-300);
+    border:1px solid rgba(231,204,140,.35); border-radius:999px; padding:4px 12px;
+  }
+  .consult-cta .btn{flex:none; padding:14px 26px; font-size:14.5px; box-shadow:0 10px 24px -10px rgba(199,154,69,.7);}
+  @media (max-width:760px){
+    .consult-cta{flex-direction:column; align-items:flex-start; padding:30px 24px;}
+    .consult-cta::before{right:-200px; top:auto; bottom:-220px; transform:none;}
+  }
+  .brand-chip-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
+  /* Early-career card: story left, client brands right */
+  .consult-full{display:grid; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); column-gap:36px; align-items:center;}
+  .consult-full h4{grid-column:1 / -1;}
+  .consult-full .brand-chip-row{
+    margin-top:0; align-content:center; padding-left:28px; border-left:1px solid var(--line);
+  }
+  @media (max-width:800px){
+    .consult-full{grid-template-columns:1fr;}
+    .consult-full .brand-chip-row{margin-top:16px; padding-left:0; border-left:none;}
+  }
+  .brand-chip{font-size:12.5px; font-weight:600; background:var(--surface-2); border:1px solid var(--line); padding:5px 12px; border-radius:999px; color:var(--text);}
+
+  /* ---------- teaching ---------- */
+  .teach-grid{display:grid; grid-template-columns:1fr; gap:20px; margin-top:30px;}
+  .training-topics{margin-top:36px;}
+  .training-topics h4{font-family:'Fraunces',serif; font-weight:600; font-size:16.5px; margin-bottom:14px; color:var(--text-muted);}
+  .training-topics-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  @media (max-width:800px){ .training-topics-grid{grid-template-columns:1fr;} }
+  .training-topic-box{
+    border:1.5px solid var(--line); border-radius:12px; padding:18px 20px; background:var(--surface);
+    font-family:'Fraunces',serif; font-weight:600; font-size:15.5px; text-align:center; color:var(--accent-ink);
+  }
+  .lens-card{
+    display:grid; grid-template-columns:1.15fr 1fr; margin-top:44px;
+    background:var(--surface); border:1px solid var(--line); border-radius:18px; overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  /* Show the whole banner (never crop the face); soft blue fill matches the banner's edges */
+  .lens-media{position:relative; display:flex; align-items:center; overflow:hidden; background:linear-gradient(180deg,#EEF4FB,#DCE7F4);}
+  .lens-img-link{display:block; width:100%;}
+  .lens-media img{width:100%; height:auto; aspect-ratio:1672/941; object-fit:contain; transition:transform .4s ease;}
+  .lens-img-link:hover img{transform:scale(1.02);}
+  /* CTA sits on the banner, over the skyline at bottom-left */
+  .lens-media .btn-lens{
+    position:absolute; left:20px; bottom:20px; z-index:1;
+    box-shadow:0 12px 24px -10px rgba(10,23,48,.7);
+  }
+  @media (max-width:560px){
+    .lens-media .btn-lens{left:10px; bottom:10px; padding:7px 13px; font-size:12px;}
+  }
+  .lens-body{padding:32px 34px; display:flex; flex-direction:column; justify-content:center; gap:10px;}
+  .lens-eyebrow{font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--accent-ink);}
+  .lens-title{font-size:clamp(26px,3vw,34px); line-height:1.1;}
+  .lens-tagline{font-family:'Fraunces',serif; font-style:italic; font-size:16.5px; color:var(--accent-ink); line-height:1.45;}
+  .lens-desc{font-size:14.5px; color:var(--text-muted);}
+  .lens-latest{
+    border-left:3px solid var(--accent); padding:4px 0 4px 14px; margin:4px 0 6px;
+    display:flex; flex-direction:column; gap:2px;
+  }
+  .lens-latest .k{font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--text-muted);}
+  .lens-latest .v{font-size:14.5px; font-weight:600; color:var(--text);}
+  .btn-lens{align-self:flex-start; background:var(--navy-900); color:var(--cream-50);}
+  .btn-lens:hover{background:var(--navy-700);}
+  @media (max-width:860px){
+    .lens-card{grid-template-columns:1fr;}
+    .lens-body{padding:24px 22px 26px;}
+  }
+  .teach-card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:26px;}
+  .teach-card h4{font-family:'Fraunces',serif; font-weight:600; font-size:18px; margin-bottom:6px;}
+  .teach-card .org{color:var(--accent-ink); font-size:13.5px; font-weight:600; margin-bottom:12px;}
+  .teach-card p{font-size:14.5px; color:var(--text-muted);}
+
+  /* ---------- expertise ---------- */
+  .chip-group{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;}
+  .chip{font-size:13.5px; padding:8px 16px; border-radius:999px; background:var(--surface); border:1px solid var(--line); color:var(--text);}
+  /* Thought leadership section blocks */
+  .tl-block + .tl-block{margin-top:64px; padding-top:48px; border-top:1px solid var(--line);}
+  .tl-title{font-size:clamp(20px,2.2vw,24px); margin-bottom:22px; display:flex; align-items:center; gap:10px;}
+  .tl-title::before{content:""; width:10px; height:10px; transform:rotate(45deg); background:var(--accent); border-radius:2px; flex:none;}
+  #advisory .training-topics{margin:36px 0 0;}
+  /* Contact stands out in the menu */
+  .nav-links a.nav-cta{border:1px solid var(--gold-300); color:var(--gold-300); padding:6px 14px; border-radius:999px;}
+  .nav-links a.nav-cta:hover{background:var(--gold-500); color:var(--navy-950); border-color:var(--gold-500);}
+  @media (max-width:860px){ .nav-links a.nav-cta{border:none; padding:12px 0; border-radius:0;} }
+  .net-block{margin-top:48px;}
+  .net-label{font-size:11.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); margin:22px 0 10px;}
+  .net-label:first-child{margin-top:0;}
+  .speaking-gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:28px;}
+  @media (max-width:860px){ .speaking-gallery{grid-template-columns:repeat(2,1fr);} }
+  .speaking-gallery figure{margin:0; border-radius:10px; overflow:hidden; background:var(--surface-2); border:1px solid var(--line);}
+  .speaking-gallery img{width:100%; aspect-ratio:4/3; object-fit:cover;}
+  .speaking-gallery figcaption{font-size:11.5px; color:var(--text-muted); padding:8px 10px;}
+  .expertise-cols{display:grid; grid-template-columns:1fr 1fr; gap:44px;}
+  @media (max-width:800px){ .expertise-cols{grid-template-columns:1fr;} }
+  .edu-row{display:flex; justify-content:space-between; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); font-size:14px;}
+  .edu-row:last-child{border-bottom:none;}
+  .edu-row .k{color:var(--text-muted); white-space:nowrap; text-align:right;}
+  /* Group headings in Education: bold serif with gold marker and rule, so each group reads as its own block */
+  #education .side-title, #expertise .side-title{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Fraunces',serif; font-size:20px; font-weight:700; letter-spacing:0; text-transform:none;
+    color:var(--text); margin-bottom:6px; padding-bottom:12px;
+    border-bottom:2px solid var(--accent);
+  }
+  #expertise .side-title{margin-bottom:0;}
+  #expertise .expertise-cols{grid-template-columns:1fr; gap:44px;}
+  #expertise .expertise-cols > div:first-child .chip-group{margin-top:0;}
+  #education .side-title::before, #expertise .side-title::before{
+    content:""; flex:none; width:10px; height:10px; transform:rotate(45deg);
+    background:var(--accent); border-radius:2px;
+  }
+  /* Education layout: photo + education on top, three credential boxes below */
+  .edu-top{display:grid; grid-template-columns:1fr 1.05fr; gap:48px; align-items:center;}
+  .edu-top .motto-card{margin:0;}
+  .cred-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:44px;}
+  .edu-main{
+    background:var(--surface); border:1px solid var(--line); border-radius:16px;
+    padding:28px 30px 14px; box-shadow:var(--shadow);
+  }
+  .edu-main .edu-row:last-child{border-bottom:none;}
+  .cred-box{
+    background:var(--surface); border:1px solid var(--line); border-radius:16px;
+    padding:24px 24px 10px; box-shadow:var(--shadow);
+  }
+  .cred-box .side-title{font-size:18px;}
+  .cred-box .edu-row{font-size:14px;}
+  .cred-box .edu-row:last-child{border-bottom:none;}
+  @media (max-width:980px){ .cred-grid{grid-template-columns:1fr 1fr;} .cred-box:first-child{grid-column:1 / -1;} }
+  @media (max-width:860px){ .edu-top{grid-template-columns:1fr; gap:32px;} }
+  @media (max-width:640px){ .cred-grid{grid-template-columns:1fr;} .cred-box:first-child{grid-column:auto;} }
+  .motto-card{
+    position:relative; margin:32px 0 0; border-radius:16px; overflow:hidden;
+    aspect-ratio:4/3; background:var(--navy-900); box-shadow:var(--shadow);
+    border:1px solid rgba(231,204,140,.3);
+  }
+  .motto-card img{width:100%; height:100%; object-fit:cover; object-position:55% 25%;}
+  .motto-card::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(0deg, rgba(10,23,48,.94) 0%, rgba(10,23,48,.55) 38%, rgba(10,23,48,0) 65%);
+  }
+  .motto-card figcaption{
+    position:absolute; left:0; right:0; bottom:0; z-index:1; padding:22px 26px 24px;
+  }
+  .motto-label{
+    display:block; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--gold-300); margin-bottom:8px;
+  }
+  .motto-line{
+    display:block; font-family:'Fraunces',serif; font-style:italic; font-weight:600;
+    font-size:clamp(22px,2.6vw,30px); line-height:1.15; color:#fff;
+  }
+  .motto-line .m{white-space:nowrap;}
+  .motto-line .dot{color:var(--gold-300); font-style:normal; margin-left:.35em;}
+  @media (max-width:560px){
+    .motto-card{aspect-ratio:4/5;}
+    .motto-card img{object-position:55% 20%;}
+    .motto-card figcaption{padding:18px 20px 20px;}
+    .motto-line{font-size:23px;}
+  }
+
+  /* ---------- footer / contact ---------- */
+  .footer{
+    position:relative; overflow:hidden; isolation:isolate;
+    background:
+      radial-gradient(55% 70% at 18% 35%, rgba(231,204,140,.16), transparent 60%),
+      radial-gradient(45% 60% at 95% 100%, rgba(32,64,115,.55), transparent 65%),
+      var(--navy-950);
+    color:var(--cream-50); padding:88px 20px 40px;
+  }
+  .footer::before{
+    /* faint dot grid texture */
+    content:""; position:absolute; inset:0; z-index:-1; opacity:.35;
+    background-image:radial-gradient(rgba(231,204,140,.22) 1px, transparent 1.2px);
+    background-size:22px 22px;
+    -webkit-mask-image:linear-gradient(270deg, transparent 0%, #000 60%, #000 100%);
+            mask-image:linear-gradient(270deg, transparent 0%, #000 60%, #000 100%);
+  }
+  .footer-inner{max-width:1180px; margin-inline:auto;}
+  .footer-grid{display:grid; grid-template-columns:.9fr 1.25fr; gap:56px; align-items:center;}
+  .footer-grid .footer-visual{order:-1;}
+  .footer-open{display:flex; flex-wrap:wrap; gap:8px; margin-top:22px;}
+  .footer-open > span{
+    font-size:12.5px; font-weight:600; color:var(--gold-300);
+    border:1px solid rgba(231,204,140,.35); border-radius:999px; padding:5px 13px;
+    background:rgba(231,204,140,.06);
+  }
+  .footer-visual{position:relative; justify-self:center; width:min(340px, 78vw); aspect-ratio:1;}
+  .footer-visual img{
+    position:absolute; inset:14%; width:72%; height:72%; border-radius:50%;
+    object-fit:cover; object-position:50% 18%; background:#fff;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.6), 0 0 0 4px rgba(231,204,140,.55);
+  }
+  .footer-visual .ring{position:absolute; border-radius:50%; pointer-events:none;}
+  .footer-visual .ring-1{inset:6%; border:1px solid rgba(231,204,140,.35);}
+  .footer-visual .ring-2{inset:0; border:1px dashed rgba(231,204,140,.22);}
+  .footer-visual .ring-orbit{inset:0; animation:orbit 18s linear infinite;}
+  .footer-visual .ring-orbit i{
+    position:absolute; top:-5px; left:50%; width:10px; height:10px; margin-left:-5px; border-radius:50%;
+    background:var(--gold-300); box-shadow:0 0 14px 3px rgba(231,204,140,.7);
+  }
+  @keyframes orbit{to{transform:rotate(360deg);}}
+  .footer-badge .dot-live{
+    display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:8px; vertical-align:1px;
+    background:#1F8A5B; box-shadow:0 0 0 0 rgba(31,138,91,.6); animation:pulse 2s ease-out infinite;
+  }
+  @keyframes pulse{70%{box-shadow:0 0 0 8px rgba(31,138,91,0);} 100%{box-shadow:0 0 0 0 rgba(31,138,91,0);}}
+  @media (prefers-reduced-motion:reduce){ .footer-badge .dot-live{animation:none;} }
+  .footer-badge{
+    position:absolute; left:50%; bottom:2%; transform:translateX(-50%); white-space:nowrap;
+    font-family:'Public Sans',sans-serif; font-weight:700; font-size:13px; letter-spacing:.01em;
+    color:var(--navy-950); background:linear-gradient(90deg, var(--gold-300), var(--gold-500));
+    padding:8px 16px; border-radius:999px; box-shadow:0 10px 24px -10px rgba(0,0,0,.6);
+  }
+  @media (max-width:860px){
+    .footer-grid{grid-template-columns:1fr;}
+    .footer-visual{order:-1; width:min(260px, 70vw);}
+  }
+  @media (prefers-reduced-motion:reduce){ .footer-visual .ring-orbit{animation:none;} }
+  /* Hero: gold border with a light sweeping around it */
+  .hero-photo-wrap{
+    position:relative; justify-self:center; padding:5px; border-radius:21px;
+    background:linear-gradient(135deg, #9C7830 0%, #E7CC8C 28%, #C79A45 52%, #F1DDA8 76%, #9C7830 100%);
+    box-shadow:0 0 44px -6px rgba(231,204,140,.45), 0 30px 60px -20px rgba(0,0,0,.6);
+  }
+  /* comet light gliding smoothly around the border: bright star head + fading tail */
+  .hero-comet{position:absolute; left:0; top:0; z-index:2; pointer-events:none;}
+  .hero-comet b{
+    position:absolute; left:0; top:0; border-radius:50%; will-change:transform;
+    background:#FFF3D0; box-shadow:0 0 8px 2px rgba(241,221,168,.7);
+  }
+  .hero-comet b.head{
+    width:7px; height:7px; margin:-3.5px 0 0 -3.5px; background:#FFFBEF;
+    box-shadow:0 0 6px 2px #FFF1C9, 0 0 18px 6px rgba(231,204,140,.75), 0 0 34px 10px rgba(231,204,140,.35);
+  }
+  .hero-comet b.head::before, .hero-comet b.head::after{
+    content:""; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    background:linear-gradient(90deg, transparent, #FFFBEF, transparent);
+  }
+  .hero-comet b.head::before{width:26px; height:1.5px;}
+  .hero-comet b.head::after{width:1.5px; height:26px; background:linear-gradient(180deg, transparent, #FFFBEF, transparent);}
+  @media (prefers-reduced-motion:reduce){ .hero-comet{display:none;} }
+  .hero-photo-wrap .hero-photo{box-shadow:none;}
+  .hero-photo-wrap .hero-photo::after{display:none;}
+  .footer h2{color:#fff; font-size:clamp(30px,4.2vw,46px); line-height:1.1; max-width:16ch; margin-top:4px;}
+  .footer .lede{color:#C9CFDC; margin-top:16px; max-width:56ch; font-size:16px;}
+  .footer-cta{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;}
+  .footer-bottom{
+    margin-top:64px; padding-top:24px; border-top:1px solid rgba(231,204,140,.18);
+    display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12.5px; color:#8891A3;
+  }
+
+  /* ---------- copy-email toast ---------- */
+  .copy-toast{
+    position:fixed; left:50%; bottom:calc(24px + env(safe-area-inset-bottom,0px)); z-index:100;
+    transform:translate(-50%, 12px); opacity:0; pointer-events:none;
+    background:var(--navy-950); color:var(--cream-50); border:1px solid rgba(231,204,140,.45);
+    padding:12px 20px; border-radius:999px; font-size:14px; font-weight:600;
+    box-shadow:0 12px 30px -10px rgba(0,0,0,.5); max-width:calc(100vw - 32px); text-align:center;
+    transition:opacity .2s ease, transform .2s ease;
+  }
+  .copy-toast.show{opacity:1; transform:translate(-50%, 0);}
 </style>
 </head>
 <body>
-
-  <!-- =========================================================
-       0. COVER
-  ========================================================== -->
-  <header class="cover">
-    <div class="wrap cover-grid">
-      <div>
-        <div class="cover-eyebrow">Portfolio prepared for: EU Strategic Communication in Viet Nam — Particip GmbH Consortium, Key Expert 1 Candidacy</div>
-        <h1>Uyen T.P. Nguyen, MBA</h1>
-        <div class="role">Strategic Communication &amp; Campaign Leader</div>
-        <p class="lede">20+ years designing, leading and evaluating brand, public-affairs and public-awareness campaigns across Vietnam and ASEAN — for global technology platforms and government-endorsed national programs.</p>
-        <div class="contact-row">
-          <span>+84 982 69 9090</span>
-          <span>uyenntp@gmail.com</span>
-          <span>Ho Chi Minh City, Vietnam</span>
-          <span>linkedin.com/in/uyen1503</span>
-        </div>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">Uy<span>ê</span>n T.P. Nguy<span>ễ</span>n<span class="brand-mba">, MBA</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"><span class="lang-en">About</span><span class="lang-vi">Giới thiệu</span></a></li>
+      <li><a href="#track-record"><span class="lang-en">Track Record</span><span class="lang-vi">Thành tích</span></a></li>
+      <li><a href="#programs"><span class="lang-en">Programs</span><span class="lang-vi">Dự án</span></a></li>
+      <li><a href="#thought-leadership"><span class="lang-en">Thought Leadership</span><span class="lang-vi">Chia sẻ chuyên môn</span></a></li>
+      <li><a href="#advisory"><span class="lang-en">Advisory</span><span class="lang-vi">Tư vấn</span></a></li>
+      <li><a class="nav-cta" href="#contact"><span class="lang-en">Contact</span><span class="lang-vi">Liên hệ</span></a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-toggle" id="langToggle">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="vi">VI</button>
       </div>
-      <div class="cover-photo">
-        <img src="images/profile.jpg" alt="Uyen T.P. Nguyen">
+      <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">
+        <span class="lang-en"><span class="eb">B2B &amp; B2C</span> · <span class="eb">Performance Marketing</span> · <span class="eb">Brand &amp; Communications</span> · <span class="eb">Government &amp; Ecosystem Partnerships</span></span>
+        <span class="lang-vi"><span class="eb">B2B &amp; B2C</span> · <span class="eb">Performance Marketing</span> · <span class="eb">Thương hiệu &amp; Truyền thông</span> · <span class="eb">Quan hệ Chính phủ &amp; Hệ sinh thái Đối tác</span></span>
+      </span>
+      <h1><span class="lang-en">Uyen T.P. Nguyen, MBA</span><span class="lang-vi">Uyên T.P. Nguyễn, MBA</span></h1>
+      <p class="role"><span class="lang-en">Head of Marketing · Marketing Director</span><span class="lang-vi">Trưởng phòng Marketing · Giám đốc Marketing</span></p>
+      <p class="lede">
+        <span class="lang-en">Twenty years turning market opportunity into revenue — through brand transformation, full-funnel demand generation, and government-endorsed campaigns across Vietnam and ASEAN, for organizations including IBM, Alibaba.com, TRG International, FPT and ACB.</span>
+        <span class="lang-vi">20 năm biến cơ hội thị trường thành doanh thu thực — qua tái định vị thương hiệu, xây dựng tăng trưởng toàn phễu, và các chiến dịch được chính phủ bảo trợ tại Việt Nam &amp; ASEAN, cho các tổ chức như IBM, Alibaba.com, TRG International, FPT và ACB.</span>
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="mailto:uyenntp@gmail.com">
+          <span class="lang-en">Email me</span><span class="lang-vi">Gửi email</span>
+        </a>
+        <a class="btn btn-outline" href="https://linkedin.com/in/uyen1503" target="_blank" rel="noopener">
+          <span class="lang-en">Connect on LinkedIn</span><span class="lang-vi">Kết nối trên LinkedIn</span>
+        </a>
       </div>
     </div>
-  </header>
-
-  <!-- =========================================================
-       1. SNAPSHOT STATS
-  ========================================================== -->
-  <section class="stats">
-    <div class="wrap stats-grid">
-      <div class="stat">
-        <div class="num">20+ yrs</div>
-        <div class="label">leading strategic communication campaigns across Vietnam &amp; ASEAN</div>
-      </div>
-      <div class="stat">
-        <div class="num">100+</div>
-        <div class="label">campaigns &amp; events run annually at peak — Alibaba.com Vietnam</div>
-      </div>
-      <div class="stat">
-        <div class="num">1,000+</div>
-        <div class="label">delegates, ASEAN-wide — IBM Think ASEAN 2021</div>
-      </div>
-      <div class="stat">
-        <div class="num">400,000+</div>
-        <div class="label">unique online viewers — KEL APAC Award livestream, VnExpress.net</div>
+    <div class="hero-photo-wrap" id="heroWrap">
+      <span class="hero-comet" aria-hidden="true"></span>
+      <span class="hero-comet" aria-hidden="true"></span>
+      <div class="hero-photo">
+        <img src="assets/img/headshot.jpg" alt="Uyen T.P. Nguyen" loading="eager">
       </div>
     </div>
-  </section>
-
-  <div class="wrap intro-title">
-    <h2>Campaign case studies</h2>
-    <p>Five programs spanning national government communication, international e-commerce, and technology-sector demand generation — selected to show range across audience, scale and channel mix.</p>
   </div>
 
-  <!-- =========================================================
-       2. VIETNAM PAVILION
-  ========================================================== -->
-  <section class="block">
-    <div class="wrap">
-      <div class="block-head">
-        <h2>Vietnam Pavilion — Top 100 &amp; Top 200 Featured Businesses</h2>
-        <div class="meta">National flagship communication program · MOIT &amp; VIETRADE · 2023–2026</div>
-      </div>
-      <p>Designed and led the full multi-year integrated marketing communication (IMC) strategy end-to-end, from pre-launch media positioning through to a sustained, multi-year national press and advertising presence — a program endorsed by Vietnam's Ministry of Industry and Trade (MOIT) and Trade Promotion Agency (VIETRADE).</p>
-
-      <div class="timeline">
-        <div class="step">
-          <div class="when">Oct 2023 — Pre-launch</div>
-          <p>Media talkshow on Tạp chí Công Thương introducing the program concept.</p>
-        </div>
-        <div class="step">
-          <div class="when">Nov 2023 — Launch</div>
-          <p>Launch event with paid advertising and press outreach.</p>
-        </div>
-        <div class="step">
-          <div class="when">Late 2023 – Early 2024 — Selection</div>
-          <p>Nationwide Top 100 business selection, promoted at VIETRADE and Alibaba.com events.</p>
-        </div>
-        <div class="step">
-          <div class="when">Mar 2024 — National recognition</div>
-          <p>Awards ceremony in Hanoi with a media conference covered by VTV1 and national press, plus a TVC.</p>
-        </div>
-        <div class="step">
-          <div class="when">2025–2026 — Sustained</div>
-          <p>Continued press coverage and paid advertising in Vietnam and select foreign markets; 2025 edition completed, 2026 edition in preparation.</p>
-        </div>
-      </div>
-
-      <div class="media-grid cols-4">
-        <div class="media-slot">
-          <img src="images/vn-pavilion-1.jpg" alt="Vietnam Pavilion pre-launch talkshow, Oct 2023">
-          <div class="ph"><span class="fname">vn-pavilion-1.jpg</span><span class="cap">Pre-launch talkshow, Tạp chí Công Thương (Oct 2023)</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/vn-pavilion-2.jpg" alt="Vietnam Pavilion launch event, Nov 2023">
-          <div class="ph"><span class="fname">vn-pavilion-2.jpg</span><span class="cap">Launch event (Nov 2023)</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/vn-pavilion-3.jpg" alt="Top 100 selection event">
-          <div class="ph"><span class="fname">vn-pavilion-3.jpg</span><span class="cap">Top 100 selection, VIETRADE / Alibaba.com event</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/vn-pavilion-4.jpg" alt="Hanoi awards ceremony, Mar 2024">
-          <div class="ph"><span class="fname">vn-pavilion-4.jpg</span><span class="cap">Awards ceremony, Hanoi (Mar 2024)</span></div>
-        </div>
-      </div>
-      <div class="press-note"><strong>To add:</strong> TVC / VTV1 clip link, and links to press coverage — paste as text once you have them; ask Claude to drop them in.</div>
+  <div class="stats">
+    <div class="stats-inner">
+      <div><div class="stat-num">20+</div><div class="stat-label"><span class="lang-en">years leading strategic communication &amp; marketing across Vietnam &amp; ASEAN</span><span class="lang-vi">năm dẫn dắt truyền thông chiến lược &amp; marketing xuyên Việt Nam &amp; ASEAN</span></div></div>
+      <div><div class="stat-num">100+</div><div class="stat-label"><span class="lang-en">campaigns &amp; events run annually at peak — Alibaba.com Vietnam</span><span class="lang-vi">chiến dịch &amp; sự kiện mỗi năm ở cao điểm — Alibaba.com Việt Nam</span></div></div>
+      <div><div class="stat-num">2,572</div><div class="stat-label"><span class="lang-en">event attendees ASEAN-wide — IBM Think ASEAN 2021</span><span class="lang-vi">người tham dự sự kiện toàn ASEAN — IBM Think ASEAN 2021</span></div></div>
+      <div><div class="stat-num">594K+</div><div class="stat-label"><span class="lang-en">livestream unique views — KEL APAC Award Grand Finale</span><span class="lang-vi">lượt xem duy nhất qua livestream — Chung kết KEL APAC Award</span></div></div>
+      <div><div class="stat-num">300+</div><div class="stat-label"><span class="lang-en">media touchpoints annually — Alibaba.com Vietnam</span><span class="lang-vi">lượt xuất hiện truyền thông mỗi năm — Alibaba.com Việt Nam</span></div></div>
+      <div><div class="stat-num">20+</div><div class="stat-label"><span class="lang-en">government, institution &amp; industry-association relationships</span><span class="lang-vi">mối quan hệ với cơ quan chính phủ, tổ chức &amp; hiệp hội</span></div></div>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- =========================================================
-       3. KEL AWARD
-  ========================================================== -->
-  <section class="block alt">
-    <div class="wrap">
-      <div class="block-head">
-        <h2>KEL Award — Vietnam &amp; APAC</h2>
-        <div class="meta">E-commerce leadership awards, endorsed by VIETRADE · 2024</div>
+<section class="section section-cream" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="assets/img/about-photo.jpg" alt="Uyen T.P. Nguyen" loading="lazy">
       </div>
-      <p>Conceived and led both the national and regional editions of the Key E-commerce Leader (KEL) Award for Alibaba.com.</p>
-
-      <div class="timeline">
-        <div class="step">
-          <div class="when">KEL Vietnam</div>
-          <p>Pre-awareness paid and organic promotion on Facebook and Zalo (via Alibaba.com's and contestants' own pages), an award event, and post-event press-release outreach generating national media coverage. A Deputy Director of Vietnam's Trade Promotion Agency (VIETRADE) attended and judged.</p>
-        </div>
-        <div class="step">
-          <div class="when">KEL APAC</div>
-          <p>A larger regional edition held in Vietnam with top sellers from India, Vietnam, Malaysia, Thailand and Pakistan — 500+ offline guests and 400,000+ unique online viewers via a live broadcast on VnExpress.net during the event. Featured a well-known Chinese seller-KOL as promotional partner. VIETRADE's Director General attended and endorsed.</p>
-        </div>
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow"><span class="lang-en">About</span><span class="lang-vi">Giới thiệu</span></span>
+        <h2 class="h2"><span class="lang-en">A marketer who also builds ecosystems.</span><span class="lang-vi">Người làm marketing, đồng thời kiến tạo hệ sinh thái.</span></h2>
+        <p class="lede-2">
+          <span class="lang-en">I'm a marketing and growth leader with 20+ years across B2B and B2C organizations in Vietnam and ASEAN — IBM, Alibaba.com, TRG International, FPT and ACB. My work sits at the intersection of brand, demand generation and public affairs: building full-funnel marketing engines across digital, content and events, then using government relationships and commercial partnerships to turn that momentum into revenue and national-scale programs. Outside full-time roles, I'm open to IMC projects and creative concepts, brand identity &amp; strategy consulting, and marketing training — the same craft, at a different scale.</span>
+          <span class="lang-vi">Tôi là người làm marketing và tăng trưởng với hơn 20 năm kinh nghiệm tại các tổ chức B2B và B2C ở Việt Nam và ASEAN — trong đó có IBM, Alibaba.com, TRG International, FPT và ACB. Công việc của tôi nằm ở giao điểm giữa thương hiệu, tăng trưởng nhu cầu và quan hệ công chúng: xây dựng cỗ máy marketing toàn phễu qua digital, content và sự kiện, sau đó dùng quan hệ với chính phủ và đối tác thương mại để biến đà tăng trưởng đó thành doanh thu và những chương trình tầm quốc gia. Bên cạnh vai trò toàn thời gian, tôi sẵn sàng nhận các dự án IMC và concept sáng tạo, tư vấn nhận diện &amp; chiến lược thương hiệu, và các lớp đào tạo marketing — cùng một chuyên môn, ở một quy mô khác.</span>
+        </p>
       </div>
-
-      <div class="media-grid cols-4">
-        <div class="media-slot">
-          <img src="images/kel-1.jpg" alt="KEL Vietnam Award event">
-          <div class="ph"><span class="fname">kel-1.jpg</span><span class="cap">KEL Vietnam Award event</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/kel-2.jpg" alt="KEL APAC Award, sellers from 5 countries">
-          <div class="ph"><span class="fname">kel-2.jpg</span><span class="cap">KEL APAC — sellers from 5 countries</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/kel-3.jpg" alt="Chinese seller-KOL moment">
-          <div class="ph"><span class="fname">kel-3.jpg</span><span class="cap">Featured seller-KOL moment</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/kel-4.jpg" alt="VIETRADE representative attending">
-          <div class="ph"><span class="fname">kel-4.jpg</span><span class="cap">VIETRADE representative attending</span></div>
-        </div>
-      </div>
-      <div class="press-note"><strong>To add:</strong> VnExpress.net livestream link or screenshot.</div>
     </div>
-  </section>
 
-  <!-- =========================================================
-       4. ITC SHETRADES / GOVERNMENT OF THE NETHERLANDS / APO
-  ========================================================== -->
-  <section class="block">
-    <div class="wrap">
-      <div class="block-head">
-        <h2>ITC SheTrades × Government of the Netherlands</h2>
-        <div class="meta">International trade-development partnership · ITC (joint UN/WTO agency) · 2023–2025</div>
+    <div class="pillar-grid" style="margin-top:40px;">
+      <div class="pillar">
+        <span class="num">01</span>
+        <h3><a href="#track-record"><span class="lang-en">Marketing &amp; Growth Leadership</span><span class="lang-vi">Lãnh đạo Marketing &amp; Tăng trưởng</span></a></h3>
+        <p><span class="lang-en">Head of Marketing / Marketing Director roles. Brand P&amp;L, full-funnel demand generation, GTM strategy and government relations for MNCs and Vietnamese businesses.</span><span class="lang-vi">Vai trò Trưởng phòng/Giám đốc Marketing. Quản lý P&amp;L thương hiệu, tăng trưởng nhu cầu toàn phễu, chiến lược GTM và quan hệ chính phủ cho tập đoàn đa quốc gia và doanh nghiệp Việt Nam.</span></p>
       </div>
-      <p>Introduced Alibaba.com's B2B e-commerce solutions to the International Trade Centre's SheTrades team, leading to a government-funded market-access program for women-owned Vietnamese businesses.</p>
+      <div class="pillar">
+        <span class="num">02</span>
+        <h3><a href="#advisory"><span class="lang-en">IMC Projects &amp; Creative Concepts</span><span class="lang-vi">Dự án IMC &amp; Concept Sáng tạo</span></a></h3>
+        <p><span class="lang-en">End-to-end IMC campaigns and event concepts — from the big idea, storyboard and copy to production oversight and launch.</span><span class="lang-vi">Chiến dịch IMC và concept sự kiện trọn gói — từ big idea, storyboard, viết lời đến giám sát sản xuất và ra mắt.</span></p>
+      </div>
+      <div class="pillar">
+        <span class="num">03</span>
+        <h3><a href="#advisory"><span class="lang-en">Brand Identity &amp; Strategy Consulting</span><span class="lang-vi">Tư vấn Nhận diện &amp; Chiến lược Thương hiệu</span></a></h3>
+        <p><span class="lang-en">Project-based consulting and brand identity development — from logo, slogan, brand statement, mission, core values and positioning to communication materials — grounded in surveys and interviews that capture customer and stakeholder insight.</span><span class="lang-vi">Theo dự án — tư vấn và xây dựng bộ nhận diện thương hiệu, từ logo, slogan, tuyên ngôn, sứ mệnh, giá trị cốt lõi, định vị đến ấn phẩm truyền thông — dựa trên khảo sát và phỏng vấn insight khách hàng và các bên liên quan.</span></p>
+      </div>
+      <div class="pillar">
+        <span class="num">04</span>
+        <h3><a href="#advisory"><span class="lang-en">Marketing Training</span><span class="lang-vi">Đào tạo Marketing</span></a></h3>
+        <p><span class="lang-en">Training classes, corporate workshops and guest lectures on digital marketing, event &amp; IMC, and B2B sales &amp; marketing.</span><span class="lang-vi">Lớp đào tạo, workshop doanh nghiệp và giảng dạy thỉnh giảng về digital marketing, sự kiện &amp; IMC, và bán hàng &amp; marketing B2B.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="timeline">
-        <div class="step">
-          <div class="when">Sep 2023</div>
-          <p>First presentation to ITC SheTrades on Alibaba.com's B2B solutions and export/market-access opportunities, backed by market data.</p>
+<section class="section section-white" id="track-record">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="lang-en">Track Record</span><span class="lang-vi">Thành tích nổi bật</span></span>
+      <h2 class="h2"><span class="lang-en">Highlights across a 20-year career</span><span class="lang-vi">Điểm nhấn xuyên suốt 20 năm sự nghiệp</span></h2>
+    </div>
+
+    <div class="tr-grid">
+      <div class="highlight-list">
+        <div class="highlight">
+          <span class="highlight-mark">1</span>
+          <div>
+            <h4><span class="lang-en">Brand Transformation</span><span class="lang-vi">Khôi phục &amp; Củng cố Thương hiệu</span></h4>
+            <p><span class="lang-en">Transformed Alibaba.com's brand in Vietnam <strong class="hl">within one year</strong> — after public trust was hit in 2023 by an unrelated fraudulent company using the Alibaba name — into a <strong class="hl">nationally recognized, government-endorsed</strong> platform; led TRG International's brand repositioning, lifting talent attraction <strong class="hl">+65% YoY</strong>.</span><span class="lang-vi">Khôi phục và củng cố thương hiệu Alibaba.com tại Việt Nam <strong class="hl">trong vòng một năm</strong> — sau khi niềm tin công chúng bị ảnh hưởng năm 2023 bởi một công ty lừa đảo không liên quan mang tên Alibaba — đưa thương hiệu trở thành nền tảng được <strong class="hl">chính phủ công nhận trên toàn quốc</strong>; dẫn dắt tái định vị thương hiệu TRG International, tăng <strong class="hl">+65%</strong> khả năng thu hút nhân tài theo năm.</span></p>
+          </div>
         </div>
-        <div class="step">
-          <div class="when">Nov 2024</div>
-          <p>Official launch event introducing the Alibaba.com solution alongside the announcement of Government of the Netherlands funding for SheTrades member businesses.</p>
+        <div class="highlight">
+          <span class="highlight-mark">2</span>
+          <div>
+            <h4><span class="lang-en">Marketing P&amp;L &amp; Revenue Contribution</span><span class="lang-vi">P&amp;L Marketing &amp; Đóng góp Doanh thu</span></h4>
+            <p><span class="lang-en">Owned marketing P&amp;L, contributing to <strong class="hl">~40% of annual revenue</strong> at IBM Vietnam and <strong class="hl">~30–35%</strong> at Alibaba.com Vietnam.</span><span class="lang-vi">Trực tiếp quản lý P&amp;L marketing, đóng góp vào <strong class="hl">khoảng 40% doanh thu hàng năm</strong> tại IBM Việt Nam và <strong class="hl">30–35%</strong> tại Alibaba.com Việt Nam.</span></p>
+          </div>
         </div>
-        <div class="step">
-          <div class="when">Apr 2025</div>
-          <p>Funding approved; 32 women-owned businesses selected. Supported business selection and training through the program, with agency OSB.</p>
+        <div class="highlight">
+          <span class="highlight-mark">3</span>
+          <div>
+            <h4><span class="lang-en">Seller Acquisition — #1 Country KPI</span><span class="lang-vi">Thu hút Nhà bán hàng — KPI Quốc gia #1</span></h4>
+            <p><span class="lang-en">Delivered <strong class="hl">117–147%</strong> of Alibaba.com Vietnam's #1 country-level KPI for <strong class="hl">3 straight years</strong> via a full-funnel digital, content, media, CRM and event demand-gen engine.</span><span class="lang-vi">Đạt <strong class="hl">117–147%</strong> chỉ tiêu KPI quốc gia số 1 của Alibaba.com Việt Nam <strong class="hl">trong 3 năm liên tiếp</strong>, qua cỗ máy tăng trưởng nhu cầu toàn phễu: digital, content, truyền thông, CRM và sự kiện.</span></p>
+          </div>
         </div>
-        <div class="step">
-          <div class="when">Nov 2025</div>
-          <p>Invited back by ITC SheTrades as a speaker at the program's closing conference.</p>
+        <div class="highlight">
+          <span class="highlight-mark">4</span>
+          <div>
+            <h4><span class="lang-en">Government Relations &amp; Strategic Partnerships</span><span class="lang-vi">Quan hệ Chính phủ &amp; Đối tác Chiến lược</span></h4>
+            <p><span class="lang-en">Official spokesperson and lead liaison across <strong class="hl">20+</strong> government, diplomatic, financial &amp; academic institutions — a strength uncommon among marketing leaders.</span><span class="lang-vi">Người phát ngôn chính thức và đầu mối liên hệ với <strong class="hl">hơn 20</strong> cơ quan chính phủ, ngoại giao, tài chính &amp; học thuật — thế mạnh hiếm thấy ở các lãnh đạo marketing.</span></p>
+          </div>
         </div>
-        <div class="step">
-          <div class="when">Aug 2025 — Related engagement</div>
-          <p>Hosted a 23-member delegation from the Asian Productivity Organization (APO).</p>
+        <div class="highlight">
+          <span class="highlight-mark">5</span>
+          <div>
+            <h4><span class="lang-en">Innovative Growth Mindset</span><span class="lang-vi">Tư duy Tăng trưởng Đột phá</span></h4>
+            <p><span class="lang-en">Spearheaded Top 100 &amp; Top 200 Featured Businesses on Vietnam Pavilion on Alibaba.com — a MOIT &amp; VIETRADE-endorsed national program — supporting <strong class="hl">370+</strong> Vietnamese businesses since 2023, <strong class="hl">200+</strong> of them new to Alibaba.com.</span><span class="lang-vi">Dẫn dắt Top 100 &amp; Top 200 Doanh nghiệp Tiêu biểu trên Vietnam Pavilion tại Alibaba.com — chương trình quốc gia được MOIT &amp; VIETRADE bảo trợ — hỗ trợ <strong class="hl">hơn 370</strong> doanh nghiệp Việt Nam từ 2023, trong đó <strong class="hl">hơn 200</strong> doanh nghiệp lần đầu tham gia Alibaba.com.</span></p>
+          </div>
         </div>
       </div>
 
-      <div class="media-grid cols-4">
-        <div class="media-slot">
-          <img src="images/itc-1.jpg" alt="ITC SheTrades presentation">
-          <div class="ph"><span class="fname">itc-1.jpg</span><span class="cap">Presentation to ITC SheTrades (2023 / 2024)</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/itc-2.jpg" alt="Closing conference, Nov 2025">
-          <div class="ph"><span class="fname">itc-2.jpg</span><span class="cap">Closing conference speaker (Nov 2025)</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/itc-3.jpg" alt="APO delegation, Aug 2025">
-          <div class="ph"><span class="fname">itc-3.jpg</span><span class="cap">APO delegation visit (Aug 2025)</span></div>
-        </div>
-        <div class="media-slot">
-          <img src="images/itc-4.jpg" alt="Invitation letter / presentation slide">
-          <div class="ph"><span class="fname">itc-4.jpg</span><span class="cap">Invitation letter or presentation slide</span></div>
+      <div>
+        <div class="side-title"><span class="lang-en">Employers</span><span class="lang-vi">Quá trình công tác</span></div>
+        <div class="timeline">
+          <div class="timeline-item"><div class="co">Alibaba.com Vietnam</div><div class="yr">2023–2026</div></div>
+          <div class="timeline-item"><div class="co">TRG International</div><div class="yr">2022</div></div>
+          <div class="timeline-item"><div class="co">IBM Vietnam</div><div class="yr">2012–2021</div></div>
+          <div class="timeline-item"><div class="co">Synnex FPT</div><div class="yr">2011–2012</div></div>
+          <div class="timeline-item"><div class="co">Asia Commercial Bank (ACB)</div><div class="yr">2007–2009</div></div>
+          <div class="timeline-item"><div class="co">Masso Group</div><div class="yr">2005–2007</div></div>
+          <div class="timeline-item"><div class="co">HCMC Dept. of Planning &amp; Investment</div><div class="yr">2004–2005</div></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- =========================================================
-       5. IBM THINK ASEAN / SOLUTION DAYS
-  ========================================================== -->
-  <section class="block alt">
-    <div class="wrap">
-      <div class="block-head">
-        <h2>IBM Think ASEAN 2021 &amp; IBM Solution Days</h2>
-        <div class="meta">Regional demand-generation flagships · IBM ASEAN · 2012–2021</div>
+<section class="section section-cream" id="programs">
+  <div class="wrap">
+    <div class="programs-head-grid">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow"><span class="lang-en">Flagship Programs</span><span class="lang-vi">Dự án Tiêu biểu</span></span>
+        <h2 class="h2"><span class="lang-en">Programs I've built, end to end</span><span class="lang-vi">Những chương trình tôi xây dựng từ đầu đến cuối</span></h2>
+        <p class="lede-2"><span class="lang-en">A selection of national and regional programs I conceived, led, or directed — spanning brand strategy, government-endorsed platforms, and demand-generation flagships.</span><span class="lang-vi">Một số chương trình quốc gia và khu vực tôi sáng lập, dẫn dắt hoặc chỉ đạo — trải dài từ chiến lược thương hiệu, nền tảng được chính phủ bảo trợ, đến các sự kiện tăng trưởng nhu cầu quy mô lớn.</span></p>
       </div>
-      <p>At IBM Vietnam, led marketing for two recurring flagship formats: an annual regional conference and a high-frequency national roadshow — together demonstrating sustained delivery at both large-scale and high-volume levels.</p>
+      <div class="programs-photo">
+        <img src="assets/img/programs-portrait.jpg" alt="Uyen T.P. Nguyen speaking" loading="lazy">
+      </div>
+    </div>
 
-      <div class="timeline">
-        <div class="step">
-          <div class="when">Think ASEAN 2021 — Pre-event</div>
-          <p>Led social amplification and content/creative production (key visuals, posters, agenda design) driving registration across ASEAN-6 markets.</p>
+    <!-- Vietnam Pavilion -->
+    <article class="case">
+      <span class="case-tag">MOIT × VIETRADE × Alibaba.com · 2023–2026</span>
+      <h3 class="case-title">Vietnam Pavilion</h3>
+      <p class="case-role"><span class="lang-en">Co-Founder &amp; Program Lead, Top DNTB / Vietnam Pavilion</span><span class="lang-vi">Đồng sáng lập &amp; Trưởng chương trình, Top DNTB / Vietnam Pavilion</span></p>
+
+      <div class="case-cover"><img src="assets/img/vp-cover-collage.jpg" alt="Vietnam Pavilion" loading="lazy"></div>
+
+      <p class="case-narrative">
+        <span class="lang-en">Vietnam's Ministry of Industry and Trade (MOIT) and the Vietnam Trade Promotion Agency (VIETRADE) wanted a national storefront for Vietnamese exporters on Alibaba.com — but an open storefront isn't, by itself, a strategy. I designed and proposed the piece that made it work: Top Featured Businesses (Top Doanh Nghiệp Tiêu Biểu), a selection-and-support program that gave the pavilion both a bar to clear, and a reason to succeed once businesses cleared it.</span>
+        <span class="lang-vi">Bộ Công Thương (MOIT) và Cục Xúc tiến Thương mại Việt Nam (VIETRADE) muốn có một gian hàng quốc gia cho doanh nghiệp xuất khẩu Việt Nam trên Alibaba.com — nhưng một gian hàng mở, tự nó, chưa phải là một chiến lược. Tôi đã thiết kế và đề xuất mảnh ghép tạo nên thành công: Top Doanh Nghiệp Tiêu Biểu — chương trình tuyển chọn và đồng hành, vừa đặt ra tiêu chuẩn để vượt qua, vừa tạo động lực để doanh nghiệp thành công sau khi được chọn.</span>
+      </p>
+      <div class="role-callout">
+        <div class="rc-mark">&#8220;</div>
+        <div>
+          <span class="rc-label"><span class="lang-en">My Role</span><span class="lang-vi">Vai Trò Của Tôi</span></span>
+          <p><span class="lang-en">I conceived the program from the ground up — mission, vision, and the selection and scoring criteria — then designed and led the end-to-end communication strategy and IMC execution from 2023 to 2026.</span><span class="lang-vi">Tôi xây dựng chương trình từ con số 0 — sứ mệnh, tầm nhìn, tiêu chí tuyển chọn và chấm điểm — sau đó thiết kế và dẫn dắt toàn bộ chiến lược truyền thông và triển khai IMC xuyên suốt 2023–2026.</span></p>
         </div>
-        <div class="step">
-          <div class="when">During the event</div>
-          <p>On-site facilitator for HCMC-region delegates, at an event drawing 1,000+ delegates across ASEAN.</p>
+      </div>
+      <p style="margin:-8px 0 22px;"><a href="https://event.vietrade.gov.vn/vietnampavilion2026-2027" target="_blank" rel="noopener" style="font-size:12.5px; font-weight:600; color:var(--accent-ink);"><span class="lang-en">Full program details, selection criteria &amp; benefits for Top Featured Businesses awardees ↗</span><span class="lang-vi">Tham khảo chi tiết chương trình, thể lệ tuyển chọn &amp; quyền lợi doanh nghiệp được trao giải Top Doanh Nghiệp Tiêu Biểu ↗</span></a></p>
+
+      <div class="model-grid">
+        <div class="model-item">
+          <span class="n">01</span>
+          <h4><span class="lang-en">A real bar to clear</span><span class="lang-vi">Một tiêu chuẩn thực sự phải vượt qua</span></h4>
+          <p><span class="lang-en">A scoring rubric across 5 criteria groups — eligibility, Vietnamese ownership &amp; origin, product quality &amp; IP, e-commerce performance, and support for new exporters. 16 measures, 40 points, minimum 25 to earn a seat. Selected businesses can't reapply the very next season — the roster genuinely renews.</span><span class="lang-vi">Bộ tiêu chí chấm điểm gồm 5 nhóm — điều kiện tham gia, sở hữu &amp; xuất xứ Việt Nam, chất lượng sản phẩm &amp; sở hữu trí tuệ, hiệu quả kinh doanh trên TMĐT, và hỗ trợ doanh nghiệp xuất khẩu mới. 16 tiêu chí, 40 điểm, tối thiểu 25 điểm để được chọn. Doanh nghiệp đã được chọn không thể ứng tuyển lại ngay mùa kế tiếp — danh sách thực sự được làm mới.</span></p>
         </div>
-        <div class="step">
-          <div class="when">Post-event</div>
-          <p>Coordinated with ASEAN-country teams and PR on press release and cross-channel social content, including client testimonials, social advocates, and a Singapore-based KOL.</p>
-        </div>
-        <div class="step">
-          <div class="when">IBM Solution Days — recurring, ~30 events/yr</div>
-          <p>As Demand Manager for the Software Group, led marketing for this annual flagship series, each edition drawing 300–500 guests, part of roughly 30 large and small events run per year.</p>
+        <div class="model-item">
+          <span class="n">02</span>
+          <h4><span class="lang-en">Support that didn't end at the ribbon-cutting</span><span class="lang-vi">Đồng hành không dừng lại sau lễ ra mắt</span></h4>
+          <p><span class="lang-en">Ongoing 1-on-1 consulting and training — store optimization, digital advertising, cross-border logistics, commercial law — because visibility alone doesn't close a sale. Selected businesses were coached, season after season, to turn a badge into revenue — producing 10+ KOC/Success Sellers with million-dollar export revenue.</span><span class="lang-vi">Tư vấn và đào tạo 1-1 liên tục — tối ưu gian hàng, quảng cáo digital, logistics xuyên biên giới, pháp lý thương mại — vì chỉ riêng độ nhận diện chưa đủ để chốt đơn hàng. Doanh nghiệp được đồng hành qua từng mùa, để biến một danh hiệu thành doanh thu thực — tạo ra hơn 10 KOC/Success Sellers với doanh thu xuất khẩu hàng triệu đô.</span></p>
         </div>
       </div>
 
-      <div class="media-grid">
-        <div class="media-slot">
-          <img src="images/ibm-think-asean-1.jpg" alt="IBM Think ASEAN 2021 event">
-          <div class="ph"><span class="fname">ibm-think-asean-1.jpg</span><span class="cap">Think ASEAN 2021 — event / key visual</span></div>
+      <div class="season-grid">
+        <div class="season">
+          <div class="s-name"><span class="lang-en">Season 1</span><span class="lang-vi">Mùa 1</span></div>
+          <div class="s-date">Nov 2023 – Mar 2024</div>
+          <p><span class="lang-en">Applications Nov 28, 2023–Jan 15, 2024. Top 100 Featured Businesses announced Mar 6, 2024. Launch conference with MOIT, VIETRADE &amp; Alibaba.com leadership.</span><span class="lang-vi">Nhận hồ sơ 28/11/2023–15/1/2024. Công bố Top 100 Doanh nghiệp Tiêu biểu ngày 6/3/2024. Hội nghị ra mắt cùng lãnh đạo MOIT, VIETRADE &amp; Alibaba.com.</span></p>
+          <p style="margin-top:8px;"><a href="https://vietrade.gov.vn/news-detail/1025?newsId=1025&amp;categoryId=90" target="_blank" rel="noopener" style="font-size:12.5px; font-weight:600; color:var(--accent-ink);"><span class="lang-en">Official announcement, Top 100 Featured Businesses list, Season 1 2024–2025 (VIETRADE) ↗</span><span class="lang-vi">Công bố chính thức danh sách Top 100 Doanh nghiệp Tiêu biểu, Mùa 1 2024–2025 (VIETRADE) ↗</span></a></p>
         </div>
-        <div class="media-slot">
-          <img src="images/ibm-think-asean-2.jpg" alt="IBM Solution Days event">
-          <div class="ph"><span class="fname">ibm-think-asean-2.jpg</span><span class="cap">IBM Solution Days — event</span></div>
+        <div class="season">
+          <div class="s-name"><span class="lang-en">Season 2</span><span class="lang-vi">Mùa 2</span></div>
+          <div class="s-date">Dec 2024 – Jun 2025</div>
+          <p><span class="lang-en">Evaluation Dec 13, 2024–May 15, 2025. New batch of Top 200 Featured Businesses, bringing the community to 300. Announced Jun 12, 2025 at the Int'l B2B Export Conference.</span><span class="lang-vi">Đánh giá 13/12/2024–15/5/2025. Thêm 200 Doanh nghiệp Tiêu biểu mới, nâng cộng đồng lên 300. Công bố ngày 12/6/2025 tại Hội nghị Xuất khẩu B2B Quốc tế.</span></p>
+          <p style="margin-top:8px;"><a href="https://www.vietnam.vn/cong-bo-200-doanh-nghiep-tieu-bieu-tham-gia-gian-hang-quoc-gia-viet-nam-2025" target="_blank" rel="noopener" style="font-size:12.5px; font-weight:600; color:var(--accent-ink);"><span class="lang-en">Announcement of the Top 200 Featured Businesses, Season 2 2025 (Vietnam.vn) ↗</span><span class="lang-vi">Công bố 200 Doanh nghiệp Tiêu biểu tham gia Gian hàng Quốc gia Việt Nam, Mùa 2 2025 (Vietnam.vn) ↗</span></a></p>
+        </div>
+        <div class="season">
+          <div class="s-name"><span class="lang-en">Season 3</span><span class="lang-vi">Mùa 3</span></div>
+          <div class="s-date">Feb 2026 – Aug 2026</div>
+          <p><span class="lang-en">Applications Feb–Jun 2026. Top 100 announced Aug 18, 2026, open to new businesses and Season 1 alumni. Community surpasses 370+ businesses supported.</span><span class="lang-vi">Nhận hồ sơ 2–6/2026. Công bố Top 100 ngày 18/8/2026, mở cho cả doanh nghiệp mới và doanh nghiệp đã đạt giải Mùa 1. Cộng đồng vượt mốc hơn 370 doanh nghiệp được hỗ trợ.</span></p>
+          <p style="margin-top:8px;"><a href="https://vietrade.gov.vn/news-detail/1758?newsId=1758&amp;categoryId=92" target="_blank" rel="noopener" style="font-size:12.5px; font-weight:600; color:var(--accent-ink);"><span class="lang-en">Official Top 100 Featured Businesses list, Season 3 2026–2027 (VIETRADE) ↗</span><span class="lang-vi">Danh sách chính thức Top 100 Doanh nghiệp Tiêu biểu, Mùa 3 2026–2027 (VIETRADE) ↗</span></a></p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure><img src="assets/img/vp-govt-presentation.jpg" loading="lazy" alt="Presenting to government partners"><figcaption><span class="lang-en">Presenting the model to government &amp; industry partners</span><span class="lang-vi">Trình bày mô hình với đối tác chính phủ &amp; ngành</span></figcaption></figure>
+        <figure><img src="assets/img/vp-launch-stage.jpg" loading="lazy" alt="Launch conference"><figcaption><span class="lang-en">Launch conference, Hanoi</span><span class="lang-vi">Hội nghị ra mắt, Hà Nội</span></figcaption></figure>
+        <figure><a href="https://sale.alibaba.com/p/vietnampavilion-vnfeaturedbusiness/index.html" target="_blank" rel="noopener"><img src="assets/img/vp-storefront-screenshot.jpg" loading="lazy" alt="Vietnam Pavilion storefront"></a><figcaption><span class="lang-en">Live storefront on Alibaba.com</span><span class="lang-vi">Gian hàng trực tuyến trên Alibaba.com</span></figcaption></figure>
+        <figure><img src="assets/img/vp-certificate.jpg" loading="lazy" alt="VIETRADE honors Vietnam's Top 200 Businesses, Vietnam Pavilion"><figcaption><span class="lang-en">VIETRADE honors Vietnam's Top 200 Businesses — Vietnam Pavilion on Alibaba.com</span><span class="lang-vi">VIETRADE vinh danh Top 200 Doanh nghiệp tiêu biểu — Vietnam Pavilion trên Alibaba.com</span></figcaption></figure>
+        <figure><a class="video-thumb" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQADqQYfHOvXRa6geBmnF_mmATwMoEpr5GACW3Q-VfPM04Q?e=a4oBWc" target="_blank" rel="noopener"><img src="assets/img/vp-vtv1-coverage.jpg" loading="lazy" alt="VTV1 coverage"><span class="play-tri"></span></a><figcaption><span class="lang-en">National television coverage, VTV1</span><span class="lang-vi">Đưa tin trên truyền hình quốc gia VTV1</span></figcaption></figure>
+        <figure><a class="video-thumb" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQB4yfsjzxu3Rqpy2rl8Zm-aAbg01cMWBMU_cfE9Jw0eank?e=BfQpSB" target="_blank" rel="noopener"><img src="assets/img/vp-success-namviet.jpg" loading="lazy" alt="Nam Viet success story"><span class="play-tri"></span></a><figcaption><span class="lang-en">Nam Viet — Export Success Story (video)</span><span class="lang-vi">Nam Việt — Câu chuyện Xuất khẩu Thành công (video)</span></figcaption></figure>
+        <figure><a class="video-thumb" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQCJZCZVdM13TbfPE67N0ZODAWxnxyMAVaxqJyn7Lpe-JWU?e=Hg1Cam" target="_blank" rel="noopener"><img src="assets/img/vp-conference-video.jpg" loading="lazy" alt="A Unique Opportunity for Vietnamese Suppliers — Vietnam Pavilion program video"><span class="play-tri"></span></a><figcaption><span class="lang-en">Program introduction, Alibaba.com conference (video)</span><span class="lang-vi">Giới thiệu chương trình, hội nghị Alibaba.com (video)</span></figcaption></figure>
+        <figure><a href="assets/img/vp-top100-official-doc.jpg" target="_blank" rel="noopener"><img src="assets/img/vp-top100-official-doc.jpg" loading="lazy" alt="Official VIETRADE notice — Top 100 Featured Businesses, Season 3 2026-2027"></a><figcaption><span class="lang-en">Official VIETRADE notice &amp; approved Top 100 list, Season 3 2026–2027 (click to enlarge)</span><span class="lang-vi">Công văn chính thức &amp; danh sách Top 100 được duyệt, Mùa 3 2026–2027 (nhấp để phóng to)</span></figcaption></figure>
+      </div>
+
+      <div class="impact-stats cols-4">
+        <div class="impact-tile"><div class="n">3</div><div class="l"><span class="lang-en">seasons run (2023–2026)</span><span class="lang-vi">mùa đã triển khai (2023–2026)</span></div></div>
+        <div class="impact-tile"><div class="n">370+</div><div class="l"><span class="lang-en">unique businesses across 3 seasons</span><span class="lang-vi">doanh nghiệp tham gia qua 3 mùa</span></div></div>
+        <div class="impact-tile"><div class="n">475+</div><div class="l"><span class="lang-en">media touchpoints (VN, ASEAN, EU)</span><span class="lang-vi">lượt xuất hiện truyền thông (VN, ASEAN, EU)</span></div></div>
+        <div class="impact-tile"><div class="n">10+</div><div class="l"><span class="lang-en">KOC/Success Sellers with million-dollar export revenue</span><span class="lang-vi">KOC/Success Sellers đạt doanh thu xuất khẩu hàng triệu đô</span></div></div>
+      </div>
+
+      <div class="quote-grid">
+        <div class="quote-card">
+          <div class="who">
+            <img src="assets/img/quote-vubaphu.jpg" alt="Vũ Bá Phú" loading="lazy">
+            <div>
+              <div class="name">Vũ Bá Phú</div>
+              <div class="role"><span class="lang-en">General Director, Vietnam Trade Promotion Agency, Ministry of Industry and Trade</span><span class="lang-vi">Tổng Giám đốc, Cục Xúc tiến Thương mại, Bộ Công Thương</span></div>
+            </div>
+          </div>
+          <p><span class="lang-en">"These Top Featured Businesses demonstrate digital transformation capabilities in promoting Vietnamese business globally."</span><span class="lang-vi">"Những Doanh nghiệp Tiêu biểu này thể hiện năng lực chuyển đổi số trong việc quảng bá doanh nghiệp Việt Nam ra toàn cầu."</span></p>
+        </div>
+        <div class="quote-card">
+          <div class="who">
+            <img src="assets/img/quote-hoangminhchien.jpg" alt="Hoàng Minh Chiến" loading="lazy">
+            <div>
+              <div class="name">Hoàng Minh Chiến</div>
+              <div class="role"><span class="lang-en">Vice General Director, VIETRADE, Ministry of Industry and Trade</span><span class="lang-vi">Phó Tổng Giám đốc, VIETRADE, Bộ Công Thương</span></div>
+            </div>
+          </div>
+          <p><span class="lang-en">"Digital transformation is no longer a trend but an inevitable requirement. The 'Vietnam Pavilion' initiative was created to support businesses in increasing brand awareness and expanding sustainable business cooperation."</span><span class="lang-vi">"Chuyển đổi số không còn là xu hướng mà là yêu cầu tất yếu. Sáng kiến 'Vietnam Pavilion' ra đời như một giải pháp, kỳ vọng hỗ trợ doanh nghiệp gia tăng nhận diện thương hiệu và mở rộng hợp tác kinh doanh bền vững."</span></p>
+        </div>
+      </div>
+
+      <p class="success-block">
+        <span class="lang-en"><strong>Results for beneficiaries: </strong>V.KAUS grew from a 4M VND seed to $2.5M–$3.6M via Alibaba.com. Sukavina expanded into the US, Japan and India, landing a $2.5M contract with Korea. Nam Việt reached seven-figure annual export revenue and now ships to the EU, US and Japan — alongside Nghĩa Sơn, Pima, SSR, Bambeeni, Gia Nhiên, Indochina, Hành Sanh and more.</span>
+        <span class="lang-vi"><strong>Kết quả cho doanh nghiệp: </strong>V.KAUS tăng trưởng từ 4 triệu đồng vốn khởi đầu lên $2.5M–$3.6M qua Alibaba.com. Sukavina mở rộng sang Mỹ, Nhật Bản và Ấn Độ, ký hợp đồng $2.5M với Hàn Quốc. Nam Việt đạt doanh thu xuất khẩu hàng năm hàng triệu đô và hiện xuất khẩu sang EU, Mỹ, Nhật Bản — cùng Nghĩa Sơn, Pima, SSR, Bambeeni, Gia Nhiên, Indochina, Hành Sanh và nhiều doanh nghiệp khác.</span>
+      </p>
+      <p class="press-line">
+        <span class="lang-en">Coverage from VTV, Nhân Dân, VnExpress, Tuổi Trẻ, Thanh Niên, Dân Trí, CafeF and more — plus an international wave via Media Outreach Newswire positioning the pavilion for European buyers under EVFTA.</span>
+        <span class="lang-vi">Được đưa tin bởi VTV, Nhân Dân, VnExpress, Tuổi Trẻ, Thanh Niên, Dân Trí, CafeF và nhiều cơ quan báo chí khác — cùng một đợt truyền thông quốc tế qua Media Outreach Newswire, định vị gian hàng với người mua châu Âu theo EVFTA.</span>
+      </p>
+      <div class="press-links">
+        <a href="https://e.vnexpress.net/news/business/european-businesses-explore-international-markets-through-vietnam-pavilion-4817442.html" target="_blank" rel="noopener">VnExpress International ↗</a>
+        <a href="https://cafef.vn/200-doanh-nghiep-viet-gop-mat-tai-gian-hang-quoc-gia-tren-alibabacom-188250612170338203.chn" target="_blank" rel="noopener">CafeF ↗</a>
+        <a href="https://vtv.vn/tu-tru-xuat-khau-viet-nam-tim-van-hoi-moi-tu-nhung-cu-click-chuot-100260203180737727.htm" target="_blank" rel="noopener">VTV ↗</a>
+        <a href="https://nhandan.vn/doanh-nghiep-viet-con-lep-ve-tren-san-thuong-mai-dien-tu-nuoc-ngoai-post778564.html" target="_blank" rel="noopener">Nhân Dân ↗</a>
+        <a href="https://congthuong.vn/vietnam-pavilion-dua-san-pham-viet-chinh-phuc-toan-cau-405617.html" target="_blank" rel="noopener">Công Thương ↗</a>
+        <a href="https://tuoitre.vn/nld/kinh-te/nganh-hang-nao-duoc-uu-tien-tren-gian-hang-quoc-gia-viet-nam-tai-alibabacom-20231122182702863.htm" target="_blank" rel="noopener">Tuổi Trẻ ↗</a>
+      </div>
+    </article>
+
+    <!-- KEL Award -->
+    <article class="case">
+      <span class="case-tag">Key E-Commerce Leader Award · South &amp; Southeast Asia · 2024</span>
+      <h3 class="case-title">KEL Award — Vietnam &amp; APAC Grand Finale</h3>
+
+      <div class="case-cover"><img src="assets/img/kel-poster.jpg" alt="KEL Award Grand Finale" loading="lazy"></div>
+
+      <div class="role-callout">
+        <div class="rc-mark">&#8220;</div>
+        <div>
+          <span class="rc-label"><span class="lang-en">My Role</span><span class="lang-vi">Vai Trò Của Tôi</span></span>
+          <p><span class="lang-en">Conceived and led the Key E-commerce Leader (KEL) Award for Alibaba.com — from the Vietnam launch and country finale through to the regional Grand Finale in Ho Chi Minh City, with finalists from 6 countries. Mandated by the Regional Marketing Director to direct the event end-to-end, coordinating marketing personnel across participating countries and holding final sign-off on all content. Co-wrote keynote speeches for two VIP Alibaba.com leaders.</span><span class="lang-vi">Khởi xướng và dẫn dắt Giải thưởng Key E-commerce Leader (KEL) cho Alibaba.com — từ lễ phát động tại Việt Nam, chung kết quốc gia, đến Chung kết Khu vực tại TP.HCM với thí sinh từ 6 quốc gia. Được Giám đốc Marketing Khu vực ủy quyền chỉ đạo toàn bộ sự kiện, điều phối nhân sự marketing giữa các nước tham gia và phê duyệt toàn bộ nội dung. Đồng biên soạn bài phát biểu khai mạc cho hai lãnh đạo cấp cao của Alibaba.com.</span></p>
+        </div>
+      </div>
+
+      <div class="season-rows">
+        <div class="season-row">
+          <div class="s-body">
+            <div class="s-name">Jul 2024</div>
+            <div class="s-date"><span class="lang-en">Launch</span><span class="lang-vi">Phát động</span></div>
+            <p><span class="lang-en">National launch announcement via press release.</span><span class="lang-vi">Công bố phát động toàn quốc qua thông cáo báo chí.</span></p>
+          </div>
+          <a class="s-thumb" href="assets/img/kel-press-collage.jpg" target="_blank" rel="noopener"><img src="assets/img/kel-press-collage.jpg" loading="lazy" alt="Press coverage of KEL Award launch, Tuổi Trẻ Pháp Luật &amp; Sài Gòn Giải Phóng"></a>
+        </div>
+        <div class="season-row">
+          <div class="s-body">
+            <div class="s-name">Aug 2024</div>
+            <div class="s-date"><span class="lang-en">Vietnam Finale</span><span class="lang-vi">Chung kết Việt Nam</span></div>
+            <p><span class="lang-en">Country-level finale with 6 Vietnam contestants, selected from 20+ applicants. 3 became Top Vietnam Key E-commerce Leaders.</span><span class="lang-vi">Chung kết cấp quốc gia với 6 thí sinh Việt Nam, được chọn từ hơn 20 hồ sơ ứng tuyển. 3 thí sinh trở thành Top Vietnam Key E-commerce Leaders.</span></p>
+          </div>
+          <a class="s-thumb" href="assets/img/kel-vn-finale.jpg" target="_blank" rel="noopener"><img src="assets/img/kel-vn-finale.jpg" loading="lazy" alt="Vietnam Finale event, KEL Award"></a>
+        </div>
+        <div class="season-row">
+          <div class="s-body">
+            <div class="s-name">14 Nov 2024</div>
+            <div class="s-date"><span class="lang-en">APAC Grand Finale</span><span class="lang-vi">Chung kết Khu vực</span></div>
+            <p><span class="lang-en">The Reverie Saigon. 10 finalists, 3 award categories — India, Pakistan, Vietnam, Thailand, Indonesia &amp; Malaysia.</span><span class="lang-vi">The Reverie Saigon. 10 thí sinh, 3 hạng mục giải thưởng — Ấn Độ, Pakistan, Việt Nam, Thái Lan, Indonesia &amp; Malaysia.</span></p>
+          </div>
+          <a class="s-thumb" href="assets/img/kel-audience.jpg" target="_blank" rel="noopener"><img src="assets/img/kel-audience.jpg" loading="lazy" alt="APAC Grand Finale audience, The Reverie Saigon"></a>
+        </div>
+      </div>
+
+      <div class="impact-stats cols-6">
+        <div class="impact-tile"><div class="n">400+</div><div class="l"><span class="lang-en">offline event attendees</span><span class="lang-vi">khách mời tham dự trực tiếp</span></div></div>
+        <div class="impact-tile"><div class="n">250+</div><div class="l"><span class="lang-en">applicants from 6 countries across APAC-S</span><span class="lang-vi">hồ sơ từ 6 quốc gia trong khu vực APAC-S</span></div></div>
+        <div class="impact-tile"><div class="n">149+</div><div class="l"><span class="lang-en">earned media (Vietnam)</span><span class="lang-vi">lượt báo chí (Việt Nam)</span></div></div>
+        <div class="impact-tile"><div class="n">594K+</div><div class="l"><span class="lang-en">livestream unique views</span><span class="lang-vi">lượt xem duy nhất qua livestream</span></div></div>
+        <div class="impact-tile"><div class="n">107K+</div><div class="l"><span class="lang-en">views outside Vietnam</span><span class="lang-vi">lượt xem ngoài Việt Nam</span></div></div>
+        <div class="impact-tile"><div class="n">2.3K</div><div class="l"><span class="lang-en">peak concurrent livestream viewers on VnExpress.net</span><span class="lang-vi">người xem trực tuyến cùng lúc cao điểm trên VnExpress.net</span></div></div>
+      </div>
+
+      <div class="gallery">
+        <figure><a class="video-thumb" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQDufcRswp6qT7wLIA2JLhOeAaEtCmT1eBowanPELknzsrc?e=D95nsw" target="_blank" rel="noopener"><img src="assets/img/kel-audience.jpg" loading="lazy" alt="KEL Award APAC Grand Finale recap video"><span class="play-tri"></span></a><figcaption><span class="lang-en">Event recap video, KEL APAC Grand Finale</span><span class="lang-vi">Video tổng kết sự kiện, KEL APAC Grand Finale</span></figcaption></figure>
+        <figure><img src="assets/img/kel-top10.jpg" loading="lazy" alt="Top 10 KEL finalists"><figcaption><span class="lang-en">Top 10 finalists, South &amp; Southeast Asia</span><span class="lang-vi">Top 10 thí sinh, Nam &amp; Đông Nam Á</span></figcaption></figure>
+        <figure><img src="assets/img/kel-jury.jpg" loading="lazy" alt="Elite jury"><figcaption><span class="lang-en">Jury included a KOL/TikToker, 1M+ followers</span><span class="lang-vi">Ban giám khảo có KOL/TikToker hơn 1 triệu người theo dõi</span></figcaption></figure>
+        <figure><a href="assets/img/kel-recap-infographic.jpg" target="_blank" rel="noopener"><img src="assets/img/kel-recap-infographic.jpg" loading="lazy" alt="KEL Award Grand Finale recap infographic"></a><figcaption><span class="lang-en">Full event recap — stats, ambassadors &amp; category winners (click to enlarge)</span><span class="lang-vi">Tổng kết sự kiện — số liệu, đại sứ &amp; người thắng giải (bấm để phóng to)</span></figcaption></figure>
+      </div>
+    </article>
+
+    <!-- IMC / content production -->
+    <article class="case">
+      <span class="case-tag"><span class="lang-en">Integrated Marketing Communications · Creative Production</span><span class="lang-vi">Truyền thông Tích hợp (IMC) · Sản xuất Nội dung</span></span>
+      <h3 class="case-title"><span class="lang-en">Storytelling that closes the loop</span><span class="lang-vi">Kể chuyện thương hiệu đến cùng</span></h3>
+      <p class="case-narrative">
+        <span class="lang-en">Strategy needs a voice. Across these programs I was a direct contributor to video and content production — creative concept, storyboard, copywriting, shoot oversight and final review — not just the brief behind it.</span>
+        <span class="lang-vi">Chiến lược cần một tiếng nói. Trong các chương trình này, tôi trực tiếp tham gia sản xuất video và nội dung — ý tưởng sáng tạo, storyboard, viết lời, giám sát quay hình và duyệt bản dựng cuối — không chỉ là người đưa ra brief.</span>
+      </p>
+      <div class="imc-grid">
+        <div class="imc-item">
+          <a class="video-thumb" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQAUYsG4F7ShTJR8TnzfzdiNAeAff0dJ2VT0cerfPt8utvE?e=aLCCTc" target="_blank" rel="noopener"><img src="assets/img/imc-metrang.jpg" loading="lazy" alt="Outstanding Vietnam branding"><span class="play-tri"></span></a>
+          <div class="body">
+            <h4><span class="lang-en">Branding — "Outstanding Vietnam"</span><span class="lang-vi">Thương hiệu — "Outstanding Vietnam"</span></h4>
+            <p><span class="lang-en">Full production: creative concept, storyboard, copywriting, final review.</span><span class="lang-vi">Toàn bộ quy trình: ý tưởng sáng tạo, storyboard, viết lời, duyệt bản dựng cuối.</span></p>
+          </div>
+        </div>
+        <div class="imc-item">
+          <a class="video-thumb" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQD45JL0fNyqTpwpVY3N6km5AefRjk3h03onvJLBazTHmEg?e=EmuqxT" target="_blank" rel="noopener"><img src="assets/img/imc-pima.jpg" loading="lazy" alt="PIMA"><span class="play-tri"></span></a>
+          <div class="body">
+            <h4>PIMA — <span class="lang-en">"The Very Vietnam Route"</span><span class="lang-vi">"Con đường rất Việt Nam"</span></h4>
+            <p><span class="lang-en">Key contributor: concept brainstorm, client/actor alignment, shoot oversight, music &amp; copy direction, final review.</span><span class="lang-vi">Đóng góp then chốt: brainstorm ý tưởng, thống nhất với khách hàng &amp; diễn viên, giám sát quay hình, định hướng âm nhạc &amp; lời thoại, duyệt bản dựng cuối.</span></p>
+          </div>
+        </div>
+        <div class="imc-item">
+          <a class="video-thumb" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQAjTEWfbgvrRZYzvKGywJoIAWWlgG9sW53JUa0CagMeFNk?e=HafiHQ" target="_blank" rel="noopener"><img src="assets/img/imc-nghiason.jpg" loading="lazy" alt="Nghia Son Furniture"><span class="play-tri"></span></a>
+          <div class="body">
+            <h4>Nghĩa Sơn Furniture — <span class="lang-en">"Success Doesn't Come by Chance"</span><span class="lang-vi">"Thành công không đến từ sự ngẫu nhiên"</span></h4>
+            <p><span class="lang-en">Full production: creative concept, storyboard, copywriting, shoot oversight, final review.</span><span class="lang-vi">Toàn bộ quy trình: ý tưởng sáng tạo, storyboard, viết lời, giám sát quay hình, duyệt bản dựng cuối.</span></p>
+          </div>
+        </div>
+        <div class="imc-item">
+          <a class="video-thumb" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQBL0ds6wClxQYevSk_Up49kAWaRWiPu3wP6zLeC0YTfuJ8?e=SZbetD" target="_blank" rel="noopener"><img src="assets/img/imc-outstanding-vn.jpg" loading="lazy" alt="Mê Trang Coffee"><span class="play-tri"></span></a>
+          <div class="body">
+            <h4>Mê Trang Coffee — <span class="lang-en">"Ambition to Bring Vietnamese Coffee to the World"</span><span class="lang-vi">"Khát vọng đưa cà phê Việt ra thế giới"</span></h4>
+            <p><span class="lang-en">Full production: creative concept, storyboard, copywriting, shoot oversight, final review.</span><span class="lang-vi">Toàn bộ quy trình: ý tưởng sáng tạo, storyboard, viết lời, giám sát quay hình, duyệt bản dựng cuối.</span></p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ITC SheTrades -->
+    <article class="case">
+      <span class="case-tag">ITC SheTrades × Government of the Netherlands · 2023–2025</span>
+      <h3 class="case-title"><span class="lang-en">Opening export access for women-owned businesses</span><span class="lang-vi">Mở cánh cửa xuất khẩu cho doanh nghiệp do phụ nữ làm chủ</span></h3>
+      <p class="case-narrative">
+        <span class="lang-en">Introduced Alibaba.com's B2B e-commerce solutions to the International Trade Centre's SheTrades team — a joint UN/WTO agency — leading to a government-funded market-access program (2024–2025) for women-owned Vietnamese businesses.</span>
+        <span class="lang-vi">Giới thiệu giải pháp thương mại điện tử B2B của Alibaba.com tới đội ngũ SheTrades của Trung tâm Thương mại Quốc tế (ITC) — cơ quan liên kết Liên Hợp Quốc/WTO — dẫn đến một chương trình tiếp cận thị trường được chính phủ tài trợ (2024–2025) dành cho doanh nghiệp Việt Nam do phụ nữ làm chủ.</span>
+      </p>
+
+      <div class="gallery">
+        <figure><img src="assets/img/itc-panel-discussion.jpg" loading="lazy" alt="Panel discussion"><figcaption><span class="lang-en">Panel — women in digital trade, 2024</span><span class="lang-vi">Tọa đàm — phụ nữ trong thương mại số, 2024</span></figcaption></figure>
+        <figure><img src="assets/img/itc-conference-room.jpg" loading="lazy" alt="Closing conference"><figcaption><span class="lang-en">Closing conference, Nov 2025</span><span class="lang-vi">Hội nghị tổng kết, 11/2025</span></figcaption></figure>
+        <figure><img src="assets/img/itc-global-panel.jpg" loading="lazy" alt="Panel: From Local Roots to Global Reach in the Digital Economy"><figcaption><span class="lang-en">Keynote speaker &amp; panelist, "From Local Roots to Global Reach in the Digital Economy"</span><span class="lang-vi">Diễn giả chính &amp; tọa đàm, "Từ địa phương đến vươn tầm toàn cầu trong nền kinh tế số"</span></figcaption></figure>
+        <figure><img src="assets/img/itc-group-award.jpg" loading="lazy" alt="With representatives of the Government of the Netherlands, Vietnam Trade Promotion Agency, ITC, SheTrades and OSB"><figcaption><span class="lang-en">With representatives of the Government of the Netherlands, Vietnam Trade Promotion Agency (under the Ministry of Industry and Trade), ITC, SheTrades and OSB</span><span class="lang-vi">Cùng đại diện Chính phủ Hà Lan, Cục Xúc tiến Thương mại Việt Nam (thuộc Bộ Công Thương), ITC, SheTrades và OSB</span></figcaption></figure>
+      </div>
+
+      <div class="season-grid">
+        <div class="season"><div class="s-name">Sep 2023</div><div class="s-date">&nbsp;</div><p><span class="lang-en">First presentation to ITC SheTrades on Alibaba.com's B2B solutions and market-access opportunities, backed by market data.</span><span class="lang-vi">Buổi trình bày đầu tiên với ITC SheTrades về giải pháp B2B của Alibaba.com và cơ hội tiếp cận thị trường xuất khẩu.</span></p></div>
+        <div class="season"><div class="s-name">Nov 2024</div><div class="s-date">&nbsp;</div><p><span class="lang-en">Official event introducing the Alibaba.com solution alongside the Government of the Netherlands funding announcement.</span><span class="lang-vi">Sự kiện chính thức giới thiệu giải pháp Alibaba.com cùng thông báo tài trợ từ Chính phủ Hà Lan.</span></p></div>
+        <div class="season"><div class="s-name">Apr 2025 – Nov 2025</div><div class="s-date">&nbsp;</div><p><span class="lang-en">Funding approved for 32 businesses (Apr); invited back as keynote speaker at the program's closing conference (Nov).</span><span class="lang-vi">Tài trợ được phê duyệt cho 32 doanh nghiệp (4/2025); được mời quay lại làm diễn giả chính tại hội nghị tổng kết (11/2025).</span></p></div>
+      </div>
+
+      <div class="impact-stats itc-impact" style="grid-template-columns:1fr;">
+        <div class="impact-tile"><div class="n">32</div><div class="l"><span class="lang-en">women-owned Vietnamese businesses funded by the Government of the Netherlands and ITC SheTrades to open accounts on Alibaba.com</span><span class="lang-vi">doanh nghiệp Việt Nam do phụ nữ làm chủ được Chính phủ Hà Lan và ITC SheTrades tài trợ mở gian hàng trên Alibaba.com</span></div></div>
+      </div>
+    </article>
+
+    <!-- IBM Think ASEAN -->
+    <article class="case">
+      <span class="case-tag">Regional Demand-Generation Flagship · IBM ASEAN · 2021</span>
+      <h3 class="case-title">IBM Think ASEAN 2021</h3>
+      <div class="case-cover"><img src="assets/img/ibm-think-collage.jpg" alt="IBM Think ASEAN 2021" loading="lazy"></div>
+      <div class="role-callout">
+        <div class="rc-mark">&#8220;</div>
+        <div>
+          <span class="rc-label"><span class="lang-en">My Role</span><span class="lang-vi">Vai Trò Của Tôi</span></span>
+          <p><span class="lang-en">As Regional Project Owner, appointed by the Regional Marketing Director, I coordinated execution with IBM Worldwide across every track — online and onsite — owning the full lifecycle from pre-event planning through live delivery to post-event follow-through. I tracked progress, unblocked issues, and assigned tasks across country teams, driving targets for attendance, guest experience and post-event pipeline.</span><span class="lang-vi">Với vai trò Chủ nhiệm Dự án Khu vực, được Giám đốc Marketing Khu vực bổ nhiệm, tôi điều phối triển khai cùng IBM Worldwide trên mọi hạng mục — trực tuyến và trực tiếp — phụ trách toàn bộ vòng đời sự kiện từ chuẩn bị, triển khai, đến theo dõi sau sự kiện. Tôi theo dõi tiến độ, tháo gỡ vướng mắc, và phân bổ công việc cho các đội nhóm từng quốc gia — thúc đẩy chỉ tiêu về lượng tham dự, trải nghiệm khách mời và pipeline sau sự kiện.</span></p>
+        </div>
+      </div>
+      <div class="impact-stats cols-4">
+        <div class="impact-tile"><div class="n">2,572</div><div class="l"><span class="lang-en">attendees ASEAN-wide</span><span class="lang-vi">người tham dự toàn ASEAN</span></div></div>
+        <div class="impact-tile"><div class="n">248%</div><div class="l"><span class="lang-en">of customer attendance target</span><span class="lang-vi">so với chỉ tiêu lượng khách hàng tham dự</span></div></div>
+        <div class="impact-tile"><div class="n">304%</div><div class="l"><span class="lang-en">of business partner attendance target</span><span class="lang-vi">so với chỉ tiêu lượng đối tác kinh doanh tham dự</span></div></div>
+        <div class="impact-tile"><div class="n">163%</div><div class="l"><span class="lang-en">pipeline achievement within 6 months post-event</span><span class="lang-vi">hiệu suất pipeline đạt được trong 6 tháng sau sự kiện</span></div></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section section-white" id="thought-leadership">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="lang-en">Network &amp; Thought Leadership</span><span class="lang-vi">Mạng lưới &amp; Chia sẻ chuyên môn</span></span>
+      <h2 class="h2"><span class="lang-en">A trusted voice — from ministries to the classroom</span><span class="lang-vi">Tiếng nói uy tín — từ bộ ngành đến giảng đường</span></h2>
+  <p class="lede-2"><span class="lang-en">Official spokesperson and lead liaison across government agencies, trade &amp; industry associations, financial institutions, NGOs, foreign consulates and academic institutions — built over 20 years at Alibaba.com Vietnam, IBM Vietnam and Masso Group.</span><span class="lang-vi">Người phát ngôn chính thức và đầu mối liên hệ với các cơ quan chính phủ, hiệp hội thương mại &amp; ngành, tổ chức tài chính, tổ chức phi chính phủ, lãnh sự quán nước ngoài và các cơ sở học thuật — xây dựng qua 20 năm tại Alibaba.com Việt Nam, IBM Việt Nam và Masso Group.</span></p>
+    </div>
+
+    <div class="tl-block">
+      <h3 class="tl-title"><span class="lang-en">Government, Institutional &amp; Industry Network</span><span class="lang-vi">Mạng lưới Quan hệ Chính phủ &amp; Tổ chức</span></h3>
+
+      <div class="net-label"><span class="lang-en">Government Agencies &amp; Ministries</span><span class="lang-vi">Cơ quan Chính phủ &amp; Bộ ngành</span></div>
+      <div class="chip-group">
+        <span class="chip">MOIT — <span class="lang-en">Ministry of Industry and Trade</span><span class="lang-vi">Bộ Công Thương</span></span>
+        <span class="chip">VIETRADE — <span class="lang-en">Vietnam Trade Promotion Agency</span><span class="lang-vi">Cục Xúc tiến Thương mại</span></span>
+        <span class="chip">IDEA — <span class="lang-en">Vietnam E-commerce &amp; Digital Economy Agency</span><span class="lang-vi">Cục Thương mại điện tử &amp; Kinh tế số</span></span>
+        <span class="chip">MOST — <span class="lang-en">Ministry of Science &amp; Technology</span><span class="lang-vi">Bộ Khoa học &amp; Công nghệ</span></span>
+        <span class="chip">MOAE — <span class="lang-en">Ministry of Agriculture &amp; Environment</span><span class="lang-vi">Bộ Nông nghiệp &amp; Môi trường</span></span>
+        <span class="chip">MOF — <span class="lang-en">Ministry of Finance</span><span class="lang-vi">Bộ Tài chính</span></span>
+        <span class="chip">DOIT — <span class="lang-en">Department of Industry and Trade</span><span class="lang-vi">Sở Công Thương</span></span>
+        <span class="chip"><span class="lang-en">HCMC Dept. of Planning &amp; Investment</span><span class="lang-vi">Sở Kế hoạch &amp; Đầu tư TP.HCM</span></span>
+      </div>
+
+      <div class="net-label"><span class="lang-en">Trade &amp; Industry Associations</span><span class="lang-vi">Hiệp hội Thương mại &amp; Ngành</span></div>
+      <div class="chip-group">
+        <span class="chip">VCCI — <span class="lang-en">Vietnam Chamber of Commerce &amp; Industry</span><span class="lang-vi">Phòng Thương mại &amp; Công nghiệp Việt Nam</span></span>
+        <span class="chip">VECOM — <span class="lang-en">Vietnam E-commerce Association</span><span class="lang-vi">Hiệp hội Thương mại điện tử Việt Nam</span></span>
+        <span class="chip">HAWA — <span class="lang-en">Handicraft &amp; Wood Industry Association</span><span class="lang-vi">Hội Mỹ nghệ &amp; Chế biến gỗ</span></span>
+        <span class="chip">ITPC — <span class="lang-en">Investment &amp; Trade Promotion Centre</span><span class="lang-vi">Trung tâm Xúc tiến Thương mại &amp; Đầu tư</span></span>
+        <span class="chip">VINASA — <span class="lang-en">Vietnam Software &amp; IT Services Association</span><span class="lang-vi">Hiệp hội Phần mềm &amp; CNTT Việt Nam</span></span>
+        <span class="chip">VNISA — <span class="lang-en">Vietnam Information Security Association</span><span class="lang-vi">Hiệp hội An toàn Thông tin Việt Nam</span></span>
+        <span class="chip">CIO Vietnam</span>
+        <span class="chip">CSMO Vietnam</span>
+      </div>
+
+      <div class="net-label"><span class="lang-en">Financial Institutions</span><span class="lang-vi">Tổ chức Tài chính</span></div>
+      <div class="chip-group">
+        <span class="chip">UOB</span>
+        <span class="chip">HD Capital</span>
+      </div>
+
+      <div class="net-label"><span class="lang-en">NGOs &amp; International Organizations</span><span class="lang-vi">Tổ chức Phi chính phủ &amp; Quốc tế</span></div>
+      <div class="chip-group">
+        <span class="chip">APO — <span class="lang-en">Asian Productivity Organization</span><span class="lang-vi">Tổ chức Năng suất Châu Á</span></span>
+        <span class="chip">ITC SheTrades — <span class="lang-en">International Trade Centre (UN/WTO)</span><span class="lang-vi">Trung tâm Thương mại Quốc tế (UN/WTO)</span></span>
+      </div>
+
+      <div class="net-label"><span class="lang-en">Foreign Consulates &amp; Diplomatic</span><span class="lang-vi">Lãnh sự quán &amp; Ngoại giao</span></div>
+      <div class="chip-group">
+        <span class="chip"><span class="lang-en">Consulate of the Netherlands</span><span class="lang-vi">Lãnh sự quán Hà Lan</span></span>
+        <span class="chip"><span class="lang-en">Consulate of Russia (Moscow)</span><span class="lang-vi">Lãnh sự quán Nga (Moscow)</span></span>
+        <span class="chip"><span class="lang-en">Consulate of China</span><span class="lang-vi">Lãnh sự quán Trung Quốc</span></span>
+      </div>
+
+      <div class="net-label"><span class="lang-en">Academic Institutions</span><span class="lang-vi">Cơ sở Học thuật</span></div>
+      <div class="chip-group">
+        <span class="chip">FPT University</span>
+        <span class="chip">NTTU — <span class="lang-en">Nguyen Tat Thanh University</span><span class="lang-vi">Đại học Nguyễn Tất Thành</span></span>
+        <span class="chip"><span class="lang-en">Hanoi College of Commerce</span><span class="lang-vi">Trường Cao đẳng Thương mại Hà Nội</span></span>
+      </div>
+
+      <div class="speaking-gallery" style="margin-top:36px;">
+        <figure><img src="assets/img/speak-10.jpg" loading="lazy" alt="With VIETRADE, Vietnam Pavilion partnership"><figcaption><span class="lang-en">With VIETRADE — Vietnam Pavilion partnership</span><span class="lang-vi">Cùng VIETRADE — hợp tác dự án Vietnam Pavilion</span></figcaption></figure>
+        <figure><img src="assets/img/speak-11.jpg" loading="lazy" alt="Hosting the APO delegation on AI and technology in business operations"><figcaption><span class="lang-en">Hosting the APO delegation — AI &amp; technology in business operations</span><span class="lang-vi">Đón tiếp đoàn APO — trao đổi công nghệ &amp; ứng dụng AI trong vận hành kinh doanh</span></figcaption></figure>
+        <figure><img src="assets/img/speak-12.jpg" loading="lazy" alt="ITC SheTrades and Kingdom of the Netherlands closing event"><figcaption><span class="lang-en">ITC SheTrades &amp; Kingdom of the Netherlands — closing event, 32 women-owned businesses onboarded to Alibaba.com</span><span class="lang-vi">ITC SheTrades &amp; Chính phủ Hà Lan — tổng kết hợp tác, hỗ trợ 32 doanh nghiệp nữ chủ tham gia Alibaba.com</span></figcaption></figure>
+        <figure><img src="assets/img/speak-13.jpg" loading="lazy" alt="E-commerce talk at Hanoi College of Commerce and Tourism"><figcaption><span class="lang-en">E-commerce talk — Hanoi College of Commerce &amp; Tourism, with the Hanoi Young Entrepreneurs Association</span><span class="lang-vi">Chia sẻ về Thương mại điện tử — Cao đẳng Thương mại &amp; Du lịch Hà Nội, cùng Hội DN Trẻ Hà Nội</span></figcaption></figure>
+      </div>
+
+      <div class="net-label" style="margin-top:36px;"><span class="lang-en">Speaking &amp; Events</span><span class="lang-vi">Diễn giả &amp; Sự kiện</span></div>
+      <div class="speaking-gallery">
+        <figure class="more"><img src="assets/img/speak-01.jpg" loading="lazy" alt="Trade Assurance workshop"><figcaption><span class="lang-en">Trade Assurance workshop, Alibaba.com</span><span class="lang-vi">Hội thảo Trade Assurance, Alibaba.com</span></figcaption></figure>
+        <figure class="more"><img src="assets/img/speak-02.jpg" loading="lazy" alt="VTV1 panel discussion"><figcaption><span class="lang-en">Vietnam Pavilion coverage, VTV1</span><span class="lang-vi">Đưa tin về Vietnam Pavilion, VTV1</span></figcaption></figure>
+        <figure><img src="assets/img/speak-03.jpg" loading="lazy" alt="Keynote on export promotion to the EU market via e-commerce"><figcaption><span class="lang-en">Keynote — Export Promotion to the EU Market through E-commerce — Melia Hanoi</span><span class="lang-vi">Diễn giả chính — Xúc tiến Xuất khẩu vào Thị trường EU qua Thương mại điện tử — Melia Hà Nội</span></figcaption></figure>
+        <figure><img src="assets/img/speak-04.jpg" loading="lazy" alt="Speaking at MOIT trade promotion conference, Lao Cai"><figcaption><span class="lang-en">MOIT Trade &amp; Export Promotion Conference — Lào Cai</span><span class="lang-vi">Hội nghị Xúc tiến Thương mại &amp; Xuất nhập khẩu — Lào Cai (MOIT)</span></figcaption></figure>
+        <figure><img src="assets/img/speak-05.jpg" loading="lazy" alt="Briefing with Ministry of Industry and Trade"><figcaption><span class="lang-en">Sharing e-commerce export trends with MOIT and Vietnam's Trade Counselors across 140+ countries</span><span class="lang-vi">Chia sẻ xu hướng xuất khẩu qua thương mại điện tử cùng Bộ Công Thương và các Tham tán Thương mại Việt Nam tại hơn 140 quốc gia</span></figcaption></figure>
+        <figure><img src="assets/img/speak-06.jpg" loading="lazy" alt="Speaking at E-commerce Trends 2026 conference, Hanoi"><figcaption><span class="lang-en">Speaker, "E-commerce Trends 2026" — Hanoi</span><span class="lang-vi">Diễn giả, "Xu hướng Thương mại Điện tử 2026" — Hà Nội</span></figcaption></figure>
+        <figure class="more"><img src="assets/img/speak-08.jpg" loading="lazy" alt="TV panel discussion, Cong Thuong Magazine"><figcaption><span class="lang-en">TV panel discussion, Công Thương Magazine</span><span class="lang-vi">Tọa đàm truyền hình, Tạp chí Công Thương</span></figcaption></figure>
+        <figure class="more"><img src="assets/img/speak-09.jpg" loading="lazy" alt="Presenting global trade outlook"><figcaption><span class="lang-en">Global Trade Outlook data, sharing at Autumn Festive 2025 — Hanoi</span><span class="lang-vi">Dữ liệu Triển vọng Thương mại Toàn cầu, chia sẻ tại Autumn Festive 2025 — Hà Nội</span></figcaption></figure>
+        <figure><img src="assets/img/speak-14.jpg" loading="lazy" alt="Speaking at UOB Digital Gateway to Global Markets conference"><figcaption><span class="lang-en">Speaker, "Digital Gateway to Global Markets" — UOB</span><span class="lang-vi">Diễn giả, "Digital Gateway to Global Markets" — UOB</span></figcaption></figure>
+        <figure><img src="assets/img/speak-15.jpg" loading="lazy" alt="TV panel discussion on building the Food and Beverage brand, VTV1, Vietnam National Brand Program 2025"><figcaption><span class="lang-en">TV panel discussion, "Building the Food &amp; Beverage Brand" — Vietnam National Brand Program 2025, VTV1</span><span class="lang-vi">Tọa đàm truyền hình, "Xây dựng Thương hiệu ngành Thực phẩm - Đồ uống" — Chương trình Thương hiệu Quốc gia Việt Nam 2025, VTV1</span></figcaption></figure>
+        <figure><img src="assets/img/speak-16.jpg" loading="lazy" alt="Keynote speaker and panelist, B2B E-commerce talk show, VOV"><figcaption><span class="lang-en">Keynote speaker &amp; panelist, "B2B E-commerce: New Opportunities for SMEs" — VOV</span><span class="lang-vi">Diễn giả chính &amp; tọa đàm, "Thương mại điện tử B2B: Cơ hội mới cho doanh nghiệp SMEs" — VOV</span></figcaption></figure>
+        <figure><img src="assets/img/speak-17.jpg" loading="lazy" alt="Speaking at Export Experts Day 2026"><figcaption><span class="lang-en">Speaking at "Export Experts Day 2026" — an event concept I developed</span><span class="lang-vi">Trình bày tại "Ngày hội Chuyên gia Xuất khẩu 2026" — concept sự kiện do tôi phát triển</span></figcaption></figure>
+      </div>
+      <button type="button" class="more-toggle" id="speakMore" aria-expanded="false">
+        <span class="when-closed"><span class="lang-en">View more photos (4)</span><span class="lang-vi">Xem thêm ảnh (4)</span></span>
+        <span class="when-open"><span class="lang-en">Show fewer</span><span class="lang-vi">Thu gọn</span></span>
+      </button>
+    </div>
+
+    <div class="tl-block">
+      <h3 class="tl-title"><span class="lang-en">Teaching &amp; Writing</span><span class="lang-vi">Giảng dạy &amp; Viết bài</span></h3>
+    <div class="teach-grid">
+      <div class="teach-card">
+        <h4><span class="lang-en">Guest Lecturer — Event Management, Digital Marketing &amp; E-commerce</span><span class="lang-vi">Giảng viên thỉnh giảng — Quản lý Sự kiện, Digital Marketing &amp; Thương mại điện tử</span></h4>
+        <div class="org">NTT University (Nguyễn Tất Thành University) · 2023–<span class="lang-en">Present</span><span class="lang-vi">Nay</span></div>
+        <p><span class="lang-en">Teaching Event Management, Digital Marketing, and E-commerce &amp; eMarketing to 300+ students since 2023.</span><span class="lang-vi">Giảng dạy các môn Quản lý Sự kiện, Digital Marketing, và Thương mại điện tử &amp; eMarketing cho hơn 300 sinh viên từ năm 2023 đến nay.</span></p>
+      </div>
+    </div>
+
+    <article class="lens-card">
+      <div class="lens-media">
+        <a class="lens-img-link" href="https://www.linkedin.com/pulse/market-lens-september-2026-viet-nam-from-frontier-emerging-nguyen-zoqmc/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/market-lens.jpg" alt="Market Lens — Beyond headlines, signals that quietly shape what comes next" loading="lazy">
+        </a>
+        <a class="btn btn-lens" href="https://www.linkedin.com/pulse/market-lens-september-2026-viet-nam-from-frontier-emerging-nguyen-zoqmc/" target="_blank" rel="noopener"><span class="lang-en">Read on LinkedIn ↗</span><span class="lang-vi">Đọc trên LinkedIn ↗</span></a>
+      </div>
+      <div class="lens-body">
+        <span class="lens-eyebrow"><span class="lang-en">Thought Leadership · LinkedIn</span><span class="lang-vi">Chia sẻ chuyên môn · LinkedIn</span></span>
+        <h3 class="lens-title">Market Lens</h3>
+        <p class="lens-tagline">Beyond headlines, signals that quietly shape what comes next.</p>
+        <p class="lens-desc"><span class="lang-en">An article series I write to keep sharpening my own read of the market — looking past the news to the trade, economic and consumer signals shaping Vietnam and the region.</span><span class="lang-vi">Chuỗi bài viết tôi thực hiện để không ngừng mở rộng kiến thức và rèn luyện góc nhìn thị trường — vượt qua tin tức bề mặt để đọc những tín hiệu thương mại, kinh tế và tiêu dùng đang định hình Việt Nam và khu vực.</span></p>
+        <div class="lens-latest">
+          <span class="k"><span class="lang-en">Latest issue</span><span class="lang-vi">Bài mới nhất</span></span>
+          <span class="v">September 2026 — Viet Nam: From Frontier to Emerging</span>
+        </div>
+      </div>
+    </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream" id="advisory">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="lang-en">Advisory</span><span class="lang-vi">Tư vấn &amp; Đào tạo</span></span>
+      <h2 class="h2"><span class="lang-en">IMC, Branding and Training — project by project</span><span class="lang-vi">IMC, thương hiệu &amp; đào tạo — theo từng dự án</span></h2>
+      <p class="lede-2"><span class="lang-en">Outside employed roles, I take on IMC projects and creative concepts, brand identity &amp; strategy engagements, and marketing training — from building a brand identity from zero to running a workshop for your team.</span><span class="lang-vi">Bên cạnh các vai trò toàn thời gian, tôi nhận các dự án IMC và concept sáng tạo, tư vấn nhận diện &amp; chiến lược thương hiệu, và đào tạo marketing — từ xây dựng bộ nhận diện thương hiệu từ con số 0 đến tổ chức workshop cho đội ngũ của bạn.</span></p>
+    </div>
+
+    <div class="consult-grid">
+      <div class="consult-card">
+        <h4>LHC — <span class="lang-en">Long Hậu Industrial Park</span><span class="lang-vi">Khu Công nghiệp Long Hậu</span> <span style="font-weight:400; color:var(--text-muted); font-size:0.8em;">(2008)</span></h4>
+        <div class="consult-logo"><img src="assets/img/lhc-logo.png" loading="lazy" alt="LHC — Long Hậu Industrial Park logo, original design"></div>
+        <div class="consult-logo-caption"><span class="lang-en">Original logo design, 2008</span><span class="lang-vi">Thiết kế logo gốc, 2008</span></div>
+        <div class="slogan"><span class="slogan-label"><span class="lang-en">Slogan: </span><span class="lang-vi">Slogan: </span></span>"Partner in Success"</div>
+        <p><span class="lang-en">A 3-month engagement grounded in qualitative research — 2 one-on-one in-depth interviews with the Chairman and the CEO, 3 rapid interviews with LHC customers, and a quick internal survey of key staff on core values and brand colors — to define brand personality and the mission, vision &amp; core values. Delivered the full Verbal Brand Identity (mission, vision, core values, slogan and positioning statement) alongside a 21-item Graphic Brand Identity system — logo, letterhead, namecard, billboard, website layout and more.</span><span class="lang-vi">Dự án tư vấn kéo dài 3 tháng, dựa trên nghiên cứu định tính — 2 buổi phỏng vấn sâu 1-1 với Chủ tịch HĐQT và CEO, 3 phỏng vấn nhanh với khách hàng của LHC, và một khảo sát nhanh nội bộ với nhân sự chủ chốt về giá trị cốt lõi và màu sắc thương hiệu — để xác định brand personality và bộ sứ mệnh, tầm nhìn &amp; giá trị cốt lõi. Xây dựng trọn bộ Verbal Brand Identity (sứ mệnh, tầm nhìn, giá trị cốt lõi, slogan và positioning statement) cùng bộ 21 hạng mục Graphic Brand Identity — logo, letterhead, namecard, billboard, website layout và nhiều hơn nữa.</span></p>
+        <p style="margin-top:-6px;"><a href="https://longhau.com.vn/en" target="_blank" rel="noopener" style="font-size:12.5px; font-weight:600; color:var(--accent-ink);"><span class="lang-en">View LHC's current website ↗</span><span class="lang-vi">Xem website hiện tại của LHC ↗</span></a> <span style="font-size:12px; color:var(--text-muted);"><span class="lang-en">(layout reflects this project; content &amp; copy managed separately by LHC)</span><span class="lang-vi">(layout theo dự án này; nội dung do LHC quản lý riêng)</span></span></p>
+      </div>
+      <div class="consult-card">
+        <h4>DQSmart <span style="font-weight:400; color:var(--text-muted); font-size:0.8em;">(2022)</span></h4>
+        <div class="consult-logo"><img src="assets/img/dqsmart-logo.png" loading="lazy" alt="DQSmart logo — a member of Dien Quang Group"></div>
+        <div class="slogan"><span class="slogan-label"><span class="lang-en">Slogan: </span><span class="lang-vi">Slogan: </span></span>"Envision Smart Living"</div>
+        <p><span class="lang-en">Brand naming and identity development for DQSmart — created the logo, slogan, core values and 6 core brand identity items, plus authored the full website content.</span><span class="lang-vi">Xây dựng tên thương hiệu và hệ thống nhận diện cho DQSmart — thiết kế logo, slogan, giá trị cốt lõi và 6 hạng mục chính trong brand identity, đồng thời viết toàn bộ nội dung website.</span></p>
+        <p style="margin-top:-6px;"><a href="https://dqsmart.vn/" target="_blank" rel="noopener" style="font-size:12.5px; font-weight:600; color:var(--accent-ink);"><span class="lang-en">View DQSmart's website ↗</span><span class="lang-vi">Xem website DQSmart ↗</span></a></p>
+      </div>
+    </div>
+
+    <div class="consult-full">
+      <h4><span class="lang-en">Early-Career Brand Consulting Projects</span><span class="lang-vi">Dự án Tư vấn Thương hiệu (Giai đoạn đầu sự nghiệp)</span></h4>
+      <p>
+        <span class="lang-en">Earlier in my career, as a Senior Brand Analyst and Project Coordinator on the brand consulting team at Masso Group (Brand &amp; Marketing Agency), I was assigned to supervise and coordinate focus groups and 1-on-1 in-depth interviews with the research agency, turning the findings into the consumer and stakeholder insight behind brand repositioning projects for VNPT, Bảo Việt Group and Military Bank, and contributed to the full brand identity system for Kienlong Bank. The role also covered project implementation meetings, training sessions and client presentations. I also worked on IMC projects for VIFON and Hoa Đăng Restaurant.</span>
+        <span class="lang-vi">Trong giai đoạn đầu sự nghiệp, với vai trò Senior Brand Analyst kiêm Điều phối dự án trong đội tư vấn thương hiệu tại Masso Group (Công ty Thương hiệu &amp; Marketing), tôi được giao giám sát và phối hợp cùng công ty nghiên cứu triển khai các buổi thảo luận nhóm và phỏng vấn sâu 1-1, từ đó tổng hợp insight người tiêu dùng và các bên liên quan làm nền tảng cho các dự án tái định vị thương hiệu VNPT, Tập đoàn Bảo Việt và Ngân hàng Quân đội, đồng thời tham gia xây dựng hệ thống nhận diện thương hiệu cho Ngân hàng Kiên Long. Công việc còn bao gồm nhiều cuộc họp triển khai dự án, buổi đào tạo và thuyết trình với khách hàng. Tôi cũng tham gia các dự án IMC cho VIFON và Nhà hàng Hoa Đăng.</span>
+      </p>
+      <div class="brand-chip-row">
+        <span class="brand-chip">VNPT</span>
+        <span class="brand-chip"><span class="lang-en">Bảo Việt Group</span><span class="lang-vi">Tập đoàn Bảo Việt</span></span>
+        <span class="brand-chip"><span class="lang-en">Military Bank</span><span class="lang-vi">Ngân hàng Quân đội</span></span>
+        <span class="brand-chip"><span class="lang-en">Kienlong Bank</span><span class="lang-vi">Ngân hàng Kiên Long</span></span>
+        <span class="brand-chip">VIFON</span>
+        <span class="brand-chip"><span class="lang-en">Hoa Đăng Restaurant</span><span class="lang-vi">Nhà hàng Hoa Đăng</span></span>
+      </div>
+    </div>
+
+    <div class="consult-cta">
+      <div class="cta-text">
+        <span class="cta-eyebrow"><span class="lang-en">Let's collaborate</span><span class="lang-vi">Hợp tác cùng tôi</span></span>
+        <h4><span class="lang-en">Interested in working together?</span><span class="lang-vi">Quan tâm hợp tác cùng nhau?</span></h4>
+        <p><span class="lang-en">Reach out if you have an IMC, Demand Gen or Brand Identity project in mind — or a corporate or public training session for your team.</span><span class="lang-vi">Liên hệ nếu bạn có dự án IMC, Demand Gen hoặc Brand Identity cần triển khai — hoặc cần một buổi đào tạo cho doanh nghiệp hay cộng đồng.</span></p>
+        <div class="tag-group">
+          <span class="tag-label"><span class="lang-en">Projects</span><span class="lang-vi">Dự án</span></span>
+          <div class="tag-row"><span>IMC</span><span>Demand Gen</span><span>Brand Identity</span></div>
+        </div>
+        <div class="tag-group">
+          <span class="tag-label"><span class="lang-en">Training</span><span class="lang-vi">Đào tạo</span></span>
+          <div class="tag-row"><span><span class="lang-en">Digital Marketing (Basic)</span><span class="lang-vi">Digital Marketing (Cơ bản)</span></span><span><span class="lang-en">Event &amp; IMC</span><span class="lang-vi">Sự kiện &amp; IMC</span></span><span><span class="lang-en">B2B Sales &amp; Marketing</span><span class="lang-vi">Bán hàng &amp; Marketing B2B</span></span></div>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="mailto:uyenntp@gmail.com?subject=IMC%20%2F%20Demand%20Gen%20%2F%20Brand%20Identity%20Project%20Inquiry"><span class="lang-en">Email me about your project</span><span class="lang-vi">Gửi email cho tôi</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-white" id="expertise">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="lang-en">Expertise</span><span class="lang-vi">Chuyên môn</span></span>
+      <h2 class="h2"><span class="lang-en">Core expertise &amp; industries</span><span class="lang-vi">Chuyên môn cốt lõi &amp; ngành nghề</span></h2>
+    </div>
+
+    <div class="expertise-cols">
+      <div>
+        <div class="chip-group">
+          <span class="chip"><span class="lang-en">Market Expansion &amp; Commercial Growth (VN &amp; ASEAN)</span><span class="lang-vi">Mở rộng thị trường &amp; Tăng trưởng thương mại (VN &amp; ASEAN)</span></span>
+          <span class="chip"><span class="lang-en">Product Launching &amp; GTM Strategy</span><span class="lang-vi">Ra mắt sản phẩm &amp; Chiến lược GTM</span></span>
+          <span class="chip"><span class="lang-en">Brand Building, Communications &amp; Public Representation</span><span class="lang-vi">Xây dựng thương hiệu, Truyền thông &amp; Đại diện công chúng</span></span>
+          <span class="chip"><span class="lang-en">Demand Gen &amp; Full-Funnel Acquisition</span><span class="lang-vi">Tăng trưởng nhu cầu &amp; Thu hút khách hàng toàn phễu</span></span>
+          <span class="chip"><span class="lang-en">Digital Marketing &amp; Social (Meta, Google, LinkedIn, TikTok, Zalo)</span><span class="lang-vi">Digital Marketing &amp; Mạng xã hội (Meta, Google, LinkedIn, TikTok, Zalo)</span></span>
+          <span class="chip"><span class="lang-en">SEO &amp; Content Strategy</span><span class="lang-vi">SEO &amp; Chiến lược Nội dung</span></span>
+          <span class="chip">Marketing Automation &amp; CRM/CDP (Salesforce, HubSpot, Marketo)</span>
+          <span class="chip"><span class="lang-en">Strategic Partnerships &amp; Government Relations</span><span class="lang-vi">Đối tác Chiến lược &amp; Quan hệ Chính phủ</span></span>
+          <span class="chip"><span class="lang-en">Project &amp; Event Management (Vietnam, ASEAN, APAC)</span><span class="lang-vi">Quản lý Dự án &amp; Sự kiện (Việt Nam, ASEAN, APAC)</span></span>
+          <span class="chip"><span class="lang-en">KOC &amp; Affiliate Program Management</span><span class="lang-vi">Quản lý KOC &amp; Chương trình Affiliate</span></span>
+          <span class="chip"><span class="lang-en">Attribution &amp; ROI Management</span><span class="lang-vi">Đo lường hiệu quả &amp; ROI</span></span>
+        </div>
+      </div>
+
+      <div>
+        <div class="side-title"><span class="lang-en">Industries</span><span class="lang-vi">Ngành nghề</span></div>
+        <div class="chip-group">
+          <span class="chip"><span class="lang-en">B2B E-commerce &amp; Cross-border Trade</span><span class="lang-vi">Thương mại điện tử B2B &amp; Thương mại xuyên biên giới</span></span>
+          <span class="chip"><span class="lang-en">Enterprise IT &amp; ICT Distribution</span><span class="lang-vi">CNTT Doanh nghiệp &amp; Phân phối ICT</span></span>
+          <span class="chip"><span class="lang-en">Professional Services</span><span class="lang-vi">Dịch vụ Chuyên nghiệp</span></span>
+          <span class="chip"><span class="lang-en">Banking &amp; Financial Services</span><span class="lang-vi">Ngân hàng &amp; Dịch vụ Tài chính</span></span>
+          <span class="chip"><span class="lang-en">Government &amp; Public Sector</span><span class="lang-vi">Chính phủ &amp; Khu vực Công</span></span>
+          <span class="chip"><span class="lang-en">FMCG &amp; Brand Consulting</span><span class="lang-vi">FMCG &amp; Tư vấn Thương hiệu</span></span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- =========================================================
-       6. EARLY HIGHLIGHTS
-  ========================================================== -->
-  <section class="block">
-    <div class="wrap">
-      <div class="block-head">
-        <h2>Early highlights</h2>
-        <div class="meta">IBM "Come to You" (2012–2013) &amp; VIFON "World Cup 2006" (Masso Group)</div>
+<section class="section section-cream" id="education">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="lang-en">Education</span><span class="lang-vi">Học vấn</span></span>
+      <h2 class="h2"><span class="lang-en">Education &amp; credentials</span><span class="lang-vi">Học vấn &amp; chứng chỉ</span></h2>
+    </div>
+
+    <div class="edu-top">
+      <figure class="motto-card">
+        <img src="assets/img/motto-portrait.jpg" alt="Uyen T.P. Nguyen speaking at a panel discussion" loading="lazy">
+        <figcaption>
+          <span class="motto-label"><span class="lang-en">My motto</span><span class="lang-vi">Phương châm của tôi</span></span>
+          <span class="motto-line"><span class="m">Be Kind<span class="dot">·</span></span> <span class="m">Be Bold<span class="dot">·</span></span> <span class="m">Be Better</span></span>
+        </figcaption>
+      </figure>
+      <div class="edu-main">
+        <div class="side-title"><span class="lang-en">Education</span><span class="lang-vi">Học vấn</span></div>
+        <div class="edu-row"><span><span class="lang-en">Asian Institute of Management — MBA, Philippines</span><span class="lang-vi">Asian Institute of Management — MBA, Philippines</span></span><span class="k">2009–2010</span></div>
+        <div class="edu-row"><span><span class="lang-en">University of Economics HCMC — Bachelor of Foreign Trade</span><span class="lang-vi">Đại học Kinh tế TP.HCM — Cử nhân Ngoại thương</span></span><span class="k">2000–2004</span></div>
       </div>
-      <p><strong>IBM "Come to You"</strong> — a nationwide roadshow communication strategy bringing enterprise technology awareness directly to regional business audiences across 8 provinces and cities: Đồng Nai, Bình Dương, Hải Phòng, Đà Nẵng, Gia Lai, Cần Thơ, Quảng Ngãi, Ho Chi Minh City and Hanoi.</p>
-      <p><strong>VIFON "World Cup 2006" ATL campaign</strong> — led execution of an above-the-line brand campaign for Masso Group, including video production and nationwide promotional activities.</p>
-      <div class="media-grid">
-        <div class="media-slot">
-          <img src="images/early-1.jpg" alt="Early campaign material">
-          <div class="ph"><span class="fname">early-1.jpg</span><span class="cap">Optional — any surviving material (TVC still, poster, etc.)</span></div>
+    </div>
+
+    <div class="cred-grid">
+      <div class="cred-box">
+        <div class="side-title"><span class="lang-en">Scholarship &amp; Awards</span><span class="lang-vi">Học bổng &amp; Giải thưởng</span></div>
+        <div class="edu-row"><span><span class="lang-en">Full MBA Scholarship Holder — Cheng Yung Foundation</span><span class="lang-vi">Học bổng MBA toàn phần — Quỹ Cheng Yung</span></span><span class="k">2009–2010</span></div>
+        <div class="edu-row"><span><span class="lang-en">IBM Management's Choice Award</span><span class="lang-vi">Giải thưởng Management's Choice, IBM</span></span><span class="k">2017 · 2020 · 2021</span></div>
+        <div class="edu-row"><span><span class="lang-en">IBM Best Employee Award</span><span class="lang-vi">Giải thưởng Nhân viên Xuất sắc, IBM</span></span><span class="k">2018</span></div>
+      </div>
+      <div class="cred-box">
+        <div class="side-title"><span class="lang-en">Certifications</span><span class="lang-vi">Chứng chỉ</span></div>
+        <div class="edu-row"><span>HubSpot Marketing Software</span></div>
+        <div class="edu-row"><span><span class="lang-en">Product Marketing</span><span class="lang-vi">Product Marketing</span></span></div>
+        <div class="edu-row"><span><span class="lang-en">Design Thinking</span><span class="lang-vi">Design Thinking</span></span></div>
+        <div class="edu-row"><span><span class="lang-en">Digital Marketing &amp; Advertising</span><span class="lang-vi">Digital Marketing &amp; Advertising</span></span></div>
+      </div>
+      <div class="cred-box">
+        <div class="side-title"><span class="lang-en">Languages</span><span class="lang-vi">Ngôn ngữ</span></div>
+        <div class="edu-row"><span><span class="lang-en">English</span><span class="lang-vi">Tiếng Anh</span></span><span class="k"><span class="lang-en">Fluent, Business</span><span class="lang-vi">Thành thạo, Thương mại</span></span></div>
+        <div class="edu-row"><span><span class="lang-en">French</span><span class="lang-vi">Tiếng Pháp</span></span><span class="k"><span class="lang-en">Basic</span><span class="lang-vi">Cơ bản</span></span></div>
+        <div class="edu-row"><span><span class="lang-en">Vietnamese</span><span class="lang-vi">Tiếng Việt</span></span><span class="k"><span class="lang-en">Native</span><span class="lang-vi">Bản ngữ</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-copy">
+        <span class="eyebrow"><span class="lang-en">Contact</span><span class="lang-vi">Liên hệ</span></span>
+        <h2><span class="lang-en">Let's connect &amp; work together!</span><span class="lang-vi">Hãy kết nối và làm việc cùng nhau!</span></h2>
+        <p class="lede"><span class="lang-en">Open to Head of Marketing conversations, IMC &amp; brand consulting engagements, and marketing training invitations.</span><span class="lang-vi">Sẵn sàng trao đổi về các vị trí Head of Marketing, các dự án tư vấn IMC &amp; thương hiệu, và lời mời đào tạo marketing.</span></p>
+        <div class="footer-open">
+          <span><span class="lang-en">Head of Marketing roles</span><span class="lang-vi">Vị trí Head of Marketing</span></span>
+          <span><span class="lang-en">IMC &amp; Brand consulting</span><span class="lang-vi">Tư vấn IMC &amp; Thương hiệu</span></span>
+          <span><span class="lang-en">Marketing training</span><span class="lang-vi">Đào tạo marketing</span></span>
         </div>
-        <div class="media-slot">
-          <img src="images/early-2.jpg" alt="Early campaign material">
-          <div class="ph"><span class="fname">early-2.jpg</span><span class="cap">Optional — any surviving material</span></div>
+        <div class="footer-cta">
+          <a class="btn btn-primary" href="mailto:uyenntp@gmail.com">uyenntp@gmail.com</a>
+          <a class="btn btn-outline" href="https://linkedin.com/in/uyen1503" target="_blank" rel="noopener">linkedin.com/in/uyen1503</a>
         </div>
       </div>
+      <div class="footer-visual" aria-hidden="true">
+        <span class="ring ring-1"></span>
+        <span class="ring ring-2"></span>
+        <span class="ring ring-orbit"><i></i></span>
+        <img src="assets/img/about-photo.jpg" alt="" loading="lazy">
+        <span class="footer-badge"><span class="dot-live"></span><span class="lang-en">Open to new opportunities</span><span class="lang-vi">Sẵn sàng cho cơ hội mới</span></span>
+      </div>
     </div>
-  </section>
+    <div class="footer-bottom">
+      <span><span class="lang-en">Ho Chi Minh City, Vietnam · English (Business Fluent) · Vietnamese (Native)</span><span class="lang-vi">TP. Hồ Chí Minh, Việt Nam · Tiếng Anh (Thành thạo) · Tiếng Việt (Bản ngữ)</span></span>
+      <span>Uyên T.P. Nguyễn · Portfolio 2026</span>
+    </div>
+  </div>
+</footer>
 
-  <!-- =========================================================
-       7. RECOGNITION
-  ========================================================== -->
-  <section class="block alt">
-    <div class="wrap">
-      <div class="block-head">
-        <h2>Recognition &amp; partners</h2>
-        <div class="meta">Government, international and industry bodies engaged directly through the campaigns above</div>
-      </div>
-      <div class="recog-cols">
-        <ul class="recog-list">
-          <li>Ministry of Industry and Trade (MOIT)</li>
-          <li>Vietnam Trade Promotion Agency (VIETRADE)</li>
-          <li>Ministry of Science and Technology (MOST)</li>
-          <li>Vietnam Chamber of Commerce and Industry (VCCI)</li>
-          <li>Investment and Trade Promotion Centre (ITPC)</li>
-          <li>International Trade Centre (ITC — joint UN/WTO agency)</li>
-          <li>Asian Productivity Organization (APO)</li>
-          <li>Government of the Netherlands (SheTrades funding partner)</li>
-        </ul>
-        <ul class="recog-list">
-          <li>HubSpot Marketing Software</li>
-          <li>Product Marketing</li>
-          <li>Design Thinking</li>
-          <li>Digital Marketing &amp; Advertising</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       FOOTER
-  ========================================================== -->
-  <footer>
-    <div class="wrap">
-      <h2>Uyen T.P. Nguyen</h2>
-      <p style="color:#C7CDD3; max-width:56ch; margin-top:10px;">Strategic Communication &amp; Campaign Leader — proposed Key Expert 1 (Team Leader), EU Strategic Communication in Viet Nam.</p>
-      <div class="foot-contact">
-        <span>+84 982 69 9090</span>
-        <span>uyenntp@gmail.com</span>
-        <span>Ho Chi Minh City, Vietnam</span>
-        <span>linkedin.com/in/uyen1503</span>
-      </div>
-    </div>
-  </footer>
+<div class="copy-toast" id="copyToast" role="status" aria-live="polite"></div>
 
 <script>
-  document.querySelectorAll('.media-slot img').forEach(function(img){
-    img.addEventListener('error', function(){
-      img.style.display = 'none';
-      var ph = img.nextElementSibling;
-      if (ph) ph.style.display = 'flex';
-      ph.style.flexDirection = 'column';
-      ph.style.alignItems = 'center';
-    });
+(function(){
+  var root = document.body;
+  var toggle = document.getElementById('langToggle');
+  function setLang(lang){
+    root.setAttribute('data-lang', lang);
+    var btns = toggle.querySelectorAll('button');
+    for (var i=0;i<btns.length;i++){
+      btns[i].classList.toggle('active', btns[i].getAttribute('data-lang') === lang);
+    }
+    try { localStorage.setItem('portfolio-lang', lang); } catch(e){}
+  }
+  var initial = 'en';
+  try {
+    var saved = localStorage.getItem('portfolio-lang');
+    if (saved === 'en' || saved === 'vi') initial = saved;
+  } catch(e){}
+  setLang(initial);
+  toggle.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-lang]');
+    if (!btn) return;
+    setLang(btn.getAttribute('data-lang'));
   });
-</script>
 
+  // Mobile menu
+  var menuBtn = document.getElementById('menuBtn');
+  var navLinks = document.getElementById('navLinks');
+  function setMenu(open){
+    navLinks.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  menuBtn.addEventListener('click', function(){ setMenu(!navLinks.classList.contains('open')); });
+  navLinks.addEventListener('click', function(e){ if (e.target.closest('a')) setMenu(false); });
+
+  // Speaking gallery "View more"
+  var moreBtn = document.getElementById('speakMore');
+  if (moreBtn){
+    moreBtn.addEventListener('click', function(){
+      var gallery = moreBtn.previousElementSibling;
+      var open = !gallery.classList.contains('expanded');
+      gallery.classList.toggle('expanded', open);
+      moreBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // Hero border: two comets glide at constant speed along the rounded border
+  (function(){
+    var wrap = document.getElementById('heroWrap');
+    if (!wrap) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var comets = wrap.querySelectorAll('.hero-comet'), TAIL = 14, GAP = 5, PERIOD = 18000;
+    var dots = [];
+    for (var c = 0; c < comets.length; c++){
+      var list = [];
+      for (var k = 0; k <= TAIL; k++){
+        var d = document.createElement('b');
+        if (k === 0) d.className = 'head';
+        else { var sz = Math.max(1.5, 4.5 - k*0.22); d.style.width = d.style.height = sz+'px';
+               d.style.margin = (-sz/2)+'px 0 0 '+(-sz/2)+'px'; d.style.opacity = (1 - k/(TAIL+1)).toFixed(2); }
+        comets[c].appendChild(d); list.push(d);
+      }
+      dots.push(list);
+    }
+    // point at distance s along a rounded rectangle (clockwise from top-left straight edge)
+    function pointAt(s, W, H, R){
+      var sw = W - 2*R, sh = H - 2*R, arc = Math.PI*R/2, P = 2*sw + 2*sh + 4*arc;
+      s = ((s % P) + P) % P;
+      var segs = [
+        [sw, function(t){return [R+t, 0];}],
+        [arc,function(t){var a=-Math.PI/2+t/R; return [W-R+R*Math.cos(a), R+R*Math.sin(a)];}],
+        [sh, function(t){return [W, R+t];}],
+        [arc,function(t){var a=t/R; return [W-R+R*Math.cos(a), H-R+R*Math.sin(a)];}],
+        [sw, function(t){return [W-R-t, H];}],
+        [arc,function(t){var a=Math.PI/2+t/R; return [R+R*Math.cos(a), H-R+R*Math.sin(a)];}],
+        [sh, function(t){return [0, H-R-t];}],
+        [arc,function(t){var a=Math.PI+t/R; return [R+R*Math.cos(a), R+R*Math.sin(a)];}]
+      ];
+      for (var i = 0; i < segs.length; i++){ if (s <= segs[i][0]) return segs[i][1](s); s -= segs[i][0]; }
+      return [R, 0];
+    }
+    var start = performance.now();
+    function tick(now){
+      var inset = 2.5, W = wrap.offsetWidth - 2*inset, H = wrap.offsetHeight - 2*inset, R = 18.5;
+      var P = 2*(W-2*R) + 2*(H-2*R) + 2*Math.PI*R;
+      var base = ((now - start) / PERIOD) * P;
+      for (var c = 0; c < dots.length; c++){
+        var off = base + c * P/2;
+        for (var k = 0; k < dots[c].length; k++){
+          var pt = pointAt(off - k*GAP, W, H, R);
+          dots[c][k].style.transform = 'translate(' + (pt[0]+inset).toFixed(1) + 'px,' + (pt[1]+inset).toFixed(1) + 'px)';
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  })();
+
+  // Email links copy the address instead of opening a mail app
+  var EMAIL = 'uyenntp@gmail.com';
+  var toast = document.getElementById('copyToast');
+  var toastTimer;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2600);
+  }
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta);
+    return ok;
+  }
+  function copyEmail(){
+    var vi = root.getAttribute('data-lang') === 'vi';
+    var okMsg = vi ? 'Đã sao chép email: ' + EMAIL : 'Email copied: ' + EMAIL;
+    var failMsg = vi ? 'Email của tôi: ' + EMAIL : 'My email: ' + EMAIL;
+    function done(ok){ showToast(ok ? okMsg : failMsg); }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(EMAIL).then(function(){ done(true); }, function(){ done(fallbackCopy(EMAIL)); });
+    } else {
+      done(fallbackCopy(EMAIL));
+    }
+  }
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href^="mailto:"]');
+    if (!link) return;
+    e.preventDefault();
+    copyEmail();
+  });
+})();
+</script>
 </body>
 </html>
