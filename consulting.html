@@ -741,6 +741,22 @@
   .sub-title{font-family:'Fraunces',serif; font-weight:600; font-size:22px; margin:52px 0 0;}
   .cred-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:22px;}
   .teach-card .chip-group{margin-top:14px;}
+  .prog-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:22px;}
+  @media (max-width:860px){ .prog-grid{grid-template-columns:1fr;} }
+  .prog-card{display:flex; flex-direction:column; background:var(--surface); border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:var(--shadow);}
+  .prog-card .prog-img{aspect-ratio:16/9; background:var(--surface-2); overflow:hidden;}
+  .prog-card .prog-img img{width:100%; height:100%; object-fit:cover; display:block;}
+  .prog-card .prog-body{padding:24px 26px 26px; display:flex; flex-direction:column; gap:10px; flex:1;}
+  .prog-card .prog-tag{font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink);}
+  .prog-card h3{font-family:'Fraunces',serif; font-weight:600; font-size:21px; line-height:1.25;}
+  .prog-card .prog-role{font-size:14px; color:var(--text-muted);}
+  .prog-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:auto; padding-top:16px; border-top:1px dashed var(--line);}
+  .prog-stats .n{font-family:'Fraunces',serif; font-weight:700; font-size:22px; color:var(--gold-500); line-height:1.1;}
+  .prog-stats .l{font-size:11.5px; color:var(--text-muted); margin-top:4px; line-height:1.4;}
+  .prog-card .prog-link{font-size:12.5px; font-weight:600; color:var(--accent-ink);}
+  .prog-kind{display:inline-block; font-size:11px; font-weight:700; padding:3px 10px; border-radius:999px; background:var(--navy-900); color:var(--gold-300); width:fit-content;}
+  .prog-note{margin-top:26px; padding:20px 24px; border-radius:14px; background:var(--surface-2); border-left:4px solid var(--gold-500); font-size:15px; color:var(--text);}
+  .prog-note b{font-family:'Fraunces',serif; font-weight:600;}
 </style>
 </head>
 <body>
@@ -749,7 +765,7 @@
     <div class="brand">Uy<span>ê</span>n T.P. Nguy<span>ễ</span>n<span class="brand-mba">, MBA</span></div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#services"><span class="lang-en">Services</span><span class="lang-vi">Dịch vụ</span></a></li>
-      <li><a href="#process"><span class="lang-en">How I Work</span><span class="lang-vi">Cách làm việc</span></a></li>
+      <li><a href="#programs"><span class="lang-en">Programs</span><span class="lang-vi">Chương trình</span></a></li>
       <li><a href="#work"><span class="lang-en">Selected Work</span><span class="lang-vi">Dự án</span></a></li>
       <li><a href="#training"><span class="lang-en">Training</span><span class="lang-vi">Đào tạo</span></a></li>
       <li><a href="#about"><span class="lang-en">About</span><span class="lang-vi">Giới thiệu</span></a></li>
@@ -853,13 +869,69 @@
       <span class="k"><span class="lang-en">Ways to work together</span><span class="lang-vi">Hình thức hợp tác</span></span>
       <span class="chip"><span class="lang-en">Project-based</span><span class="lang-vi">Theo dự án</span></span>
       <span class="chip"><span class="lang-en">Part-time / fractional</span><span class="lang-vi">Bán thời gian</span></span>
+      <span class="chip"><span class="lang-en">Project / campaign manager</span><span class="lang-vi">Quản lý dự án / chiến dịch</span></span>
       <span class="chip"><span class="lang-en">Workshops &amp; guest lectures</span><span class="lang-vi">Workshop &amp; thỉnh giảng</span></span>
       <span class="chip"><span class="lang-en">Remote or on-site · HCMC</span><span class="lang-vi">Online hoặc trực tiếp · TP.HCM</span></span>
     </div>
   </div>
 </section>
 
-<section class="section section-white" id="process">
+<section class="section section-white" id="programs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="lang-en">Signature Programs</span><span class="lang-vi">Chương trình tiêu biểu</span></span>
+      <h2 class="h2"><span class="lang-en">Programs I've conceived and led</span><span class="lang-vi">Những chương trình tôi khởi xướng &amp; dẫn dắt</span></h2>
+      <p class="lede-2"><span class="lang-en">National, international-development and regional programs — built with ministries, UN agencies and partners across Asia.</span><span class="lang-vi">Các chương trình tầm quốc gia, phát triển quốc tế và khu vực — xây dựng cùng bộ ngành, tổ chức Liên Hợp Quốc và đối tác khắp châu Á.</span></p>
+    </div>
+    <div class="prog-grid">
+      <article class="prog-card">
+        <div class="prog-img"><img src="assets/img/vp-cover-collage.jpg" alt="Vietnam Pavilion on Alibaba.com" loading="lazy"></div>
+        <div class="prog-body">
+          <span class="prog-kind"><span class="lang-en">National program</span><span class="lang-vi">Chương trình quốc gia</span></span>
+          <span class="prog-tag">MOIT × VIETRADE × Alibaba.com · 2023–2026</span>
+          <h3><span class="lang-en">Vietnam Pavilion &amp; Top 100 / Top 200 Featured Businesses</span><span class="lang-vi">Vietnam Pavilion &amp; Top 100 / Top 200 Doanh nghiệp Tiêu biểu</span></h3>
+          <p class="prog-role"><span class="lang-en">Co-founder &amp; program lead. Conceived the Top Featured Businesses program — mission, scoring criteria and support model — and led its communication and IMC across three seasons.</span><span class="lang-vi">Đồng sáng lập &amp; trưởng chương trình. Khởi xướng chương trình Top Doanh nghiệp Tiêu biểu — sứ mệnh, tiêu chí chấm điểm và mô hình đồng hành — và dẫn dắt truyền thông, IMC qua ba mùa.</span></p>
+          <a class="prog-link" href="https://event.vietrade.gov.vn/vietnampavilion2026-2027" target="_blank" rel="noopener"><span class="lang-en">Program details on VIETRADE ↗</span><span class="lang-vi">Chi tiết chương trình trên VIETRADE ↗</span></a>
+          <div class="prog-stats"><div><div class="n">3</div><div class="l"><span class="lang-en">seasons run</span><span class="lang-vi">mùa triển khai</span></div></div><div><div class="n">370+</div><div class="l"><span class="lang-en">Vietnamese businesses supported</span><span class="lang-vi">doanh nghiệp Việt được hỗ trợ</span></div></div><div><div class="n">475+</div><div class="l"><span class="lang-en">media touchpoints (VN, ASEAN, EU)</span><span class="lang-vi">lượt truyền thông (VN, ASEAN, EU)</span></div></div></div>
+        </div>
+      </article>
+      <article class="prog-card">
+        <div class="prog-img"><img src="assets/img/itc-group-award.jpg" alt="ITC SheTrades and Government of the Netherlands closing event" loading="lazy"></div>
+        <div class="prog-body">
+          <span class="prog-kind"><span class="lang-en">International development</span><span class="lang-vi">Phát triển quốc tế</span></span>
+          <span class="prog-tag">ITC SheTrades (UN/WTO) × Government of the Netherlands · 2023–2025</span>
+          <h3><span class="lang-en">Export access for women-owned businesses</span><span class="lang-vi">Mở lối xuất khẩu cho doanh nghiệp nữ chủ</span></h3>
+          <p class="prog-role"><span class="lang-en">Brought Alibaba.com's B2B solutions to the International Trade Centre's SheTrades team, leading to a government-funded market-access program; keynote speaker at its closing conference.</span><span class="lang-vi">Giới thiệu giải pháp B2B của Alibaba.com tới đội SheTrades của Trung tâm Thương mại Quốc tế, dẫn đến chương trình tiếp cận thị trường do Chính phủ Hà Lan tài trợ; diễn giả chính tại hội nghị tổng kết.</span></p>
+          <div class="prog-stats"><div><div class="n">32</div><div class="l"><span class="lang-en">women-owned businesses funded</span><span class="lang-vi">doanh nghiệp nữ chủ được tài trợ</span></div></div><div><div class="n">2024–25</div><div class="l"><span class="lang-en">government-funded program</span><span class="lang-vi">chương trình do chính phủ tài trợ</span></div></div><div><div class="n">UN/WTO</div><div class="l"><span class="lang-en">joint agency partner</span><span class="lang-vi">đối tác tổ chức LHQ/WTO</span></div></div></div>
+        </div>
+      </article>
+      <article class="prog-card">
+        <div class="prog-img"><img src="assets/img/kel-poster.jpg" alt="KEL Award APAC Grand Finale" loading="lazy"></div>
+        <div class="prog-body">
+          <span class="prog-kind"><span class="lang-en">Regional award</span><span class="lang-vi">Giải thưởng khu vực</span></span>
+          <span class="prog-tag">Alibaba.com · South &amp; Southeast Asia · 2024</span>
+          <h3><span class="lang-en">KEL Award — Vietnam &amp; APAC Grand Finale</span><span class="lang-vi">KEL Award — Chung kết Việt Nam &amp; APAC</span></h3>
+          <p class="prog-role"><span class="lang-en">Conceived and directed the Key E-commerce Leader Award end to end — from the Vietnam launch and finale to the regional Grand Finale in Ho Chi Minh City with finalists from 6 countries.</span><span class="lang-vi">Khởi xướng và chỉ đạo toàn bộ giải thưởng Key E-commerce Leader — từ ra mắt, chung kết Việt Nam đến Chung kết khu vực tại TP.HCM với thí sinh từ 6 quốc gia.</span></p>
+          <a class="prog-link" href="https://1drv.ms/v/c/e2bf25afc56db3b1/IQDufcRswp6qT7wLIA2JLhOeAaEtCmT1eBowanPELknzsrc?e=D95nsw" target="_blank" rel="noopener"><span class="lang-en">Watch the recap video ↗</span><span class="lang-vi">Xem video tổng kết ↗</span></a>
+          <div class="prog-stats"><div><div class="n">250+</div><div class="l"><span class="lang-en">applicants from 6 countries</span><span class="lang-vi">hồ sơ từ 6 quốc gia</span></div></div><div><div class="n">400+</div><div class="l"><span class="lang-en">offline attendees</span><span class="lang-vi">khách tham dự trực tiếp</span></div></div><div><div class="n">594K+</div><div class="l"><span class="lang-en">livestream unique views</span><span class="lang-vi">lượt xem livestream</span></div></div></div>
+        </div>
+      </article>
+      <article class="prog-card">
+        <div class="prog-img"><img src="assets/img/ibm-think-collage.jpg" alt="IBM Think ASEAN 2021" loading="lazy"></div>
+        <div class="prog-body">
+          <span class="prog-kind"><span class="lang-en">Regional flagship</span><span class="lang-vi">Sự kiện khu vực</span></span>
+          <span class="prog-tag">IBM ASEAN · 2021</span>
+          <h3>IBM Think ASEAN 2021</h3>
+          <p class="prog-role"><span class="lang-en">Regional project owner, appointed by the Regional Marketing Director — coordinated IBM Worldwide and country teams across every online and onsite track, from planning to post-event pipeline.</span><span class="lang-vi">Chủ dự án khu vực, do Giám đốc Marketing khu vực chỉ định — điều phối IBM toàn cầu và các đội quốc gia trên mọi hạng mục online và onsite, từ lập kế hoạch đến pipeline sau sự kiện.</span></p>
+          <div class="prog-stats"><div><div class="n">2,572</div><div class="l"><span class="lang-en">attendees ASEAN-wide</span><span class="lang-vi">khách tham dự toàn ASEAN</span></div></div><div><div class="n">248%</div><div class="l"><span class="lang-en">of customer attendance target</span><span class="lang-vi">chỉ tiêu khách hàng tham dự</span></div></div><div><div class="n">163%</div><div class="l"><span class="lang-en">pipeline achievement in 6 months</span><span class="lang-vi">đạt pipeline sau 6 tháng</span></div></div></div>
+        </div>
+      </article>
+    </div>
+    <p class="prog-note"><span class="lang-en"><b>Running a national, NGO or regional program?</b> I can join as a freelance project or campaign manager — from concept and partner coordination to launch, media and impact reporting.</span><span class="lang-vi"><b>Bạn đang triển khai một chương trình quốc gia, phi chính phủ hay khu vực?</b> Tôi có thể tham gia với vai trò freelancer hoặc quản lý dự án / chiến dịch — từ ý tưởng, phối hợp đối tác đến ra mắt, truyền thông và báo cáo tác động.</span></p>
+  </div>
+</section>
+
+<section class="section section-cream" id="process">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow"><span class="lang-en">How I Work</span><span class="lang-vi">Cách tôi làm việc</span></span>
@@ -874,7 +946,7 @@
   </div>
 </section>
 
-<section class="section section-cream" id="work">
+<section class="section section-white" id="work">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow"><span class="lang-en">Selected Work</span><span class="lang-vi">Dự án tiêu biểu</span></span>
@@ -933,7 +1005,7 @@
   </div>
 </section>
 
-<section class="section section-white" id="training">
+<section class="section section-cream" id="training">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow"><span class="lang-en">Training &amp; Speaking</span><span class="lang-vi">Đào tạo &amp; Diễn giả</span></span>
@@ -973,7 +1045,7 @@
   </div>
 </section>
 
-<section class="section section-cream" id="about">
+<section class="section section-white" id="about">
   <div class="wrap">
     <div class="about-grid">
       <div class="about-photo">
@@ -1002,6 +1074,7 @@
           <span><span class="lang-en">IMC projects</span><span class="lang-vi">Dự án IMC</span></span>
           <span><span class="lang-en">Brand identity</span><span class="lang-vi">Nhận diện thương hiệu</span></span>
           <span><span class="lang-en">Marketing training</span><span class="lang-vi">Đào tạo marketing</span></span>
+          <span><span class="lang-en">Project / campaign manager</span><span class="lang-vi">Quản lý dự án / chiến dịch</span></span>
           <span><span class="lang-en">Part-time / freelance</span><span class="lang-vi">Bán thời gian / freelance</span></span>
         </div>
         <div class="footer-cta">
